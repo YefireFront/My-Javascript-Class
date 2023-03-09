@@ -1,10 +1,18 @@
+/** 
+@author PLATZY -- OSCAR BARAJAS  <CLOSURE>
+*/
+//!------------------------------------------CLOUSERE
+//* Permite accedre a el ambito de una funcion exterior desde una funcion interior 
+//* Se tiene una Clusure cuando una funcion accede a una vareiabnle fuera de su contexto 
+
+//todo = No se aplica clouser
 function moneyBox(coins){
     let = saveConis = 0;
     saveConis += coins
     console.log(`MoneyBox = ${saveConis}`)
 }
 moneyBox(5)
-moneyBox(5)
+moneyBox(15)
 
 
 function Cajamoney(){
@@ -18,11 +26,16 @@ function Cajamoney(){
 }
 
  const MyCajamoney = Cajamoney();
+ const yefferMoney = Cajamoney();
 
  
  MyCajamoney(5);
  MyCajamoney(5);
  MyCajamoney(125);
+ 
+ yefferMoney(100)
+ yefferMoney(100)
+ yefferMoney(100)
  
 
 function veterinaria (){
@@ -41,3 +54,10 @@ const MarchPets = veterinaria()
  MarchPets('GATOS')
  MarchPets('VACA')
  MarchPets('POLLO')
+
+console.log('vamos camp');
+function Yeffer (Somos, Venimos) {
+    Somos += Venimos;
+    console.log(`Yeffer: ${Somos}`)
+}
+
