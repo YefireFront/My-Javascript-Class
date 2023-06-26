@@ -168,12 +168,12 @@ const riBer = [9, 11, 23, 10, 31];
  * Concatena todos los elementos de un array de strings en un solo string
  */
 
-// function concatenarElementos(arr) {
-//   let cadeneta = "";
-//   for (let i = 0; i < arr.length; i++) {
-//     cadeneta+= arr[i]
-//   }
-//   console.log(cadeneta);
-// }
+function concatenarElementos(arr) {
+  let cadeneta = " ";
+  for (let i = 0; i < arr.length; i++) {
+    cadeneta+= arr[i]
+  }
+  console.log(cadeneta);
+}
 
 // concatenarElementos(America)
