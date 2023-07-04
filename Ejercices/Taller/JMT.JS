@@ -27,15 +27,12 @@
 //*Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
 //%solution
 
-function recortar( n , c ) {
-
+ recortar = ( n , c ) =>{
   let a = []
   a = [...n]
   for (let i = 0; i < c; i++) {
     console.log(a[i]);
   }
 }
-
-
 
 recortar("Doflamingo",4)
