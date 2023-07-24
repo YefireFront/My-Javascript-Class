@@ -14,3 +14,14 @@ function doSomething(callback) {
   // Pasa la función de callback al realizar algo
   doSomething(callbackFunction);
   
+
+  function saludar(nombre) {
+    alert("Hola " + nombre);
+  }
+  
+  function procesarEntradaUsuario(callback) {
+    var nombre = prompt("Por favor ingresa tu nombre.");
+    callback(nombre);
+  }
+  
+  procesarEntradaUsuario(saludar);
