@@ -1,16 +1,7 @@
-let nombre_Variable = 99
-const Variable = "Boca jrs de Argentina"
-
-
-
-function A() {
-    console.log("Mensaje que aparezco en consola");
-    console.info('Mensaje con console tipo error');
-    console.warn('Mensaje de consola con variable',Variable);
-    console.error(`Mensaje con otra forma de uniir variabel ${Variable}`);
-    
+let persona = {
+    nombre : 'Yeffer',
+    apellido : 'Anilio',
+    imprimi : function (params) {
+        
+    }
 }
-
-
-
-A()
