@@ -11,6 +11,3 @@ let nba ={
 
 }
 
-
-console.log(nba.name);
-console.log(nba.directors.president); 
