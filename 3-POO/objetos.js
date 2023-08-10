@@ -17,5 +17,3 @@ const team = {
 console.log(team.name);
 console.log(team.championship);
 console.log(team.sponser[2015]);
-team.Sing()
-team.Info()
