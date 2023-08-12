@@ -12,3 +12,4 @@ let nba ={
 
 }
 
+console.log(`los campeonatos de ${nba.name} fueron en ${nba.championship}`);
