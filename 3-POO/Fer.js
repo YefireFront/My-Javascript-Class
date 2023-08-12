@@ -7,7 +7,8 @@ let nba ={
         president : 'russel wats',
         manage : 'Crabs Bilss',
         sponsore: 'Nike'
-    }
+    },
+    dinasty : true
 
 }
 
