@@ -9,6 +9,12 @@ const team = {
     },
     Info(){
         console.log(`EL equipo ${this.name}`);
+    },
+    champ(){
+        
+        this.championship.forEach(element => {
+            console.log(element);
+        });
     }
 }
 
@@ -17,3 +23,4 @@ const team = {
 console.log(team.name);
 console.log(team.championship);
 console.log(team.sponser[2015]);
+team.champ()
