@@ -16,8 +16,9 @@ let AP = [];
 let acum = "";
 for (let i = 0; i < fechaOriginal.length; i++) {
     if (fechaOriginal[i] == '-') {
-        AP[AP.length] = acum
+        AP[AP.length] = acum + ''
         acum = ""
+        continue
         
     }
     acum += fechaOriginal[i]
@@ -27,5 +28,6 @@ if (acum !== "") {
 }
 console.log(AP);
 
-let fin = AP[0] + AP[1] + AP[2]
+let fin = AP[2] + '/'+ AP[1] + '/'+ AP[0]
 console.log(fin);
+
