@@ -15,16 +15,17 @@ const fechaFormateada = formatoFecha(fechaOriginal);
 let AP = [];
 let acum = "";
 for (let i = 0; i < fechaOriginal.length; i++) {
-    acum += fechaOriginal[i]
     if (fechaOriginal[i] == '-') {
         AP[AP.length] = acum
         acum = ""
+        
     }
+    acum += fechaOriginal[i]
 }
 if (acum !== "") {
     AP[AP.length] = acum;
 }
 console.log(AP);
 
-let fin = AP[2] + AP[1] + AP[0]
+let fin = AP[0] + AP[1] + AP[2]
 console.log(fin);
