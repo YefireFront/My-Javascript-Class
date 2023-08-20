@@ -51,6 +51,6 @@ const Arg = {
 console.log(team.name);
 console.log(team.championship);
 console.log(team.sponser[2015]);
-team.champ()
+Arg.champ()
 
 console.log(`los campeonatos de ${nba.name} fueron en ${nba.championship}`);
