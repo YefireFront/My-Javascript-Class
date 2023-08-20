@@ -1,4 +1,4 @@
-let nba ={
+const nba ={
     name : 'Jordan',
     team : 'Bulss',
     city : 'Chocago',
@@ -12,7 +12,7 @@ let nba ={
 
 }
 
-let nba2 ={
+const nba2 ={
     name : 'Jordan',
     team : 'Bulss',
     city : 'Chocago',
@@ -26,7 +26,7 @@ let nba2 ={
 
 }
 
-const team = {
+const Arg = {
     name    : 'Boca',
     city    : 'Buenos aires',
     country : 'Argentina',
