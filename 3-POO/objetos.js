@@ -32,6 +32,7 @@ class EquipoFutbol {
 // Crear jugadores
 const jugador1 = new Jugador("Lionel Messi", "Delantero");
 const jugador2 = new Jugador("Sergio Ramos", "Defensor");
+const jugador3 = new Jugador("Sergio Ramos", "Defensor");
 
 // Crear equipo de fútbol
 const equipoBarcelona = new EquipoFutbol("FC Barcelona");
