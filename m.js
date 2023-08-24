@@ -7,16 +7,16 @@ class BankAccount {
     deposit(amount) {
       if (amount > 0) {
         this.balance += amount;
-        console.log(`Deposited ${amount} units`);
+        console.log(`Deposited ${amount} units. TOTAL ${this.balance}`);
       }
     }
   
     withdraw(amount) {
       if (amount > 0 && amount <= this.balance) {
         this.balance -= amount;
-        console.log(`Withdrew ${amount} units`);
+        console.log(`Withdrew ${amount} units TOTAL ${this.balance}`);
       } else {
-        console.log("Insufficient balance");
+        console.log(`Insufficient balance ${amount} super ${this.balance}`);
       }
     }
   }
