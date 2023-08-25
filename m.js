@@ -64,6 +64,7 @@ class BankAccount {
   
   const lakers = new Team("Los Angeles Lakers", "Los Angeles");
   const warriors = new Team("Golden State Warriors", "San Francisco");
+  const Bulls = new Team("Chicago Bulss", "Chcago");
   
   lakers.addPlayer(leBron);
   warriors.addPlayer(steph);
