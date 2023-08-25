@@ -37,6 +37,7 @@ const jugador3 = new Jugador("Sergio Ramos", "Defensor");
 // Crear equipo de fútbol
 const equipoBarcelona = new EquipoFutbol("FC Barcelona");
 const equipoRalMadrid = new EquipoFutbol("Real Madrid");
+const equipoLiverpool = new EquipoFutbol("Liverpool");
 
 // Agregar Jugador 
 equipoBarcelona.agregarJugador(jugador1);
