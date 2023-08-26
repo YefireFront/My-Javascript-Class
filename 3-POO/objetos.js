@@ -87,6 +87,5 @@ equipoRalMadrid.presentarEquipo();
   lakers.addPlayer(leBron);
   warriors.addPlayer(steph);
   
-  console.log("Jugadores de Los Angeles Lakers:", lakers.getPlayersList());
-  console.log("Jugadores de Golden State Warriors:", warriors.getPlayersList());
+
   
