@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 class BankAccount {
     constructor(owner, balance) {
       this.owner = owner;
@@ -28,3 +29,10 @@ class BankAccount {
 
 
 
+=======
+let edad = 'boca'
+
+const back = edad >= 'boca' ? 'sos bostero':' no sos bostero'
+
+console.log(back);
+>>>>>>> Stashed changes
