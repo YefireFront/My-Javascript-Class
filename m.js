@@ -24,7 +24,7 @@ class BankAccount {
   const account = new BankAccount("John Doe", 1000);
   account.deposit(500); // Output: Deposited 500 units
   account.withdraw(200); // Output: Withdrew 200 units
-  account.withdraw(1500); // Output: Insufficient balance
+
 
 
 /**
