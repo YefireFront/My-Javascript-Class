@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 class BankAccount {
     constructor(owner, balance) {
       this.owner = owner;
@@ -37,6 +38,7 @@ class BankAccount {
  * 
  */
 
+<<<<<<< HEAD
 
 
 const coche = {
@@ -53,3 +55,12 @@ console.log("Marca:", coche.marca);
 console.log("Modelo:", coche.modelo);
 console.log("Año:", coche.año);
 console.log("Antigüedad:", coche.calcularAntigüedad(), "años");
+=======
+=======
+let edad = 'boca'
+
+const back = edad >= 'boca' ? 'sos bostero':' no sos bostero'
+
+console.log(back);
+>>>>>>> Stashed changes
+>>>>>>> 308b2ff700ba87da862ed504ac96e477d58cfbe1
