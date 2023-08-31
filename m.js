@@ -27,4 +27,29 @@ class BankAccount {
   account.withdraw(1500); // Output: Insufficient balance
 
 
+/**
+ * *
+ * ?
+ * %
+ * @todo
+ * !
+ * $
+ * 
+ */
 
+
+
+const coche = {
+  marca: "Toyota",
+  modelo: "Corolla",
+  año: 2018,
+  calcularAntigüedad: function() {
+    const añoActual = new Date().getFullYear();
+    return añoActual - this.año;
+  }
+};
+
+console.log("Marca:", coche.marca);
+console.log("Modelo:", coche.modelo);
+console.log("Año:", coche.año);
+console.log("Antigüedad:", coche.calcularAntigüedad(), "años");
