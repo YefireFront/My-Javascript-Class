@@ -48,8 +48,3 @@ const coche = {
     return añoActual - this.año;
   }
 };
-
-console.log("Marca:", coche.marca);
-console.log("Modelo:", coche.modelo);
-console.log("Año:", coche.año);
-console.log("Antigüedad:", coche.calcularAntigüedad(), "años");
