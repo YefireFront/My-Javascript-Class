@@ -1,4 +1,4 @@
-console.log(typeof true);
+/* console.log(typeof true);
 console.log("Yefire".toUpperCase());
 console.log(typeof 9);
 
@@ -25,4 +25,5 @@ console.log(team.name);
 console.log(team.championship);
 console.log(team.sponser[2015]);
 team.Sing()
-team.Info()
+team.Info() */
+
