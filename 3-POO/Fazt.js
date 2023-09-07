@@ -27,3 +27,29 @@ console.log(team.sponser[2015]);
 team.Sing()
 team.Info() */
 
+function Movies (name , genero , info){
+    this.name= name 
+    this.genero = genero
+    this.info = info
+    this.basic = function(){
+        console.log(`${this.name} es de ${this.genero}`);
+    }
+}
+
+
+const avatar = new Movies('Avatar', 'Ficcion',{duracion:125,formsto:'mp4'})
+avatar.basic()
+console.log(avatar);
+
+
+
+
+// class Jugador{
+//     constructor(name , lastname){
+//         this.name = name
+//         this.lastname = lastname
+//     }
+// }
+
+// const Ronaldo = new Jugador ('Nasario', 'De lima')
+// console.log(Ronaldo);

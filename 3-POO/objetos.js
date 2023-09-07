@@ -6,7 +6,7 @@ class Jugador {
 
   presentarse() {
     console.log(`Hola, soy ${this.nombre} y juego como ${this.posicion}.`);
-  }
+  } 
 }
 
 class EquipoFutbol {
