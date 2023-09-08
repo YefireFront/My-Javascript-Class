@@ -19,7 +19,7 @@ class EquipoFutbol {
     this.jugadores.push(jugador);
     console.log(`${jugador.nombre} ha sido añadido al equipo ${this.nombre}.`);
   }
-
+   
   presentarEquipo() {
     console.log(`Equipo: ${this.nombre}`);
     console.log("Jugadores:");
