@@ -81,8 +81,7 @@ equipoRalMadrid.presentarEquipo();
   const steph = new Player("Stephen Curry", 33, "Golden State Warriors");
   
   // const lakers = new Team("Los Angeles Lakers", "Los Angeles");
-  const warriors = new Team("Golden State Warriors", "San Francisco");
-  const Bulls = new Team("Chicago Bulss", "Chcago");
+  
   
 
   
