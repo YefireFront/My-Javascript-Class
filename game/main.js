@@ -1,42 +1,44 @@
 function Guerrero(nombre , vida , energia , atk , def ) {
-    this.n this.special ++
-    if (this.atk > enemigo.def) {
-        enemigo.vida = enemigo.vida - (this.atk - enemigo.def)
-        console.log(`${this.nombre} con un ATK de ${this.atk} ataca a ${enemigo.nombre} con una defensa de ${enemigo.def} 
-        tu especial aumento a ${this.special}`);
-
-        if (enemigo.vida < 0 ) {
-            enemigo.vida=0
-        }
-      
-    }else{
-        console.log(`Tu ataque es de ${this.atk} y la defensa del enemigo es mayor, es de ${enemigo.def} no le causas daño`);
-    }ombre = nombre,
+    this.nombre = nombre,
     this.vida = vida,
     this.energia = energia,
     this.atk = atk,
     this.def = def,
     this.tipo = 'Guerrero',
     this.special=0
+
+    /** Estado */
+
+  
+
+
+
     /** Metodos */
-    this.Atacar = function(enemigo){
-        if (enemigo.vivo) {
-            this.special ++
-            if (this.atk > enemigo.def) {
-                enemigo.vida = enemigo.vida - (this.atk - enemigo.def)
-                console.log(`${this.nombre} con un ATK de ${this.atk} ataca a ${enemigo.nombre} con una defensa de ${enemigo.def} 
-                tu especial aumento a ${this.special}`);
     
-                if (enemigo.vida < 0 ) {
-                    enemigo.vida=0
+    this.Atacar = function(enemigo){
+        if (this.vida >0 ) {
+            if (enemigo.vida > 0) {
+                    this.special ++
+                    if (this.atk > enemigo.def) {
+                        enemigo.vida = enemigo.vida - (this.atk - enemigo.def)
+                        console.log(`${this.nombre} con un ATK de ${this.atk} ataca a ${enemigo.nombre} con una defensa de ${enemigo.def} 
+                        tu especial aumento a ${this.special}`);
+            
+                        if (enemigo.vida < 0 ) {
+                            enemigo.vida = 0
+                        }
+                    
+                    }else{
+                        console.log(`Tu ataque es de ${this.atk} y la defensa del enemigo es mayor, es de ${enemigo.def} no le causas daño`);
+                    
                 }
-              
             }else{
-                console.log(`Tu ataque es de ${this.atk} y la defensa del enemigo es mayor, es de ${enemigo.def} no le causas daño`);
+                console.log(`No puede interactuar con ${enemigo.nombre} esta muerto`);
+
             }
             
         }else{
-            console.log(object);
+            console.log(`No puede jugar con ${this.nombre} esta muerto`);
         }
       
        
@@ -47,40 +49,53 @@ function Guerrero(nombre , vida , energia , atk , def ) {
     },
 
     this.Blindar = function(){
-        if (this.energia >= 30) {
-            this.energia -= 30
-            if (this.def == 70) {
-                console.log('Defensa a el maximo');
-            }else{
-                this.def += 20
-                if (this.def > 70) {
-                    this.def = 70
+
+        if (this.vida >0 ) {
+            if (this.energia >= 30) {
+                this.energia -= 30
+                if (this.def == 70) {
+                    console.log('Defensa a el maximo');
+                }else{
+                    this.def += 20
+                    if (this.def > 70) {
+                        this.def = 70
+                    }
+                    console.log(`${this.nombre} tu defensa aumento a ${this.def}`);
                 }
-                console.log(`${this.nombre} tu defensa aumento a ${this.def}`);
+            }else{
+                console.log(`Tienes ${this.energia} de energia. Energia insuficiente para usar blindar`);
             }
         }else{
-            
-            console.log(`Tienes ${this.energia} de energia. Energia insuficiente para usar blindar`);
-           
-
+            console.log(`No puede jugar con ${this.nombre} esta muerto`);
         }
+       
         console.log(this);
     },
 
     this.GranAtack= function(enemigo){
-        if (this.energia >= 70) {
-            let diferecnia = this.atk - enemigo.def
-            if (diferecnia >= 30) {
-                enemigo.vida = 0
-                console.log(`${this.nombre} Usa el gran Ataque a ${enemigo.nombre}  `);
-            }else{
-                console.log(`Tu diferencia es de ${diferecnia} no puedes usan el gran ataque`);
-            }
-            
-        }else{
 
-            console.log(`tu energia es de ${this.energia}, no tienes energia suficiente para el Gran Ataque`);
-            
+        
+        if (this.vida > 0) {
+            if (enemigo.vida > 0) {
+                if (this.energia >= 70) {
+                    let diferecnia = this.atk - enemigo.def
+                    if (diferecnia >= 30) {
+                        enemigo.vida = 0
+                        console.log(`${this.nombre} Usa el gran Ataque a ${enemigo.nombre}  `);
+                    }else{
+                        console.log(`Tu diferencia es de ${diferecnia} no puedes usan el gran ataque`);
+                    }
+                    
+                }else{
+        
+                    console.log(`tu energia es de ${this.energia}, no tienes energia suficiente para el Gran Ataque`);
+                    
+                }
+            }else{
+                console.log(`No puede interactuar con ${enemigo.nombre} esta muerto`);
+            }
+        }else{
+            console.log(`No puede jugar con ${this.nombre} esta muerto`);
         }
 
         console.log(this);
@@ -96,8 +111,8 @@ function Guerrero(nombre , vida , energia , atk , def ) {
             let ira = this.atk
             this.atk = 120
             console.log(this);
-            obj1.vida += (this.atk - obj1.def )
-            obj2.vida += (this.atk - obj2.def )
+            obj1.vida -= (this.atk - obj1.def )
+            obj2.vida -= (this.atk - obj2.def )
             this.atk = ira
         }else{
             console.log(`Solo tienes ${this.special}`);
@@ -117,14 +132,35 @@ function Sanador(nombre , vida , energia , atk , def ) {
     this.special = true,
 
     this.Atacar = function(enemigo){
-        if (this.atk > enemigo.def) {
-            enemigo.vida = enemigo.vida - (this.atk - enemigo.def)
-            console.log(`${this.nombre} con un ATK de ${this.atk} ataca a ${enemigo.nombre} con una defensa de ${enemigo.def} `);
-            console.log(enemigo);
-            console.log(this);
+        if (this.vida >0 ) {
+            if (enemigo.vida > 0) {
+                    this.special ++
+                    if (this.atk > enemigo.def) {
+                        enemigo.vida = enemigo.vida - (this.atk - enemigo.def)
+                        console.log(`${this.nombre} con un ATK de ${this.atk} ataca a ${enemigo.nombre} con una defensa de ${enemigo.def} 
+                        tu especial aumento a ${this.special}`);
+            
+                        if (enemigo.vida < 0 ) {
+                            enemigo.vida = 0
+                        }
+                    
+                    }else{
+                        console.log(`Tu ataque es de ${this.atk} y la defensa del enemigo es mayor, es de ${enemigo.def} no le causas daño`);
+                    
+                }
+            }else{
+                console.log(`No puede interactuar con ${enemigo.nombre} esta muerto`);
+
+            }
+            
         }else{
-            console.log(`Tu ataque es de ${this.atk} y la defensa del enemigo es mayor, es de ${enemigo.def} no le causas daño`);
+            console.log(`No puede jugar con ${this.nombre} esta muerto`);
         }
+      
+       
+        console.log(enemigo);
+        console.log(this);
+
 
     },
     this.curar = function(objetivo){
