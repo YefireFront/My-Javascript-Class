@@ -107,16 +107,26 @@ function Guerrero(nombre , vida , energia , atk , def ) {
 
     this.ira = function(obj1 , obj2){
 
-        if (this.special >= 3) {
-            let ira = this.atk
-            this.atk = 120
-            console.log(this);
-            obj1.vida -= (this.atk - obj1.def )
-            obj2.vida -= (this.atk - obj2.def )
-            this.atk = ira
+        if (this.vida > 0) {
+
+            if (obj1.vida > 0 && obj2 > 0) {
+                if (this.special >= 3) {
+                    let ira = this.atk
+                    this.atk = 120
+                    console.log(this);
+                    obj1.vida -= (this.atk - obj1.def )
+                    obj2.vida -= (this.atk - obj2.def )
+                    this.atk = ira
+
+            }else{
+                console.log(`Solo tienes ${this.special}`);
+            }
+            
         }else{
-            console.log(`Solo tienes ${this.special}`);
+            console.log(`uno de los personajes esta muerto`);
         }
+
+        console.log(`estas muerto no puede jugar`);
 
     }
 
