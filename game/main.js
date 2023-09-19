@@ -228,5 +228,4 @@ function Mago(nombre, vida, energia, atk, def) {
 const Yeffer = new Guerrero("Yeffer", 100, 100, 70, 40);
 const Walter = new Sanador("Walter", 100, 100, 50, 60);
 
-const Apo = new Mago("Apo", 100, 100, 60, 50);
-const Arley = new Mago("Arley", 20, 100, 60, 50);
+
