@@ -229,3 +229,13 @@ const Yeffer = new Guerrero("Yeffer", 100, 100, 70, 40);
 const Walter = new Sanador("Walter", 100, 100, 50, 60);
 
 
+for (const key in Yeffer) {
+
+    console.log(` ${key} = ${Yeffer[key]}`);
+    
+  
+}
+
+for (const iterator of object) {
+  
+}
