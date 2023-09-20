@@ -60,7 +60,7 @@ const greatsTeams =[
 
 
 //* NUMERO DE VECES QUE SE REPITE UN DATO EN UN OBJ  (Map y Reduce)
-/*
+
 const mapeado_Country = greatsTeams.map(k =>  k.country)
 const reducido = mapeado_Country.reduce((obj , value)=>{
     if (obj[value]){
@@ -75,35 +75,35 @@ const reducido = mapeado_Country.reduce((obj , value)=>{
 
 console.log(mapeado_Country);
 console.log(reducido);
-*/
+
 
 //* VALIDAR SI ALGUN DATO CUMPLE CON LA CONDICION ( MAP and SOME )
 
-/*
+
 const mapeado_Title = greatsTeams.map(k =>  k.titulos)
 const someado = mapeado_Title.some((k,i) => k>10  )
 console.log(mapeado_Title);
 console.log(`es ${someado} que algun elemento coincide con la condicion`);
 
-*/
+
 //* VALIDAR SI TODOS LOS DATOS CUMPLE CON LA CONDICION (MAP and EVERY)
-/*
+
 const mapeado_Name = greatsTeams.map(k =>  k.team)
 const everyado = mapeado_Name.every((k) => k.length > 3 )
 console.log(mapeado_Name);
 console.log(`es ${everyado} que todos los  elementos coinciden con la condicion`);
-*/
+
 
 //*  ENCONTRAR EL PRIMER ELEMENTO QUE CUMPLE CON UNA CONDICION ( find )
 
-/*
+
 const findneado = greatsTeams.find(country => country.country === 'US')
 console.log(`The team that macth is`);
 console.log( findneado);
-*/
+
 
 //*  CREATE AN ARRAY THAT IS SEPARATED BY PACE (SPLIT and JOIN)
-/*
+
 const bocaFrase = 'El jugador numero 12'
 let bocaFraseSplit = bocaFrase.split(' ')
 console.log(bocaFrase);
@@ -111,13 +111,13 @@ console.log(bocaFraseSplit);
 
 let bocaFraseJoin = bocaFraseSplit.join('/')
 console.log(bocaFraseJoin);
-*/
+
 //*   CONVERTY 2 ARRAYS INTO ONE  (CONCAT)
-/*
+
 const numandstribg = num.concat(teams)
 console.log(numandstribg);
 
-*/
+
 //* CREATE AN ARRAY WITH THE START DATE OF THIS OBJECT
 
 const calendars = {
@@ -146,9 +146,9 @@ const calendars = {
       },
     ],
     };
- /*   
+ 
     
-    TODO My solution :)
+    // TODO My solution :)
     const pc = calendars.primaryCalendar.map(keys=>keys.startDate)
     console.log(pc);
     
@@ -157,7 +157,7 @@ const calendars = {
     
     
     
-    TODO The Solutio :)
+    // TODO The Solutio :)
     
     const ObjToArray = Object.values(calendars)  //? convertir objeto a array 
     console.log(ObjToArray);
@@ -169,11 +169,11 @@ const calendars = {
     console.log(MapArray);
     
 
-*/
+
     
 //* CAUNT THE NUMBERS OF WORD THAT REAPET IN THIS ARRAY
 
-/*
+
 const a = ["Beautiful is better than ugly","Explicit is better than implicit","Simple is better than complex","Complex is better than complicated",]
 
 console.log(a);
@@ -183,7 +183,7 @@ const word = text.split(' ');
 console.log(word);
 console.log(word.length);
   
-*/
+
 
 
 const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];

@@ -1,4 +1,4 @@
-/* console.log(typeof true);
+console.log(typeof true);
 console.log("Yefire".toUpperCase());
 console.log(typeof 9);
 
@@ -25,7 +25,7 @@ console.log(team.name);
 console.log(team.championship);
 console.log(team.sponser[2015]);
 team.Sing()
-team.Info() */
+team.Info() 
 
 function Movies (name , genero , info){
     this.name= name 
@@ -44,12 +44,12 @@ console.log(avatar);
 
 
 
-// class Jugador{
-//     constructor(name , lastname){
-//         this.name = name
-//         this.lastname = lastname
-//     }
-// }
+class Jugador{
+    constructor(name , lastname){
+        this.name = name
+        this.lastname = lastname
+    }
+}
 
-// const Ronaldo = new Jugador ('Nasario', 'De lima')
-// console.log(Ronaldo);
+const Ronaldo = new Jugador ('Nasario', 'De lima')
+console.log(Ronaldo);
