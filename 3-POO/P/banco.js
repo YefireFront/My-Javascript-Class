@@ -36,15 +36,3 @@ class BankAccount {
  * $
  * 
  */
-
-
-
-const coche = {
-  marca: "Toyota",
-  modelo: "Corolla",
-  año: 2018,
-  calcularAntigüedad: function() {
-    const añoActual = new Date().getFullYear();
-    return añoActual - this.año;
-  }
-};
