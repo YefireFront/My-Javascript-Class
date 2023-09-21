@@ -14,6 +14,10 @@
     position: relative;
 }
 
+.bord{
+    border: 2px solid palevioletred;
+}
+
 
 .hijo{
     width: 100px;
