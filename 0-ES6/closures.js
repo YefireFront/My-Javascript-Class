@@ -5,9 +5,9 @@
 //* Permite accedre a el ambito de una funcion exterior desde una funcion interior 
 //* Se tiene una Clusure cuando una funcion accede a una vareiabnle fuera de su contexto 
 
-//todo = No se aplica clouser
+//?todo = No se aplica clouser
 function moneyBox(coins){
-    let = saveConis = 0;
+    let saveConis = 0;
     saveConis += coins
     console.log(`MoneyBox = ${saveConis}`)
 }
@@ -30,11 +30,11 @@ function Cajamoney(){
 
  
  MyCajamoney(5);
+ yefferMoney(100)
  MyCajamoney(5);
- MyCajamoney(125);
  
  yefferMoney(100)
- yefferMoney(100)
+ MyCajamoney(5);
  yefferMoney(100)
  
 
@@ -55,7 +55,7 @@ const MarchPets = veterinaria()
  MarchPets('VACA')
  MarchPets('POLLO')
 
-console.log('vamos camp');
+
 function Yeffer (Somos, Venimos) {
     Somos += Venimos;
     console.log(`Yeffer: ${Somos}`)
