@@ -1,7 +1,6 @@
 
 try {
     console.log('Codigo a evaluar');
-    eviste
     console.log('Codigo a evaluar segundo');
 } catch (error) {
     console.log(`Miremo el error mejor ${error}`);
