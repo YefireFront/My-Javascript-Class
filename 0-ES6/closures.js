@@ -54,6 +54,7 @@ const MarchPets = veterinaria()
  MarchPets('GATOS')
  MarchPets('VACA')
  MarchPets('POLLO')
+ MarchPets('POLLO')
 
 
 function Yeffer (Somos, Venimos) {
