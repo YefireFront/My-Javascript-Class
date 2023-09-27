@@ -35,7 +35,7 @@ function Cajamoney(){
  
  yefferMoney(100)
  MyCajamoney(5);
- yefferMoney(100)
+
  
 
 function veterinaria (){
