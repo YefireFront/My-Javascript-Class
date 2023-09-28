@@ -36,3 +36,8 @@ async function obtenerInfoPokemon(pokemonName) {
       console.error(`Error al obtener información de ${nombrePokemon.toUpperCase()}:`, error);
     });
   
+
+    if (false === !true) { 
+      console.log(false == true) 
+    } else
+     { console.log(true === !false) }
