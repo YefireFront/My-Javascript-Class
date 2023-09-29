@@ -70,24 +70,58 @@
 //   clausura(0); // Esto imprimirá "10" en la consola
 //   clausura(15); // Esto imprimirá "10" en la consola
 
-  
+//? CADA VEZ QUE SE EJECUTA UNA FUNCION EN JS, SE CRA UN NUEVO CONTEXTO DE
+//? EJECUCION CON UN NUEVO ENTORNO LÉXICO  
 
+//! ENTORNO LEXICO
+//* Es un objrto qur tiene los contextos de ejecuco  donde se almacenan los NOMBRES DE LAS VARIABLES
+//* que existeb debtro de una funcion y los valores acuales
+
+//! REGISTRO DE ENTORNO
+//*
 
 /** 
 @author LA COCINA DEL CODIGO  <CLOSURE>
 */
 
+//Nivel 1
+// function countCrator() {
+//     let cot = 0
 
-function countCrator() {
-    let cot = 0
+//     setTimeout(()=>{
+//         cot += 100 
+//     }, 5000)
 
-    setTimeout(()=>{
-        cot += 100 
-    }, 5000)
+//     return function increase () {
+//         return cot++
+//     }
+// }
 
-    return function increase () {
-        return cot++
+// firscounter = countCrator()
+
+//Nivel 1
+
+function Count() {
+    let cont = 0
+
+    return {
+        increas:()=>{
+            cont ++
+            return cont
+        },
+        decraese:()=>{
+            cont --
+            return cont
+        },
+        show:()=>{
+            return cont
+        },
+        built:()=>{
+            setTimeout(()=>{
+               cont += 100 
+            },5000)
+        } 
     }
 }
 
-firscounter = countCrator()
+const con1 = Count()
