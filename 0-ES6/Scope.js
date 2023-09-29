@@ -4,7 +4,7 @@
 
 //!----------------------------------------------------------------------------- SCOPE
 
- //*El alcance que determina la accesibilidad de las variables 
+ //*El alcance que determina la accesibilidad de las variables, donde va a poder ser leidad
 
 //-Global Scope -Function scope -Block scope
 //? En javaScript, los objetos y las funciones tambine son variables 
@@ -12,7 +12,7 @@
 
 //! Global Scope
 
-// var fruit = "orange" //*global
+// var fruit = "orange" 
 
 // function bestFruit () {
 //     console.log(fruit);    
@@ -22,7 +22,7 @@
 
 
 // function contries () {
-//     country = 'Colombia' //al no ser Declarada Pasa automaticamenet a ser //*global 
+//     country = 'Colombia' //al no ser Declarada Pasa automaticamenet a ser
 //     console.log(country);
 // }
 
@@ -37,12 +37,15 @@
 //? Variables defined inside a function are not accessible (visible) from outside the function.
 
 
-// function getting  (arguments) {
+// function getting  () {
 //     let userName = 'Ana'
 //     console.log(userName);
+
+
     
 //     if (userName === 'ana') {
-        
+//         let yeffer = 'my name'
+//         console.log('hello'+ userName);
 //     }
 // }
 
@@ -71,4 +74,4 @@
  
 //  Basil()
 
-console.log(123 + "123");
+
