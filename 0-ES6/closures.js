@@ -125,3 +125,15 @@ function Count() {
 }
 
 const con1 = Count()
+
+con1.increas()
+con1.increas()
+con1.built()
+con1.increas()
+con1.decraese()
+con1.decraese()
+con1.built()
+console.log(con1.show());
+
+nameOfDog("Elmo"); 
+function nameOfDog(name) { console.log(name); }; 
