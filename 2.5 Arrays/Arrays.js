@@ -219,7 +219,10 @@ const greatsTeams =[
 ]
 
 
-arrTeam = greatsTeams.map( e => e.team)
+// arrTeam = greatsTeams.map( e => e.team)
+arrTeam = greatsTeams.map( e =>{
+    return {...e, sport: 'soccer'}
+})
 console.log(arrTeam);
 
 
