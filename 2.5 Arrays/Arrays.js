@@ -161,8 +161,66 @@
 
 
 
+const greatsTeams =[
+    {
+        team: 'Boca',
+        titulos: 6,
+        country :'Argentina',
+        stadium : 'Bombonera',
+        motto : 'EL jugador numero 12'
+        
+    },
+    {
+        team: 'Real Madrid',
+        titulos: 14,
+        country:'España',
+        stadium : 'Bernabeu',
+        
+        
+    },
+    {
+        team: 'Santos',
+        titulos: 3,
+        country:'Brasil',
+        stadium : 'Maracana',
+        motto : 'La casa del el rey pele'
+    },
+    {
+        team: 'Barcelona',
+        titulos: 5,
+        country:'España',
+        stadium : 'Cap noun',
+        motto : 'Siempre cule'
+    },
+    {
+        team: 'Racing',
+        titulos: 1,
+        country:'Argentina',
+        stadium : 'Amalfinati'
+    },
+    {
+      team: 'Manchester United',
+      titulos: 4,
+      country:'Inglaterra',
+      stadium : 'Stanford breach'
+    },
+    {
+        team: 'Milan',
+        titulos: 6,
+        country :'Italia',
+        stadium : 'Jusepa Meatzaa'
+    },
+    {
+        team: 'LA Galaxy',
+        titulos: 1,
+        country:'US',
+        stadium : 'Dignity Health Sports Park'
+    }
+]
 
 
+arrTeam = greatsTeams.map( e => e.team)
+console.log(arrTeam);
 
 
 
