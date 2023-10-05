@@ -220,10 +220,42 @@ const greatsTeams =[
 
 
 // arrTeam = greatsTeams.map( e => e.team)
-arrTeam = greatsTeams.map( e =>{
-    return {...e, sport: 'soccer'}
+// arrTeam = greatsTeams.map( e =>{
+//     return {...e, sport: 'soccer'}
+// })
+// console.log(arrTeam);
+
+
+title = greatsTeams
+.map( e => e.titulos)
+.reduce((obj, item)=>{
+    if (!obj[item]) {
+        obj[item] = 1
+    }else{
+        obj[item] += 1
+    }
+    return obj
+},{})
+
+
+arrnum = [1,2,3,4,5,6,7,8,5,4,2,18,2,4,2,,1,5,215,2,51,]
+
+res = arrnum.reduce((obj, item)=>{
+    if (item>=1 && item <=5) {
+        obj['1-5'] += 1
+    }
+    if (item>=6 && item <=8) {
+        obj['6-8'] += 1
+    }
+
+    if (item>=9 ) {
+        obj['rest']+= 1
+    }
+    return obj
+
+},{
+    '1-5' : 0,
+    '6-8' :0,
+    'rest':0
 })
-console.log(arrTeam);
-
-
-
+console.log(res);
