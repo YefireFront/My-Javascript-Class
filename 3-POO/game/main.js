@@ -231,26 +231,3 @@ const Walter = new Sanador("Walter", 100, 100, 50, 60);
 
 
 
-
-class Personaje {
-  constructor({ 
-    name,
-    life,
-    atk,
-    def,
-    energy,
-  }){
-    this.name = name;
-    this.life = life;
-    this.atk = atk;
-    this.def = def;
-    this.energy = energy;
-
-  }
-
-}
-
-
-
-
-class Guerrero extends Personaje {}
