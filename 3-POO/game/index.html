@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="container">
+     
         <div class="card">
-            <div class="card__img">
-                <img src="" alt="">
-            </div>
-            <div class="card__info">
-                <h5>level 1</h5>
-                <h2>the Warrior </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Neque officia, dicta nihil quos, quo, error numquam quia
-                    reprehenderit vel dolor eos voluptatum ipsum! Sequi?</p>
-            </div>
-            <div class="card__stats">
-                <div class="card__stats--heart">
-                    <i class="fa-solid fa-heart fa-beat-fade"></i>
-                    <p>100</p>
-                </div>
-                <div class="card__stats--magic">
-                    <i class="fa-solid fa-fire"></i>
-                    <p>100</p>
-                </div>
-                <div class="card__stats--special">
-                    <i class="fa-solid fa-star"></i>
-                    <p>2</p>
-                </div>
-
-            </div>
+        <div class="card__img">
+          <img src="./img/warrior.png" alt="" />
         </div>
+        <div class="card__info">
+          <h5></h5>
+          <h2>The Warrior</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+            officia, dicta nihil quos, quo, error numquam quia reprehenderit vel
+            dolor
+          </p>
+        </div>
+        <div class="card__weapon">
+          <div class="card__stats--atk">
+            <i class="fa-solid fa-hand-back-fist"></i>
+            <p id="atk">80</p>
+          </div>
+          <div class="card__stats--def">
+            <i class="fa-solid fa-shield"></i>
+            <p id="def">60</p>
+          </div>
+        </div>
+        <div class="card__stats">
+          <div class="card__stats--heart">
+            <i class="fa-solid fa-heart fa-beat-fade"></i>
+            <p id="life">100</p>
+          </div>
+          <div class="card__stats--magic">
+            <i class="fa-solid fa-fire"></i>
+            <p id="energy">100</p>
+          </div>
+          <div class="card__stats--special">
+            <i class="fa-solid fa-star"></i>
+            <p id="special">0</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
     </div>
 
-
-
-    <script src="./V2.js"></script>
-    <script src="https://kit.fontawesome.com/851857b65b.js" crossorigin="anonymous"></script>
-</body>
+    <script src="./logic/V2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/851857b65b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

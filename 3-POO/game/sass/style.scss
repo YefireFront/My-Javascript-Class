@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-image: url(../img/background2.jpg);
+
+  .card {
+    width: 300px;
+    height: 500px;
+    border-radius: 24px;
+
+    &__img {
+      height: 40%;
+      background-image: url(../img/fondo.jpg);
+
+      img {
+        width: 120%;
+        position: relative;
+        top: -90px;
+        right: 40px;
+      }
+    }
+    &__info {
+      background-color: white;
+      height: 30%;
+      padding: 20px;
+      text-align: center;
+      h5 {
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0 0 10px 0;
+      }
+
+      p {
+        color: gray;
+      }
+    }
+
+    &__weapon {
+      height: 15%;
+      background-color: darkcyan;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      div {
+        padding: 10px 0 0 0;
+        height: 100%;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        p {
+          margin: 10px;
+        }
+      }
+    }
+
+    &__stats {
+      height: 15%;
+      background-color: #ec9b3b;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+
+      div {
+        padding: 10px 0 0 0;
+        height: 100%;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        p {
+          margin: 10px;
+        }
+      }
+    }
+  }
+}

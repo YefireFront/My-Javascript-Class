@@ -21,10 +21,9 @@ class Personaje {
 }
 
 class Warrior extends Personaje {
-  constructor({name, atk, def}) {
-    super({name, atk, def});
+  constructor({ name, atk, def }) {
+    super({ name, atk, def });
     this.ira = 0;
-    
   }
 
   Atacar(objetivo) {
@@ -34,7 +33,9 @@ class Warrior extends Personaje {
 
     if (this.atk > objetivo.def) {
       objetivo.life = objetivo.life - (this.atk - objetivo.def);
-      console.log(`${this.name} con un ATK de ${this.atk} ataca a ${objetivo.name} con una defensa de ${objetivo.def} tu especial aumento a ${this.ira}`);
+      console.log(
+        `${this.name} con un ATK de ${this.atk} ataca a ${objetivo.name} con una defensa de ${objetivo.def} tu especial aumento a ${this.ira}`
+      );
 
       if (objetivo.life < 0) {
         objetivo.life = 0;
@@ -47,6 +48,7 @@ class Warrior extends Personaje {
 
     console.log(objetivo);
     console.log(this);
+    GameState(yeffer);;
   }
 
   blindar() {
@@ -57,6 +59,7 @@ class Warrior extends Personaje {
 
     console.log(`El personaje ${this.name} Activa Blindar`);
     console.log(this);
+    GameState(yeffer);;
   }
 
   iraYopuka(objetivo) {
@@ -67,14 +70,58 @@ class Warrior extends Personaje {
       objetivo.life = 0;
       this.energy -= 70;
     }
+
+    
   }
 }
 
-class Witcher extends Personaje {
-    constructor({name,atk,def}){
-       super({name, atk, def});
-       
-          
-    }
+const yeffer = new Warrior({
+  name: "Yeffer",
+  atk: 70,
+  def: 50,
+});
+const Arley = new Warrior({
+  name: "Arley",
+  atk: 80,
+  def: 60,
+});
+
+
+
+//% DOM---------------------------------------------------------------------------------------------------------
+
+const vida = document.querySelector("#life");
+const energy = document.querySelector("#energy");
+const special = document.querySelector("#special");
+
+const atk = document.querySelector("#atk");
+const def = document.querySelector("#def");
+
+function GameState(PJ) {
+
+//* stats
+  energy.textContent = PJ.energy;
+  special.textContent = PJ.ira;
+  vida.textContent = PJ.life;
+
+//* wapon
+  atk.textContent = PJ.atk;
+  def.textContent = PJ.def
+
+
 }
 
+GameState(yeffer);;
+
+
+
+
+//*! DINAMIC WAY
+
+const PersonajeGame = [yeffer,Arley]
+
+PersonajeGame.forEach( pj =>{
+
+  
+
+})
