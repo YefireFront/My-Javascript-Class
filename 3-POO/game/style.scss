@@ -1,3 +1,37 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+    
+    .card{
+        width: 300px;
+        height: 500px;
+        border: 1px solid red ;
+        background-image: url(./fondo.jpg);
+
+        &__img{
+            height: 40%;
+            border: 2px solid green ;
+        }
+        &__info{
+            height: 40%;
+            border: 2px solid green ;
+        }
+        &__stats{
+            height: 20%;
+            border: 2px solid green ;
+        }
+    }
+}
+ 
