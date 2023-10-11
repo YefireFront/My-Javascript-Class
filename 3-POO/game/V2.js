@@ -78,16 +78,3 @@ class Witcher extends Personaje {
     }
 }
 
-
-
-const yeffer = new Warrior({
-    name: 'Yeffer',
-    atk: 70,
-    def: 40,
-  });
-const Anilio = new Warrior({
-    name: 'Anilio',
-    atk: 70,
-    def: 50,
-  });
-
