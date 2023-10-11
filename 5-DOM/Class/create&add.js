@@ -1,12 +1,26 @@
-let vida = document.createElement('h2')
+const arr = ['andre', 'daniel', 'camilo']
+
+//* Selecting
 let container = document.querySelector('.container')
-console.log(container);
+let ul = document.querySelector('.ul')
 
-let y = 'Yeffer is the bigets programmer'
+//* Creating
+let h2 = document.createElement('h2')
+let h3 = document.createElement('h3')
+let li = document.createElement('li')
+let text = document.createTextNode('Yeffer is the bigets programmer')
 
-let life = document.createTextNode(y)
+
+//* Adding  
+
+container.insertBefore(h3,ul)
+container.append(h2)
+h2.append(text)
 
 
-container.append(vida)
-vida.append(life, ' yeffer')
-container.insertBefore(vida,h1)
+
+arr.forEach(element => {
+    let li = document.createElement('li')
+    li.append(element)
+    ul.append(li)
+});
