@@ -33,15 +33,54 @@
   height: 30%;
   padding: 20px;
   text-align: center;
-}
-.container .card__info h5 {
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: gray;
 }
 .container .card__info h2 {
-  margin: 0 0 10px 0;
+  text-transform: uppercase;
 }
-.container .card__info p {
-  color: gray;
+.container .card__info .skills {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card__info .skills i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(195, 195, 195);
+  font-size: 21px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.container .card__info .skills i:hover {
+  transform: scale(1.2);
+  color: white;
+}
+.container .card__info .skills-Healer i {
+  color: green;
+}
+.container .card__info .skills-Healer i:hover {
+  background-color: green;
+}
+.container .card__info .skills-Warrior i {
+  color: darkred;
+}
+.container .card__info .skills-Warrior i:hover {
+  background-color: darkred;
+}
+.container .card__info .skills-Witcher i {
+  color: darkcyan;
+}
+.container .card__info .skills-Witcher i:hover {
+  background-color: darkcyan;
 }
 .container .card__weapon {
   height: 15%;

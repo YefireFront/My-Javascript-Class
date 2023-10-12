@@ -34,17 +34,78 @@
       height: 30%;
       padding: 20px;
       text-align: center;
-      h5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color: gray;
+
+      h2{
         text-transform: uppercase;
       }
+      
+      
+      .skills{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        i{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid rgb(195, 195, 195);
+          font-size: 21px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: all 0.2s ease-in ;
 
-      h2 {
-        margin: 0 0 10px 0;
+          &:hover{
+            transform: scale(1.2);
+            color: white;
+          }
+          
+        }
+        
       }
 
-      p {
-        color: gray;
+      .skills-Healer{
+        i{
+          color:green;
+          &:hover{
+            background-color: green;
+          }
+          
+        }
+
       }
+      .skills-Warrior{
+        i{
+          color: darkred;
+          
+          &:hover{
+            background-color:darkred
+          }
+          
+        }
+
+      }
+      .skills-Witcher{
+        i{
+          color: darkcyan;
+
+          &:hover{
+            background-color: darkcyan;
+          }
+          
+        }
+
+      }
+
+ 
     }
 
     &__weapon {
@@ -92,4 +153,6 @@
       }
     }
   }
+
+
 }
