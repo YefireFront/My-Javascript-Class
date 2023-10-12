@@ -1,3 +1,4 @@
+
 class Personaje {
   constructor({ name, atk, def }) {
     this.name = name;
@@ -18,24 +19,13 @@ class Personaje {
   tired() {
     if (this.energy < 30) return true;
   }
-}
-
-class Warrior extends Personaje {
-  constructor({ name, atk, def }) {
-    super({ name, atk, def });
-    this.special = 0;
-  }
-
   Atacar(objetivo) {
     if (this.dead(objetivo)) return false;
 
-    this.special++;
 
     if (this.atk > objetivo.def) {
+
       objetivo.life = objetivo.life - (this.atk - objetivo.def);
-      console.log(
-        `${this.name} con un ATK de ${this.atk} ataca a ${objetivo.name} con una defensa de ${objetivo.def} tu especial aumento a ${this.special}`
-      );
 
       if (objetivo.life < 0) {
         objetivo.life = 0;
@@ -44,11 +34,20 @@ class Warrior extends Personaje {
       console.log(
         `Tu ataque es de ${this.atk} y la defensa del objetivo es mayor, es de ${objetivo.def} no le causas daño`
       );
-    }
 
-    console.log(objetivo);
-    console.log(this);
-    GameState(yeffer);
+    }
+    
+    if (this.constructor.name == 'Warrior') {
+        this.special++
+      }
+      Reloade(this, objetivo);
+  }
+}
+
+class Warrior extends Personaje {
+  constructor({ name, atk, def }) {
+    super({ name, atk, def });
+    this.special = 0;
   }
 
   blindar() {
@@ -59,7 +58,9 @@ class Warrior extends Personaje {
 
     console.log(`El personaje ${this.name} Activa Blindar`);
     console.log(this);
-    GameState(yeffer);
+    Reloade(this)
+    
+
   }
 
   iraYopuka(objetivo) {
@@ -69,31 +70,121 @@ class Warrior extends Personaje {
     if (dif > 30) {
       objetivo.life = 0;
       this.energy -= 70;
+      Reloade(this,objetivo)
     }
   }
 }
 
+class Healer extends Personaje{
+  constructor({name,atk,def}){
+    super({name , atk, def});
+    this.special = 1;
+  };
+
+  curar = function (objetivo) {
+    if (this.dead())  return false;
+    if (this.tired()) return false;
+  
+    objetivo.life += 30;
+    this.energy -= 30;
+    if (objetivo.life > 100) {
+      objetivo.life = 100;
+    }
+
+    Reloade(this,objetivo)
+  };
+
+  sacrificio = function (objetivo) {
+      if (this.dead())      return false;
+      if (this.exhausted()) return false;
+
+      let cantidad = 100 - objetivo.life
+      if (cantidad < this.life){
+          objetivo.life += cantidad
+          this.life     -= cantidad;
+          this.energy   -= 70 
+      }else{
+          objetivo.life += this.life 
+          this.life = 1
+          this.energy   -= 70 
+      }
+
+      Reloade(this,objetivo)
+
+
+  };
+
+  revivir = function (objetivo){
+
+      if (this.special == 0) return false;
+      if (this.life === 0)   return false;  
+      if (objetivo.life > 0) return false;            
+      if (this.exhausted())  return false;
+
+      objetivo.life = 40
+      this.energy   -=70
+      this.special = 0
+
+      Reloade(this,objetivo)
+
+
+
+  }
+
+
+
+
+}
+
+class Witcher extends Personaje{
+  constructor({name,atk,def}){
+    super({name,atk,def})
+    this.special = 1
+  }
+
+  Mejora = function (objetivo) {
+    if (this.energy >= 30) {
+      this.energy -= 30;
+      objetivo.atk += 10;
+      objetivo.def += 10;
+      if (objetivo.def > 70) {
+        objetivo.def = 70;
+      }
+      if (objetivo.atk > 100) {
+        objetivo.atk = 100;
+      }
+    } else {
+      console.log("energy Insuficiente");
+    }
+
+    Reloade(this,objetivo)
+  };
+}
+
+
+
+
 const yeffer = new Warrior({
   name: "Yeffer",
   atk: 70,
-  def: 50,
+  def: 60,
 });
-const Arley = new Warrior({
+const Arley = new Witcher({
   name: "Arley",
+  atk: 50,
+  def: 20,
+});
+const Walter = new Healer({
+  name: "Walter",
   atk: 80,
-  def: 60,
-});
-const Walter = new Warrior({
-  name: "WALTER",
-  atk: 60,
-  def: 60,
+  def: 40,
 });
 
 
 
-//*! DINAMIC WAY -------------------------------------------------------------------------------------------------
+const PersonajeGame = [Arley,yeffer,Walter];
+const allplayers = []
 
-const PersonajeGame = [yeffer, Arley,Walter];
 PersonajeGame.forEach((pj) => {
 
   //? CREANTING IMG  
@@ -180,19 +271,25 @@ PersonajeGame.forEach((pj) => {
   //? CREANTING MAIN CARD
   const card = document.createElement("div");
   //$PARDENADO
-  card.classList.add("card");
+  card.classList.add("card", pj.name);
   //% INSERTANDO
   card.append(div__img, div__info, div__weapon, div_stats);
 
 
 
-  //? CREANTING APLICATION CONTAINER
-  const container = document.querySelector(".container");
-  //% INSERTANDO
-  container.append(card);
+ 
+  allplayers.push(card)
+  
 });
 
 
+//? CREANTING APLICATION CONTAINER
+const container = document.createElement("div");
+container.classList.add("container");
+container.append(...allplayers);
+
+const appNode =  document.querySelector("#APP")
+appNode.appendChild(container);
 
 
 
@@ -201,26 +298,45 @@ PersonajeGame.forEach((pj) => {
 
 
 
-//*! GAMEPLAY -------------------------------------------------------------------------------------------------
+function Reloade(me , you) {
+
+  if (me) {
+    const me_vida    = document.querySelector(`#APP > div > div.card.${me.name} > div.card__stats > div.card__stats--heart > p`)
+    const me_energy  = document.querySelector(`#APP > div > div.card.${me.name} > div.card__stats > div.card__stats--magic > p`)
+    const me_special = document.querySelector(`#APP > div > div.card.${me.name} > div.card__stats > div.card__stats--special > p`)
+    const me_atk     = document.querySelector(`#APP > div > div.card.${me.name} > div.card__weapon > div.card__stats--atk > p`)
+    const me_def     = document.querySelector(`#APP > div > div.card.${me.name} > div.card__weapon > div.card__stats--def > p`)
+    
+      me_energy.textContent   = me.energy;
+      me_special.textContent  = me.special;
+      me_vida.textContent     = me.life;
+      me_atk.textContent      = me.atk;
+      me_def.textContent      = me.def;    
+  }
+
+  if (you) {
+    const you_vida    = document.querySelector(`#APP > div > div.card.${you.name} > div.card__stats > div.card__stats--heart > p`)
+    const you_energy  = document.querySelector(`#APP > div > div.card.${you.name} > div.card__stats > div.card__stats--magic > p`)
+    const you_special = document.querySelector(`#APP > div > div.card.${you.name} > div.card__stats > div.card__stats--special > p`)
+    const you_atk     = document.querySelector(`#APP > div > div.card.${you.name} > div.card__weapon > div.card__stats--atk > p`)
+    const you_def     = document.querySelector(`#APP > div > div.card.${you.name} > div.card__weapon > div.card__stats--def > p`)
+    
+      you_energy.textContent  = you.energy;
+      you_special.textContent = you.special;
+      you_vida.textContent    = you.life;
+      you_atk.textContent     = you.atk;
+      you_def.textContent     = you.def;
+    }
+    
+  }
+  
 
 
 
-const vida = document.querySelector("#life");
-const energy = document.querySelector("#energy");
-const special = document.querySelector("#special");
 
-const atk = document.querySelector("#atk");
-const def = document.querySelector("#def");
 
-function GameState(PJ) {
-  //* stats
-  energy.textContent = PJ.energy;
-  special.textContent = PJ.special;
-  vida.textContent = PJ.life;
 
-  //* wapon
-  atk.textContent = PJ.atk;
-  def.textContent = PJ.def;
-}
-
-GameState(yeffer);
+yeffer.Atacar(Walter)
+yeffer.Atacar(Arley)
+yeffer.Atacar(Arley)
+Walter.revivir(Arley)

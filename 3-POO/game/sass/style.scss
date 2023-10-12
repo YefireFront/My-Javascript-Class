@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   background-image: url(../img/background2.jpg);
 
   .card {
@@ -23,10 +23,10 @@
       background-image: url(../img/fondo.jpg);
 
       img {
-        width: 120%;
+        width: 110%;
         position: relative;
-        top: -90px;
-        right: 40px;
+        top: -68px;
+        right: 20px;
       }
     }
     &__info {
