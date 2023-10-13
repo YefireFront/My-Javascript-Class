@@ -39,6 +39,10 @@ class Personaje {
       
       if (this.constructor.name == 'Warrior') {
           this.special++
+          if (this.special == 2) {
+            this.atk +=10
+            this.special =0
+          }
         }
         Reloade(this, objetivo);
     }
@@ -169,8 +173,8 @@ class Personaje {
   
   const Yeffer = new Warrior({
     name: "Yeffer",
-    atk: 70,
-    def: 60,
+    atk: 60,
+    def: 40,
   });
   const Yefire = new Warrior({
     name: "Yefire",
@@ -179,13 +183,13 @@ class Personaje {
   });
   const Arley = new Witcher({
     name: "Arley",
-    atk: 50,
-    def: 20,
+    atk: 70,
+    def: 30,
   });
   const Walter = new Healer({
     name: "Walter",
-    atk: 80,
-    def: 40,
+    atk: 50,
+    def: 60,
   });
 
 

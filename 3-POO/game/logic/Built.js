@@ -23,6 +23,7 @@ PersonajeGame.forEach((pj) => {
   //% CREANTING CARD INFO
   const div__info = document.createElement("div");
   const info_h2   = document.createElement("h2");
+  const info_h4   = document.createElement("h4");
   const $skills   = document.createElement("div");
   const $skill1   = document.createElement("i");
   const $skill2   = document.createElement("i");
@@ -30,6 +31,8 @@ PersonajeGame.forEach((pj) => {
   const $skill4   = document.createElement("i");
   //% INTRODUCING TEXT
   info_h2.textContent= pj.name
+  info_h4.textContent= pj.constructor.name
+  
 
   //% ADDING CLASS
   div__info.classList.add("card__info");
@@ -68,7 +71,7 @@ PersonajeGame.forEach((pj) => {
 
   //% INSERTIND NODES
   $skills.append($skill1,$skill2,$skill3,$skill4)
-  div__info.append(info_h2,$skills);
+  div__info.append(info_h2,info_h4,$skills);
   
 
 
