@@ -152,6 +152,16 @@ class Personaje {
       Reloade(this, objetivo)
       
     };
+    Peste = function (objetivo) {
+      if (this.dead())  return false;
+      if (this.exhausted()) return false;
+      objetivo.atk -= 20;
+      objetivo.def -= 20;
+      this.energy -= 70
+
+      Reloade(this, objetivo)
+      
+    };
   }
   
   
