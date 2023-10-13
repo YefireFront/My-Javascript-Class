@@ -71,7 +71,7 @@ class Personaje {
       if (this.dead(objetivo)) return false;
       if (this.exhausted()) return false;
       let dif = this.atk - objetivo.def;
-      if (dif > 30) {
+      if (dif >= 30) {
         objetivo.life = 0;
         this.energy -= 70;
         Reloade(this,objetivo)
