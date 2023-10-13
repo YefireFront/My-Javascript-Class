@@ -1,7 +1,7 @@
 
 
 
-const PersonajeGame = [Arley,yeffer,Walter];
+const PersonajeGame = [Arley,Yeffer,Walter,Yefire];
 const allplayers = []
 
 PersonajeGame.forEach((pj) => {
@@ -14,7 +14,9 @@ PersonajeGame.forEach((pj) => {
   //% INSERTANDO
   div__img.append(div_image);
   //% DATA
-  div_image.src = `./img/${pj.constructor.name}.png`
+  div_image.src = `./img/${pj.constructor.name}.png`;
+  div_image.alt='game'
+  div_image.setAttribute('type', 'Game');
 
 
 
@@ -35,39 +37,28 @@ PersonajeGame.forEach((pj) => {
   if(pj.constructor.name == 'Healer'){
     $skills.classList.add('skills','skills-Healer')
     
-    $skill1.classList.add('fa-sharp','fa-solid','fa-wand-sparkles')
-    $skill2.classList.add('fa-solid' ,'fa-hand-holding-medical')
-    $skill3.classList.add('fa-sharp', 'fa-solid', 'fa-notes-medical')
+    $skill1.classList.add('fa-sharp','fa-solid','fa-wand-sparkles','skill1')
+    $skill2.classList.add('fa-solid' ,'fa-hand-holding-medical', 'skill2')
+    $skill3.classList.add('fa-sharp', 'fa-solid', 'fa-notes-medical', 'skill3')
     $skill4.classList.add('fa-brands', 'fa-gratipay')
     
   }
   if(pj.constructor.name == 'Warrior'){
     $skills.classList.add('skills', 'skills-Warrior')
 
-    $skill1.classList.add('fa-solid','fa-hand-fist')
-    $skill2.classList.add('fa-solid' ,'fa-user-shield')
-    $skill3.classList.add('fa-solid','fa-dragon')
+    $skill1.classList.add('fa-solid','fa-hand-fist','skill1')
+    $skill2.classList.add('fa-solid' ,'fa-user-shield', 'skill2')
+    $skill3.classList.add('fa-solid','fa-dragon', 'skill3')
     $skill4.classList.add('fa-solid' ,'fa-people-line')
     
   }
   if(pj.constructor.name == 'Witcher'){
     $skills.classList.add('skills', 'skills-Witcher')
 
-    $skill1.classList.add('fa-sharp','fa-solid','fa-wand-sparkles')
-    $skill2.classList.add('fa-solid' ,'fa-virus')
-    $skill3.classList.add('fa-solid' ,'fa-gears')
+    $skill1.classList.add('fa-sharp','fa-solid','fa-wand-sparkles','skill1')
+    $skill2.classList.add('fa-solid' ,'fa-virus', 'skill2')
+    $skill3.classList.add('fa-solid' ,'fa-gears', 'skill3')
     $skill4.classList.add('fa-solid','fa-skull-crossbones', 'neon-icon')
-    
-  }
-
- //% EVENTS
-  if(pj.constructor.name == 'Warrior'){
-
-
-    $skill2.addEventListener("click",()=>{
-      pj.blindar()
-    })
-
     
   }
 
@@ -140,7 +131,7 @@ PersonajeGame.forEach((pj) => {
   //? CREANTING MAIN CARD
   const card = document.createElement("div");
   //$PARDENADO
-  card.classList.add("card", pj.name);
+  card.classList.add( "card", pj.constructor.name, pj.name);
   //% INSERTANDO
   card.append(div__img, div__info, div__weapon, div_stats);
 

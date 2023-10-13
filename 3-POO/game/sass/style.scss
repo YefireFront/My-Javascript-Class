@@ -80,8 +80,17 @@
           }
           
         }
-
+        
       }
+      #active{
+        
+        transform: scale(1.4);
+        color: white;
+        background-color: green;
+       
+      }
+     
+
       .skills-Warrior{
         i{
           color: darkred;
@@ -112,7 +121,7 @@
       height: 15%;
       background-color: darkcyan;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       color: white;
       div {
