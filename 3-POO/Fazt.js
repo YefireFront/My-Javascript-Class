@@ -52,4 +52,3 @@ class Jugador{
 }
 
 const Ronaldo = new Jugador ('Nasario', 'De lima')
-console.log(Ronaldo);
