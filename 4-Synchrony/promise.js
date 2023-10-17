@@ -142,40 +142,56 @@
 /*
 !ERROR */
 
-function descargarContenido() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const exito = Math.random() < 0.5; // Simula un error aleatorio
-      if (exito) {
-        resolve("¡Contenido descargado!"); // Descarga exitosa
-      } else {
-        reject("Error en la descarga"); // Descarga fallida
-      }
-    }, 2000);
-  });
-}
+// function descargarContenido() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const exito = Math.random() < 0.5; // Simula un error aleatorio
+//       if (exito) {
+//         resolve("¡Contenido descargado!"); // Descarga exitosa
+//       } else {
+//         reject("Error en la descarga"); // Descarga fallida
+//       }
+//     }, 2000);
+//   });
+// }
 
-function procesarContenido(contenido) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(`Contenido procesado: ${contenido.toUpperCase()}`);
-    }, 1500);
-  });
-}
+// function procesarContenido(contenido) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(`Contenido procesado: ${contenido.toUpperCase()}`);
+//     }, 1500);
+//   });
+// }
 
-function mostrarResultado(resultado) {
-  console.log(resultado);
-}
+// function mostrarResultado(resultado) {
+//   console.log(resultado);
+// }
 
-descargarContenido()
-  .then((contenidoDescargado) => {
-    console.log("Descarga completa:", contenidoDescargado);
-    return procesarContenido(contenidoDescargado);
-  })
-  .then((contenidoProcesado) => {
-    console.log("Procesamiento completo:", contenidoProcesado);
-    mostrarResultado(contenidoProcesado);
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
+// descargarContenido()
+//   .then((contenidoDescargado) => {
+//     console.log("Descarga completa:", contenidoDescargado);
+//     return procesarContenido(contenidoDescargado);
+//   })
+//   .then((contenidoProcesado) => {
+//     console.log("Procesamiento completo:", contenidoProcesado);
+//     mostrarResultado(contenidoProcesado);
+//   })
+//   .catch((error) => {
+//     console.error("Error:", error);
+//   });
+
+
+
+$.on('button', 'click', function onClick() {
+  setTimeout(function timer() {
+      console.log('You clicked the button!');    
+  }, 2000);
+});
+
+console.log("Hi!");
+
+setTimeout(function timeout() {
+  console.log("Click the button!");
+}, 5000);
+
+console.log("Welcome to loupe.");
