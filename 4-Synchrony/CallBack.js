@@ -15,12 +15,22 @@
 // Boca(riBer)
 
 
-function suma (n1, n2, callback){
-  let res = n1 + n2
-  callback(res)
-}
 
-suma(10,20,mayor)
+
+function suma(n1, n2, callback) {
+  let res = n1 + n2;
+  setTimeout(function () {
+    if (res > 100) {
+      console.log(`${res} elevado al cuadrado es ${res ** 2}`);
+    } else {
+      console.log(`${res} elevado al cubo es ${res ** 3}`);
+    }
+  }, 3000);
+
+  callback(res)
+
+
+}
 
 function mayor(n){
   if (n > 100) {
@@ -30,14 +40,4 @@ function mayor(n){
   }
 }
 
-function hacerAlgo(numero, callback) {
-  const resultado = numero * 2;
-  
-  callback(resultado);
-}
-
-function miCallback(resultado) {
-  console.log(`El resultado es: ${resultado}`);
-}
-
-hacerAlgo(5, miCallback);
+suma(90,20, mayor)
