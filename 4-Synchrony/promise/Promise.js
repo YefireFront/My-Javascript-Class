@@ -2,44 +2,44 @@
  * Calvo man
  */
 
-// let phone = {
-//   Brand: "Iphone",
-//   Model: "14",
-//   champions: ["Super Liga", "Champiosn", "Libertadores"],
-// };
+let phone = {
+  Brand: "Iphone",
+  Model: "14",
+  champions: ["Super Liga", "Champiosn", "Libertadores"],
+};
 
-// function WhatYouWin(win) {
-//   return new Promise((resolve, reject) => {
-//     if (win) {
-//       console.log(`You won this championship`);
-//       for (let i = 0; i < win.champions.length; i++) {
-//         console.log(win.champions[i]);
-//       }
-//     } else {
-//       reject(`You Dont Wint`);
-//     }
-//   });
-// }
+function WhatYouWin(win) {
+  return new Promise((resolve, reject) => {
+    if (win) {
+      console.log(`You won this championship`);
+      for (let i = 0; i < win.champions.length; i++) {
+        console.log(win.champions[i]);
+      }
+    } else {
+      reject(`You Dont Wint`);
+    }
+  });
+}
 
-// function miProm() {
-//   return new Promise((resolve, reject) => {
-//     let championship = true;
+function miProm() {
+  return new Promise((resolve, reject) => {
+    let championship = true;
 
-//     if (championship) {
-//       resolve(phone);
-//     } else {
-//       reject("No obtuviste un Phone");
-//     }
-//   });
-// }
+    if (championship) {
+      resolve(phone);
+    } else {
+      reject("No obtuviste un Phone");
+    }
+  });
+}
 
-// miProm().then((m) => {
-//      return WhatYouWin(m);
-//   }).then((m) => {
-//     console.log(m);
-//   }).catch((m)=>{
-//     console.log(m);
-//   })
+miProm().then((m) => {
+     return WhatYouWin(m);
+  }).then((m) => {
+    console.log(m);
+  }).catch((m)=>{
+    console.log(m);
+  })
 
 /*
  * The beargd */
