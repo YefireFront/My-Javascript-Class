@@ -12,14 +12,14 @@ body {
   background-color: gray;
 }
 
-.conatiner {
+.container {
   width: 400px;
   height: 700px;
   padding: 40px 20px;
   background-color: rgb(250, 250, 250);
   overflow-y: scroll;
 }
-.conatiner .card {
+.container .card {
   width: 100%;
   height: 100px;
   padding: 0 20px;
@@ -29,31 +29,35 @@ body {
   overflow: hidden;
   margin: 25px 0;
 }
-.conatiner .card .info {
+.container .card .info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.conatiner .card .info h2 {
+.container .card .info h2 {
   color: purple;
   font-size: 34px;
 }
-.conatiner .card .info .info__type {
+.container .card .info .info__type {
   display: flex;
-  justify-content: space-between;
   width: 85px;
   position: relative;
   bottom: 7px;
 }
-.conatiner .card .info .info__type i {
+.container .card .info .info__type i {
   color: purple;
+  margin: 0 10px 0 0;
 }
-.conatiner .card .imagen {
+.container .card .info .info__type p {
+  text-align: center;
+  position: relative;
+}
+.container .card .imagen {
   width: 100px;
   height: 100%;
   position: relative;
 }
-.conatiner .card .imagen img {
+.container .card .imagen img {
   position: absolute;
   right: -20px;
   top: -25px;

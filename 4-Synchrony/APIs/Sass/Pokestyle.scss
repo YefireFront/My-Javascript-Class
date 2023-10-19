@@ -14,7 +14,7 @@ body{
 }
 
 
-.conatiner{
+.container{
     width: 400px;
     height: 700px;
     padding: 40px 20px;
@@ -48,7 +48,6 @@ body{
 
             .info__type{
                 display: flex;
-                justify-content: space-between;
                 width: 85px;
                 position: relative;
                 bottom: 7px;
@@ -56,6 +55,12 @@ body{
 
                 i{
                     color: purple;
+                    margin: 0 10px 0 0 ;
+                }
+                p{
+                    text-align: center;
+                    position: relative;
+              
                 }
             }
         }
@@ -76,3 +81,5 @@ body{
 
     }
 }
+
+
