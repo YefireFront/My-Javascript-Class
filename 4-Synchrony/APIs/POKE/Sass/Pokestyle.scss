@@ -10,7 +10,7 @@ body{
     height: 100vh;
     display: grid;
     place-content: center;
-    background-color: gray;
+    background-color: rgb(201, 201, 201);
 }
 
 
@@ -83,3 +83,32 @@ body{
 }
 
 
+
+.grass{
+    background-color: rgba(85, 183, 85, 0.635);
+}
+
+.fire{
+    background-color: rgba(183, 134, 85, 0.635);
+}
+.water{
+    background-color: rgba(85, 157, 183, 0.635);
+}
+.electric{
+    background-color: rgba(183, 183, 85, 0.635);
+}
+.poison{
+    background-color: rgba(144, 85, 183, 0.635);
+}
+.rock{
+    background-color: rgba(204, 194, 135, 0.635);
+}
+.normal{
+    background-color: rgba(207, 207, 207, 0.635);
+}
+.bug{
+    background-color: rgba(197, 103, 27, 0.507);
+}
+.feiry{
+    background-color: rgba(218, 86, 191, 0.507);
+}
