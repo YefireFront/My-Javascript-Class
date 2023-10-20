@@ -1,6 +1,6 @@
-/*
- * Calvo man
- */
+//* Calvo man
+
+//$Creamos unb objeto
 
 let phone = {
   Brand: "Iphone",
@@ -15,17 +15,17 @@ function WhatYouWin(win) {
       for (let i = 0; i < win.champions.length; i++) {
         console.log(win.champions[i]);
       }
+      resolve(win);
     } else {
       reject(`You Dont Wint`);
     }
   });
 }
 
-function miProm() {
+function miProm(phone) {
   return new Promise((resolve, reject) => {
-    let championship = true;
 
-    if (championship) {
+    if (phone.champions) {
       resolve(phone);
     } else {
       reject("No obtuviste un Phone");
@@ -33,33 +33,26 @@ function miProm() {
   });
 }
 
-miProm().then((m) => {
-     return WhatYouWin(m);
-  }).then((m) => {
-    console.log(m);
-  }).catch((m)=>{
-    console.log(m);
-  })
+// miProm(phone)
+// .then((m) =>{ 
+//   return WhatYouWin(m)
+// })
+// .then(res=>{
 
-/*
- * The beargd */
+//   if (res.champions.length >= 2) {
+//     console.log(`Felificationes tiene mas de 2 campeonastos tines ${res.champions.length}`);
+    
+//   }
+// })
 
-// const miPromesa = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     resolve(42); // Resuelve la promesa con el número 42 después de 2 segundos.
-//   }, 2000);
-// });
 
-// miPromesa.then((resultado) => {
-//   console.log(resultado); // Debería mostrar 42 después de 2 segundos.
-// });
 
-/*
- *Mistake */
+
+ //*Mistake 
 
 // const miPromesa1 = new Promise((resolve, reject) => {
 //   setTimeout(() => {
-//     // Resuelve la promesa con el número 42 después de 2 segundos.
+
 //     const numeroAleatorio = Math.random();
 //     if (numeroAleatorio >= 0.5) {
 //       resolve(numeroAleatorio);
@@ -77,12 +70,12 @@ miProm().then((m) => {
 //     console.error("Error:", error.message);
 //   });
 
-/*
-? Promesas en cadena  */
 
-// const promesa1 = new Promise((resolve) => resolve(1));
-// const promesa2 = new Promise((resolve) => resolve(2));
-// const promesa3 = new Promise((resolve) => resolve(3));
+//? Promesas en cadena  
+
+const promesa1 = new Promise((resolve) => resolve(1));
+const promesa2 = new Promise((resolve) => resolve(2));
+const promesa3 = new Promise((resolve) => resolve(3));
 
 // promesa1
 //   .then((valor) => {
@@ -98,32 +91,27 @@ miProm().then((m) => {
 //   });
 
 
+  //% Otra anidada
 
+function descargarContenido() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("¡Contenido descargado!"); // Simulación de una descarga exitosa
+    }, 2000);
+  });
+}
 
-  /*
-  % Otra anidada*/
+function procesarContenido(contenido) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`Contenido procesado: ${contenido.toUpperCase()}`);
+    }, 1500);
+  });
+}
 
-
-
-// function descargarContenido() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve("¡Contenido descargado!"); // Simulación de una descarga exitosa
-//     }, 2000);
-//   });
-// }
-
-// function procesarContenido(contenido) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve(`Contenido procesado: ${contenido.toUpperCase()}`);
-//     }, 1500);
-//   });
-// }
-
-// function mostrarResultado(resultado) {
-//   console.log(resultado);
-// }
+function mostrarResultado(resultado) {
+  console.log(resultado);
+}
 
 // descargarContenido()
 //   .then((contenidoDescargado) => {
@@ -139,33 +127,34 @@ miProm().then((m) => {
 //   });
 
 
-/*
-!ERROR */
+//!ERROR 
 
-// function descargarContenido() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const exito = Math.random() < 0.5; // Simula un error aleatorio
-//       if (exito) {
-//         resolve("¡Contenido descargado!"); // Descarga exitosa
-//       } else {
-//         reject("Error en la descarga"); // Descarga fallida
-//       }
-//     }, 2000);
-//   });
-// }
+function descargarContenido() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let num = Math.random();
+      const exito = num > 0.5; // Simula un error aleatorio
+      if (exito) {
+        console.log(`Velocidad superior a 0.5 VELOCIDAD DE : ${num}`);
+        resolve(`¡Contenido descargado`); // Descarga exitosa
+      } else {
+        reject(`Error en la descarga, velocidad inferior a 0.5 VELOCIDAD DE  : ${num}`); // Descarga fallida
+      }
+    }, 1000);
+  });
+}
 
-// function procesarContenido(contenido) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve(`Contenido procesado: ${contenido.toUpperCase()}`);
-//     }, 1500);
-//   });
-// }
+function procesarContenido(contenido) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`Contenido procesado: ${contenido.toUpperCase()}`);
+    }, 2500);
+  });
+}
 
-// function mostrarResultado(resultado) {
-//   console.log(resultado);
-// }
+function mostrarResultado(resultado) {
+  console.log(resultado);
+}
 
 // descargarContenido()
 //   .then((contenidoDescargado) => {
@@ -179,19 +168,3 @@ miProm().then((m) => {
 //   .catch((error) => {
 //     console.error("Error:", error);
 //   });
-
-
-
-$.on('button', 'click', function onClick() {
-  setTimeout(function timer() {
-      console.log('You clicked the button!');    
-  }, 2000);
-});
-
-console.log("Hi!");
-
-setTimeout(function timeout() {
-  console.log("Click the button!");
-}, 5000);
-
-console.log("Welcome to loupe.");
