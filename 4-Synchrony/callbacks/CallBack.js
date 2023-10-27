@@ -41,3 +41,4 @@ function mayor(n){
 }
 
 suma(90,20, mayor)
+suma(0,20, mayor)
