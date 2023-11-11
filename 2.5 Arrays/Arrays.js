@@ -244,4 +244,5 @@ const repe = (parrafo, word, cont = 0) => {
 };
 
 repe(parrafo,'yeffer')
+repe(parrafo,'yeffer')
 
