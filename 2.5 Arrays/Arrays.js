@@ -243,6 +243,5 @@ const repe = (parrafo, word, cont = 0) => {
   console.log(`la palabra ${word} esta ${cont} veces`);
 };
 
-repe(parrafo,'yeffer')
-repe(parrafo,'yeffer')
+
 
