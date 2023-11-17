@@ -229,8 +229,7 @@ res = arrnum.reduce(
   }
 );
 
-let parrafo =
-  "si yo considero que yeffer es una gran persona, entonces yeffer debe, mirar a yeffer y pensarlo bien";
+let parrafo = "si yo considero que yeffer es una gran persona, entonces yeffer debe, mirar a yeffer y pensarlo bien";
 
 const repe = (parrafo, word, cont = 0) => {
   let arr = parrafo.split(" ");
