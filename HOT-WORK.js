@@ -16,4 +16,3 @@ for (let numero = 2; contadorPrimos < 20; numero++) {
         contadorPrimos++;
     }
 }
-console.log();
