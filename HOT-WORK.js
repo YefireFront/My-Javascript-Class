@@ -57,7 +57,5 @@ const dishData = [
     }
   }
   
-  // Call getDiscount() with examples
-  getDiscount(true, 2);
-  getDiscount(false, 10);
+
   
