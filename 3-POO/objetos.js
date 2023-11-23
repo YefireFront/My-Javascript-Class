@@ -40,10 +40,3 @@ const equipoRalMadrid = new EquipoFutbol("Real Madrid");
 const equipoLiverpool = new EquipoFutbol("Liverpool");
 
 // Agregar Jugador 
-equipoBarcelona.agregarJugador(jugador1);
-equipoRalMadrid.agregarJugador(jugador2);
-
-// Presentar equipo y jugadores
-equipoBarcelona.presentarEquipo();
-equipoRalMadrid.presentarEquipo();
-
