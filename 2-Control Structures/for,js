@@ -18,3 +18,26 @@ for (let i = 0; i < personas.length; i++) {
   
   console.log(`Nombre: ${persona.nombre}, Edad: ${persona.edad}`);
 }
+
+
+const productos = [
+    { nombre: 'Camisa', precio: 25, descuento: 5 },
+    { nombre: 'Pantalón', precio: 40, descuento: 10 },
+    { nombre: 'Zapatos', precio: 60, descuento: 0 },
+    { nombre: 'Sombrero', precio: 15, descuento: 8 }
+  ];
+  
+  let precioTotal = 0;
+  
+  for (let i = 0; i < productos.length; i++) {
+    const producto = productos[i];
+    
+    if (producto.descuento > 0) {
+      // Calcular el precio con descuento y sumarlo al precio total
+      const precioConDescuento = producto.precio - (producto.precio * (producto.descuento / 100));
+      precioTotal += precioConDescuento;
+    }
+  }
+  
+  console.log(`El precio total de los productos con descuento es: $${precioTotal}`);
+  
