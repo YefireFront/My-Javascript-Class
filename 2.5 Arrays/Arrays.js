@@ -35,7 +35,7 @@
 
 // const found = array1.find(element => element > 10);
 
-// console.log(found);
+
 
 //! SOME()
 
