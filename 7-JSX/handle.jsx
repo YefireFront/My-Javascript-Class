@@ -19,4 +19,3 @@ onClick={()=>{
 >Click me </button>
 
 
-const [yeffer, setYeffer] = useState(22)
