@@ -13,7 +13,9 @@ const { useState } = require("react");
 className="freach"
 id="yeffer"
 onClick={()=>{
-    clickHandler()
+   setTimeout(() => {
+      clickHandler()
+   }, 1000);
     fnArrow()
 }}>
 Click me 
