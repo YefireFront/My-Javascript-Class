@@ -206,7 +206,7 @@ title = greatsTeams
     return obj;
   }, {});
 
-arrnum = [1, 2, 3, 4, 5, 6, 7, 8, 5, 4, 2, 18, 2, 4, 2, , 1, 5, 215, 2, 51];
+arrnum = [1, 2, 3, 4, 5, 6, 7,  51];
 
 res = arrnum.reduce(
   (obj, item) => {
