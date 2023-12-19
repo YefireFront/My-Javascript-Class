@@ -3,7 +3,6 @@ const { useState } = require("react");
 
  function clickHandler(){
     console.log('welcome ti the jungle');
-    console.log('welcomw 2');
  }
 
  const fnArrow = ()=>{
