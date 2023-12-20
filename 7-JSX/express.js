@@ -26,5 +26,7 @@ secunclass = (c) => {
 };
 
 function megabutton(tipo) {
-  return <button className={`Anilio ${secunclass(param)}`}></button>;
+  return (
+  <button className={`Anilio ${secunclass(param)}`}></button>
+  );
 }
