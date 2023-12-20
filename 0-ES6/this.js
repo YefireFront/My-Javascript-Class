@@ -20,5 +20,4 @@ let yeffer = {
 
 
 console.log(this.Document);
-yeffer.it()
-yeffer.obj.nivel2()
+
