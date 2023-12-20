@@ -1,39 +1,30 @@
+function contenedor({ texto }) {
+  return <div className="contador">{texto}</div>;
+}
 
-function contenedor({texto}) {
-    return(
-        <div className='contador'>
-        {texto}
-        </div>
-    );
+export default contenedor;
+
+function boton({ texto, tipo, evento }) {
+  return (
+    <button className={tipo ? "btnclicl" : "btnRest"} onClic={evento}>
+      {texto}
+    </button>
+  );
 }
 
 
-export default contenedor
 
 
+secunclass = (c) => {
+  if (c == "Broly") {
+    return "Broly";
+  }
+  if (c == "Clark") {
+    return "Clark";
+  }
 
-function boton({texto ,tipo, evento}) {
-
-    return(
-        <button
-        className = {tipo ? 'btnclicl' : 'btnRest'}
-        onClic = {evento}
-        > 
-        {texto}
-        </button>
-    )
-    
-}
-
+};
 
 function megabutton(tipo) {
-
-    return(
-        <button
-        className = {(tipo) ? 'azul yeffer canev' : 'rojo'}
-        >
-
-        </button>
-    )
-    
+  return <button className={`Anilio ${secunclass(param)}`}></button>;
 }
