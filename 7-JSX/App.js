@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./App.css";
 
 function App() {
-  const inputRef = useRef(null);
+  const inputRef = useef(null);
   const resultRef = useRef(null);
   const [result, setResult] = useState(0);
 
@@ -12,17 +12,6 @@ function App() {
     inputRef.current.value = ""; // Limpiar el input después de la operación
   }
 
-  function minus(e) {
-    e.preventDefault();
-    setResult((result) => result - Number(inputRef.current.value));
-    inputRef.current.value = ""; // Limpiar el input después de la operación
-  }
-
-  function times(e) {
-    e.preventDefault();
-    setResult((result) => result * Number(inputRef.current.value));
-    inputRef.current.value = ""; // Limpiar el input después de la operación
-  }
 
   function divide(e) {
     e.preventDefault();
