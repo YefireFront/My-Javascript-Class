@@ -15,7 +15,7 @@ id="yeffer"
 onClick={()=>{
    setTimeout(() => {
       clickHandler()
-   }, 1000);
+   }, 2000);
     fnArrow()
 }}>
 Click me 
