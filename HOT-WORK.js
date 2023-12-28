@@ -20,7 +20,7 @@ const dishData = [
       price: 16.45
     },
   ];
-  const tax = 1.20;
+  const tax = 10.20;
  
   
   // Implement getPrices()
