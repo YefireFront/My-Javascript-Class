@@ -8,10 +8,7 @@ const dishData = [
       name: "Chicken with potatoes",
       price: 15.55
     },
-    {
-      name: "Chicken  potatoes",
-      price: 15.55
-    },
+  
     {
       name: "Vegetarian Pizza",
       price: 6.45
