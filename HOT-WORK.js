@@ -9,10 +9,7 @@ const dishData = [
       price: 15.55
     },
   
-    {
-      name: "Vegetarian Pizza",
-      price: 6.45
-    },
+ 
    
   ];
   const tax = 10.20;
