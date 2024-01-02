@@ -58,6 +58,7 @@ const dishData = [
 
   console.log('i will win');
   console.log('it no over until a win');
+  console.info('MY TIME');
   
 
   
