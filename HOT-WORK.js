@@ -56,7 +56,6 @@ const dishData = [
 
 
 
-  console.log('This is the year');
   console.log('i will win');
   console.log('it no over until a win');
   
