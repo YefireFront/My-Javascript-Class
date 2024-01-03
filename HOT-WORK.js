@@ -58,8 +58,8 @@ const dishData = [
 
   console.log('JUN 1 i will win');
   console.log('JUN 1 it no over until a win');
-  console.info('JUN 2 MY TIME');
-  console.info('JUN 2 GO');
+  console.log('JUN 2 MY TIME');
+  console.log('JUN 2 Lets GO');
 
   
 
