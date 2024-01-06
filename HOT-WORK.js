@@ -63,7 +63,7 @@ const dishData = [
   console.log('JUN 3 one more');
   console.log('JUN 4 two more');
   console.log('JUN 5 crack day');
-  console.log('JUN 6 pre Day');
+  console.log('JUN 6 Pre Day');
 
   
 
