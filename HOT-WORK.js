@@ -73,7 +73,7 @@ const dishData = [
   console.log('JUN 13 Organize my new');
   console.log('FOR ME');
   console.log(`Day 1. This is first day of the rest of my life, the day when everything changes` )
-  console.log(`Day 2.` )
+  console.log(`Day 2. one day at a time` )
 
   
 
