@@ -76,6 +76,7 @@ const dishData = [
   console.log(`Day 2. One day at a time` )
   console.log(`Day 3. Big Decition` )
   console.log(`Day 4. New House, New Moment` )
+  console.log(`Day 5. Start` )
 
   
 
