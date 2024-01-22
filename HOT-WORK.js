@@ -79,6 +79,7 @@ const dishData = [
   console.log(`Day 5. Start` )
   console.log(`Day 6. End` )
   console.log(`Day 7. is it today ?. yes it's` )
+  console.log(`Day 8. how` )
 
   
 
