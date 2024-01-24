@@ -80,7 +80,7 @@ const dishData = [
   console.log(`Day 6. End` )
   console.log(`Day 7. is it today ?. yes it's` )
   console.log(`Day 8. how` )
-  console.log(`Day 8. firts battle` )
+  console.log(`Day 8. firts battle, today` )
 
   
 
