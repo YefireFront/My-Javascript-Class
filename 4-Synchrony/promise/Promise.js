@@ -1,6 +1,6 @@
 //* Calvo man
 
-//$Creamos unb objeto
+//$Creamos un objeto
 
 let phone = {
   Brand: "Iphone",
