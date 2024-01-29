@@ -83,6 +83,7 @@ const dishData = [
   console.log(`Day 8. firts battle, today` )
   console.log(`Day 9. my number` )
   console.log(`Day 10.` )
+  console.log(`Day 10. Dont Forget this day` )
 
   
 
