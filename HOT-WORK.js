@@ -85,7 +85,7 @@ const dishData = [
   console.log(`Day 10.` )
   console.log(`Day 10. Dont Forget this day` )
   console.log(`FINAL DAY OF THE REST OF MAY  MY LIVE. IT'S TODAY` )
-  console.log(`` )
+  console.log(`150 jump` )
 
   
 
