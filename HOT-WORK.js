@@ -85,7 +85,12 @@ const dishData = [
   console.log(`Day 10.` )
   console.log(`Day 10. Dont Forget this day` )
   console.log(`FINAL DAY OF THE REST OF MAY  MY LIVE. IT'S TODAY` )
+<<<<<<< HEAD
   console.log(`FINAL DAY OF THE REST OF MAY  MY LIVE. IT'S TODAY` )
+=======
+  console.log(`150 jump - 50 abdo ` )
+  console.log(`Feb pre 1` )
+>>>>>>> 20d6ceaf2ae82178040e8fe4f49c094b3cd2ba4a
 
   
 
