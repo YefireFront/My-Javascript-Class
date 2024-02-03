@@ -88,7 +88,7 @@ const dishData = [
   console.log(`FINAL DAY OF THE REST OF MAY  MY LIVE. IT'S TODAY` )
   console.log(`150 jump - 50 abdo ` )
   console.log(`Feb pre 1` )
-  console.log(`NOw` )
+  console.log(`NO` )
 
 
   
