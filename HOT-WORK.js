@@ -85,14 +85,9 @@ const dishData = [
   console.log(`Day 10.` )
   console.log(`Day 10. Dont Forget this day` )
   console.log(`FINAL DAY OF THE REST OF MAY  MY LIVE. IT'S TODAY` )
-<<<<<<< Updated upstream
   console.log(`FINAL DAY OF THE REST OF MAY  MY LIVE. IT'S TODAY` )
   console.log(`150 jump - 50 abdo ` )
   console.log(`Feb pre 1` )
 
-=======
->>>>>>> Stashed changes
-
-  
 
   
