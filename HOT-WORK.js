@@ -89,6 +89,7 @@ const dishData = [
   console.log(`150 jump - 50 abdo ` )
   console.log(`Feb pre 1` )
   console.log(`NO or NOw` )
+  console.log(`NO or NOw` )
 
 
   
