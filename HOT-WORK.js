@@ -90,7 +90,7 @@ const dishData = [
   console.log(`Feb pre 1` )
   console.log(`NO or NOw` )
   console.log(`The Day is here`)
-  console.log(`The Day `)
+  console.log(`God`)
 
 
   
