@@ -33,17 +33,17 @@ function miProm(phone) {
   });
 }
 
-// miProm(phone)
-// .then((m) =>{ 
-//   return WhatYouWin(m)
-// })
-// .then(res=>{
+miProm(phone)
+.then((m) =>{ 
+  return WhatYouWin(m)
+})
+.then(res=>{
 
-//   if (res.champions.length >= 2) {
-//     console.log(`Felificationes tiene mas de 2 campeonastos tines ${res.champions.length}`);
+  if (res.champions.length >= 2) {
+    console.log(`Felificationes tiene mas de 2 campeonastos tines ${res.champions.length}`);
     
-//   }
-// })
+  }
+})
 
 
 
