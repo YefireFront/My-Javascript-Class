@@ -122,125 +122,22 @@
 // console.log(animals.slice(2, -1));
 // console.log(animals.slice());
 
-//! SLICE()
 
-// const months = ['Jan', 'March', 'April', 'June'];
-// months.splice(1, 0, 'Feb');
-// // Inserts at index 1
-// console.log(months);
-// // Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+  
+  
 
-// months.splice(4, 0, 'May','June','July','August','September','October','November','December');
-// // Replaces 1 element at index 4
-// console.log(months);
-// // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
 
-const greatsTeams = [
-  {
-    team: "Boca",
-    titulos: 6,
-    country: "Argentina",
-    stadium: "Bombonera",
-    motto: "EL jugador numero 12",
-  },
-  {
-    team: "Real Madrid",
-    titulos: 14,
-    country: "España",
-    stadium: "Bernabeu",
-  },
-  {
-    team: "Santos",
-    titulos: 3,
-    country: "Brasil",
-    stadium: "Maracana",
-    motto: "La casa del el rey pele",
-  },
-  {
-    team: "Barcelona",
-    titulos: 5,
-    country: "España",
-    stadium: "Cap noun",
-    motto: "Siempre cule",
-  },
-  {
-    team: "Racing",
-    titulos: 1,
-    country: "Argentina",
-    stadium: "Amalfinati",
-  },
-  {
-    team: "Manchester United",
-    titulos: 4,
-    country: "Inglaterra",
-    stadium: "Stanford breach",
-  },
-  {
-    team: "Milan",
-    titulos: 6,
-    country: "Italia",
-    stadium: "Jusepa Meatzaa",
-  },
-  {
-    team: "LA Galaxy",
-    titulos: 1,
-    country: "US",
-    stadium: "Dignity Health Sports Park",
-  },
-];
 
-// arrTeam = greatsTeams.map( e => e.team)
-// arrTeam = greatsTeams.map( e =>{
-//     return {...e, sport: 'soccer'}
-// })
-// console.log(arrTeam);
+  //*  CREATE AN ARRAY THAT IS SEPARATED BY PACE (SPLIT and JOIN)
 
-title = greatsTeams
-  .map((e) => e.titulos)
-  .reduce((obj, item) => {
-    if (!obj[item]) {
-      obj[item] = 1;
-    } else {
-      obj[item] += 1;
-    }
-    return obj;
-  }, {});
+const bocaFrase = 'El jugador numero 12'
+let bocaFraseSplit = bocaFrase.split(' ')
+console.log(bocaFrase);
+console.log(bocaFraseSplit);
 
-arrnum = [1, 2, 3, 4, 5, 6, 7,  51];
+let bocaFraseJoin = bocaFraseSplit.join('/')
+console.log(bocaFraseJoin);
 
-res = arrnum.reduce(
-  (obj, item) => {
-    if (item >= 1 && item <= 5) {
-      obj["1-5"] += 1;
-    }
-    if (item >= 6 && item <= 8) {
-      obj["6-8"] += 1;
-    }
-
-    if (item >= 9) {
-      obj["rest"] += 1;
-    }
-    return obj;
-  },
-  {
-    "1-5": 0,
-    "6-8": 0,
-    rest: 0,
-  }
-);
-
-let parrafo = "si yo considero que yeffer es una gran persona, entonces yeffer debe, mirar a yeffer y pensarlo bien";
-
-const repe = (parrafo, word, cont = 0) => {
-  let arr = parrafo.split(" ");
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    if (word == element) {
-      cont++;
-    }
-  }
-  console.log(`la palabra ${word} esta ${cont} veces`);
-};
 
 
 

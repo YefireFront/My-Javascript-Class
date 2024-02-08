@@ -1,5 +1,5 @@
 
-//  ! PRACTICA DE ARRAY DIFERENTES NIVELES
+
 
 const MugiwaraCrew = ["Ussop", "Nami", "Sanji", "Lufy", "Zoro"];
 const Boca = [2000, 2002, 2006, 2007];
@@ -94,6 +94,9 @@ const mapa = [
 
 
 
+
+
+//%1
 function Sort(arr) {
   let comodin1;
   let comodin2;
@@ -107,9 +110,9 @@ function Sort(arr) {
     }
   }
   console.log(arr);
-}
+};
 
-
+//%2
 function Union(arr, arr2) {
   let arr3 = [];
   console.log(arr.length);
@@ -134,8 +137,9 @@ function Union(arr, arr2) {
     }
   }
   console.log(arr3);
-}
+};
 
+//%3
 function Clones(arr) {
   let clonArray = [];
   let j = 0;
@@ -146,8 +150,9 @@ function Clones(arr) {
   }
 
   console.log(clonArray);
-}
+};
 
+//%4
 function FindHokage(arr) {
   let h = 0;
   const hokae = [];
@@ -159,8 +164,9 @@ function FindHokage(arr) {
     }
   }
   console.log(hokae);
-}
+};
 
+//%5
 function manejarTripulacion(arr, elm, acc) {
   if (acc == "add") {
     arr[arr.length] = elm;
@@ -177,8 +183,9 @@ function manejarTripulacion(arr, elm, acc) {
     arr = newcrew;
   }
   console.log(arr);
-}
+};
 
+//%6
 function encontartesoro(params) {
   for (let i = 0; i < mapa.length; i++) {
     if (typeof mapa[i] != "object") {
@@ -192,8 +199,9 @@ function encontartesoro(params) {
       }
     }
   }
-}
+};
 
+//%7
 function ordenarPorNombre(array) {
 //   Inicia la funcion
   for (let i = 1; i < array.length; i++) {
@@ -210,8 +218,9 @@ function ordenarPorNombre(array) {
     array[j + 1] = valorActual;
   }
   return array;
-}
+};
 
+//%8
 function multiplo(num, fin) {
   let arraMult = [];
   let j = 0;
@@ -225,9 +234,9 @@ function multiplo(num, fin) {
     }
   }
   console.log(arraMult);
-}
+};
 
-
+//%9
 function findFuckPeople(arr, country, age, par, name) {
   for (let i = 0; i < arr.length; i++) {
     if (age == undefined && par == undefined && name == undefined) {
@@ -250,7 +259,17 @@ function findFuckPeople(arr, country, age, par, name) {
       }
     }
   }
-}
+};
+
+
+
+
+
+
+
+
+
+
 
 
 
