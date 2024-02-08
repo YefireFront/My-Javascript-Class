@@ -1,7 +1,7 @@
 // Ejercicio de manipulación de arrays:
 // Escribe una función que tome un array de números como entrada y devuelva un nuevo array con solo los números pares.
 
-let arrayNumbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
+let arrayNumbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
 
 //arrow fuction
 getPar = (arr)=>{
