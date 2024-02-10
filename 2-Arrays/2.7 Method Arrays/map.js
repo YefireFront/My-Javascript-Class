@@ -166,7 +166,6 @@ const ocho = personas.map(e=>{
    return e.nombre.toLocaleUpperCase()
 })
 
-console.log(ocho);
 
 
 //%9
@@ -179,4 +178,3 @@ const nueve = personas.map( e => ({
     fullName: `${e.nombre} is ${e.edad}`
 }));
 
-console.log(nueve);
