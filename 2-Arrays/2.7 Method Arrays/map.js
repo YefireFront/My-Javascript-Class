@@ -56,7 +56,7 @@ const greatsTeams =[
         stadium : 'Dignity Health Sports Park'
     }
 ]
-
+/*
 //%1
 
 //* NUMERO DE VECES QUE SE REPITE UN DATO EN UN OBJ  (Map y Reduce)
@@ -134,6 +134,49 @@ console.log(mapeado_Name);
 console.log(`es ${everyado} que todos los  elementos coinciden con la condicion`);
 
 
+*/
 
 
+//%5
 
+//%6
+const numeros = [1, 2, 3, 4, 5];
+const a = numeros.map(e=>e*2)
+console.log(a);
+
+//%7
+const palabras = ['Hola', 'Mundo', 'JavaScript'];
+// Dado un arreglo de cadenas, devuelve un nuevo arreglo 
+// donde cada cadena tenga un signo de exclamación al final.
+
+b = palabras.map(e=>`${e}!`)
+console.log(b);
+
+//%8
+// Dado un arreglo de objetos con propiedades nombre y edad, 
+// devuelve un nuevo arreglo donde solo se incluyan los nombres en mayúsculas.
+
+const personas = [
+  { nombre: 'Juan', edad: 30 },
+  { nombre: 'María', edad: 25 },
+  { nombre: 'Carlos', edad: 35 }
+];
+
+const ocho = personas.map(e=>{
+   return e.nombre.toLocaleUpperCase()
+})
+
+console.log(ocho);
+
+
+//%9
+// Dado un arreglo de objetos con propiedades nombre y apellido, devuelve un nuevo arreglo donde cada objeto 
+// tenga una nueva propiedad nombreCompleto que concatene el nombre y el apellido.
+
+const nueve = personas.map( e => ({
+    nombre : e.nombre,
+    edad : e.edad,
+    fullName: `${e.nombre} is ${e.edad}`
+}));
+
+console.log(nueve);
