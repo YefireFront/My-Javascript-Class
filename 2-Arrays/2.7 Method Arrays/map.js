@@ -166,7 +166,6 @@ const ocho = personas.map(e=>{
    return e.nombre.toLocaleUpperCase()
 })
 
-console.log(ocho);
 
 
 //%9
