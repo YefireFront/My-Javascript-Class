@@ -179,4 +179,3 @@ const nueve = personas.map( e => ({
     fullName: `${e.nombre} is ${e.edad}`
 }));
 
-console.log(nueve);
