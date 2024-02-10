@@ -6,35 +6,35 @@
 //* Se tiene una Clusure cuando una funcion accede a una vareiable fuera de su contexto 
 
 
-// function moneyBox(coins){
-//     let saveConis = 0;
-//     saveConis += coins
-//     console.log(`MoneyBox = ${saveConis}`)
-// }
-// moneyBox(5)
-// moneyBox(15)
+function moneyBox(coins){
+    let saveConis = 0;
+    saveConis += coins
+    console.log(`MoneyBox = ${saveConis}`)
+}
+moneyBox(5)
+moneyBox(15)
 
 
-// function Cajamoney(){
-//     let saveConis = 0 ;
-//     function countConis(coins){
-//         saveConis += coins;
-//         console.log(` Caja Money: $${saveConis}`)
-//     }
-//     return countConis
+function Cajamoney(){
+    let saveConis = 0 ;
+    function countConis(coins){
+        saveConis += coins;
+        console.log(` Caja Money: $${saveConis}`)
+    }
+    return countConis
 
-// }
+}
 
-//  const MyCajamoney = Cajamoney();
-//  const yefferMoney = Cajamoney();
+ const MyCajamoney = Cajamoney();
+ const yefferMoney = Cajamoney();
 
  
-//  MyCajamoney(5);
-//  yefferMoney(100)
-//  MyCajamoney(5);
+ MyCajamoney(5);
+ yefferMoney(100)
+ MyCajamoney(5);
  
-//  yefferMoney(100)
-//  MyCajamoney(5);
+ yefferMoney(100)
+ MyCajamoney(5);
 
  
 

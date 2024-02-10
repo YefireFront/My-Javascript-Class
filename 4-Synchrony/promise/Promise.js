@@ -1,7 +1,5 @@
 //* Calvo man
 
-//$Creamos un objeto
-
 let phone = {
   Brand: "Iphone",
   Model: "14",
@@ -17,14 +15,13 @@ function WhatYouWin(win) {
       }
       resolve(win);
     } else {
-      reject(`You Dont Wint`);
+      reject(`You Dont Win`);
     }
   });
 }
 
 function miProm(phone) {
   return new Promise((resolve, reject) => {
-
     if (phone.champions) {
       resolve(phone);
     } else {
@@ -33,11 +30,9 @@ function miProm(phone) {
   });
 }
 
-miProm(phone)
-.then((m) =>{ 
+miProm(phone).then((m) =>{ 
   return WhatYouWin(m)
-})
-.then(res=>{
+}).then(res=>{
 
   if (res.champions.length >= 2) {
     console.log(`Felificationes tiene mas de 2 campeonastos tines ${res.champions.length}`);
@@ -47,48 +42,6 @@ miProm(phone)
 
 
 
-
- //*Mistake 
-
-// const miPromesa1 = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-
-//     const numeroAleatorio = Math.random();
-//     if (numeroAleatorio >= 0.5) {
-//       resolve(numeroAleatorio);
-//     } else {
-//       reject(new Error(` numeor menor a 0.5 ---> ${numeroAleatorio}`));
-//     }
-//   }, 1000);
-// });
-
-// miPromesa1
-//   .then((resultado) => {
-//     console.log("Promesa resuelta:", resultado);
-//   })
-//   .catch((error) => {
-//     console.error("Error:", error.message);
-//   });
-
-
-//? Promesas en cadena  
-
-const promesa1 = new Promise((resolve) => resolve(1));
-const promesa2 = new Promise((resolve) => resolve(2));
-const promesa3 = new Promise((resolve) => resolve(3));
-
-// promesa1
-//   .then((valor) => {
-//     console.log(valor);
-//     return promesa2;
-//   })
-//   .then((valor) => {
-//     console.log(valor);
-//     return promesa3;
-//   })
-//   .then((valor) => {
-//     console.log(valor);
-//   });
 
 
   //% Otra anidada
@@ -113,18 +66,18 @@ function mostrarResultado(resultado) {
   console.log(resultado);
 }
 
-// descargarContenido()
-//   .then((contenidoDescargado) => {
-//     console.log("Descarga completa:", contenidoDescargado);
-//     return procesarContenido(contenidoDescargado);
-//   })
-//   .then((contenidoProcesado) => {
-//     console.log("Procesamiento completo:", contenidoProcesado);
-//     mostrarResultado(contenidoProcesado);
-//   })
-//   .catch((error) => {
-//     console.error("Error:", error);
-//   });
+descargarContenido()
+  .then((contenidoDescargado) => {
+    console.log("Descarga completa:", contenidoDescargado);
+    return procesarContenido(contenidoDescargado);
+  })
+  .then((contenidoProcesado) => {
+    console.log("Procesamiento completo:", contenidoProcesado);
+    mostrarResultado(contenidoProcesado);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
 
 
 //!ERROR 
