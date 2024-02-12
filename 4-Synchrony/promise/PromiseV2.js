@@ -18,7 +18,7 @@ const baseDeDatosUsuarios = {
   usuario2: {
     nombre: "María",
     edad: 30,
-    email: "maria@example.com"
+    email: "maria@example com"
   },
   usuario3: {
     nombre: "Pedro",
