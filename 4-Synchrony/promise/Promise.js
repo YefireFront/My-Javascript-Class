@@ -118,6 +118,4 @@ function mostrarResultado(resultado) {
 //     console.log("Procesamiento completo:", contenidoProcesado);
 //     mostrarResultado(contenidoProcesado);
 //   })
-//   .catch((error) => {
-//     console.error("Error:", error);
-//   });
+/
