@@ -109,8 +109,3 @@ function mostrarResultado(resultado) {
   console.log(resultado);
 }
 
-// descargarContenido()
-//   .then((contenidoDescargado) => {
-//     console.log("Descarga completa:", contenidoDescargado);
-//     return procesarContenido(contenidoDescargado);
-//   })
