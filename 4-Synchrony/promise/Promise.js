@@ -109,3 +109,15 @@ function mostrarResultado(resultado) {
   console.log(resultado);
 }
 
+// descargarContenido()
+//   .then((contenidoDescargado) => {
+//     console.log("Descarga completa:", contenidoDescargado);
+//     return procesarContenido(contenidoDescargado);
+//   })
+//   .then((contenidoProcesado) => {
+//     console.log("Procesamiento completo:", contenidoProcesado);
+//     mostrarResultado(contenidoProcesado);
+//   })
+//   .catch((error) => {
+//     console.error("Error:", error);
+//   });
