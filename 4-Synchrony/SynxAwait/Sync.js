@@ -65,3 +65,11 @@ async function obtenerInfoPokemon(pokemonName) {
 }
 
 obtenerDatos();
+
+//%
+async function obtenerDatos() {
+  let [datos1, datos2] = await Promise.all([fetchData1(), fetchData2()]);
+  console.log(datos1, datos2);
+}
+
+obtenerDatos();
