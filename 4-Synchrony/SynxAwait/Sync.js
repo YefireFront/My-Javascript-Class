@@ -52,3 +52,16 @@ async function obtenerInfoPokemon(pokemonName) {
   }
   
   procesarDatos([1, 2, 3]);
+
+
+  //%
+  async function obtenerDatos() {
+    try {
+        let datos = await fetchData();
+        console.log(datos);
+    } catch (error) {
+        console.error("Error al obtener datos:", error);
+    }
+}
+
+obtenerDatos();
