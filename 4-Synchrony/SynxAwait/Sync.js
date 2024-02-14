@@ -41,3 +41,14 @@ async function obtenerInfoPokemon(pokemonName) {
       console.log(false == true) 
     } else
      { console.log(true === !false) }
+
+
+     //%
+     async function procesarDatos(datos) {
+      for (let dato of datos) {
+          let resultado = await procesarDato(dato);
+          console.log(resultado);
+      }
+  }
+  
+  procesarDatos([1, 2, 3]);
