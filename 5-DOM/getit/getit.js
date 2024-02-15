@@ -1,25 +1,25 @@
-// const n = document.getElementById('casa')
-// console.log(n);
+const n = document.getElementById('casa')
+console.log(n);
 
-// const nn = document.querySelector('#casa');
-// console.log(nn);
+const nn = document.querySelector('#casa');
+console.log(nn);
 
-// const e = document.querySelectorAll('li')
-// console.log(e);
+const e = document.querySelectorAll('li')
+console.log(e);
 
-// e.forEach(e => {
+e.forEach(e => {
 
-//     console.log(e);
+    console.log(e);
     
-// });
+});
 
 
-// let NodeaArray = Array.from(e)
-//  console.log(NodeaArray);
+let NodeaArray = Array.from(e)
+ console.log(NodeaArray);
  
-//  NodeaArray.pop()
-//  NodeaArray.shift()
-//  console.log(NodeaArray);
+ NodeaArray.pop()
+ NodeaArray.shift()
+ console.log(NodeaArray);
 
 
 
