@@ -37,11 +37,7 @@ async function obtenerInfoPokemon(pokemonName) {
     });
   
 
-    if (false === !true) { 
-      console.log(false == true) 
-    } else
-     { console.log(true === !false) }
-
+  
 
      //%
      async function procesarDatos(datos) {
