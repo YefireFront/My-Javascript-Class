@@ -37,13 +37,33 @@ function requestHandler2(req, res) {
     
     User.findById(req.userID)
         .then(function (user) {
-            task.findById(user.tasksId)
+            return task.findById(user.tasksId)
         })
-        .then(function (task) {
-            
+        .then(function (tasks) {
+            task.completed = true;
+            return tasks.save()
+        })
+        .then(function () {
+            res.send('TASK COMPLETED')
         })
         .catch(function (errors) {
             errors.send(errors)
         })
+
+}
+
+
+//% ASYC AWAIT
+
+async function  requestHandler3(req, res) {
+    try {
+        const user = await user.findById(req.userID)
+        const task = await task.findById(user.tasksId)
+        task.completed = true
+        await task.save( )
+        
+    } catch (error) {
+        new Error (error)
+    }
 
 }
