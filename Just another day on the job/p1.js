@@ -54,18 +54,21 @@ const arrayDeObjetos = [
   { nombre: "", edad: "", email: "" },
 ];
 
-// mainfor: for (let i = 0; i < arrayDeObjetos.length; i++) {
-//   const element = arrayDeObjetos[i];
-
-//   for (const key in element) {
-//     if (element[key] == "") {
-//       console.error(`the property ${key} is empty ${element[key]}`);
-//       break mainfor;
-//     } else {
-//       console.log(`${key} ${element[key]}`);
-//     }
-//   }
-// }
+function forlabel(arr) {
+  
+  mainfor: for (let i = 0; i < arrayDeObjetos.length; i++) {
+    const element = arrayDeObjetos[i];
+  
+    for (const key in element) {
+      if (element[key] == "") {
+        console.error(`the property ${key} is empty ${element[key]}`);
+        break mainfor;
+      } else {
+        console.log(`${key} ${element[key]}`);
+      }
+    }
+  }
+}
 
 //$ Async/Await y Promesas:
 
