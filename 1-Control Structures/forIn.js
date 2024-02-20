@@ -55,6 +55,9 @@ y devuelva una cadena que contenga todas las claves y valores del objeto concate
 
 
 const persona = {
+
+
+  
   nombre: 'Juan',
   edad: 30,
   ciudad: 'Madrid'
@@ -62,4 +65,15 @@ const persona = {
 
 for (let propiedad in persona) {
   console.log(propiedad + ': ' + persona[propiedad]);
+}
+
+
+
+
+
+
+const colores = ['rojo', 'verde', 'azul'];
+
+for (let indice in colores) {
+  console.log('Índice ' + indice + ': ' + colores[indice]);
 }
