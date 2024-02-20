@@ -77,3 +77,19 @@ const colores = ['rojo', 'verde', 'azul'];
 for (let indice in colores) {
   console.log('Índice ' + indice + ': ' + colores[indice]);
 }
+
+
+function Animal(nombre, especie) {
+  this.nombre = nombre;
+  this.especie = especie;
+}
+
+Animal.prototype.hablar = function() {
+  console.log(this.nombre + ' emite un sonido.');
+};
+
+const perro = new Animal('Bobby', 'perro');
+
+for (let propiedad in perro) {
+  console.log(propiedad + ': ' + perro[propiedad]);
+}
