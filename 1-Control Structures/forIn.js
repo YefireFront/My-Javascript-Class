@@ -52,3 +52,14 @@ Ejercicio 3: Concatenación de claves y valores
 Escribe una función llamada concatenarClavesYValores que tome un objeto como argumento 
 y devuelva una cadena que contenga todas las claves y valores del objeto concatenados en un formato legible. 
  */
+
+
+const persona = {
+  nombre: 'Juan',
+  edad: 30,
+  ciudad: 'Madrid'
+};
+
+for (let propiedad in persona) {
+  console.log(propiedad + ': ' + persona[propiedad]);
+}
