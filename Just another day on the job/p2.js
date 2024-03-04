@@ -222,20 +222,20 @@ function recentBook (arrayBooks) {
 
 
     //%PURELOGICAL
-    let comoding = ''
-    for (let i = 0; i < arrayBooks.length; i++) {
+    // let comoding = ''
+    // for (let i = 0; i < arrayBooks.length; i++) {
         
-        if (arrayBooks[i+1]==undefined) {
-            break
-        }
-        if (arrayBooks[i].date > arrayBooks[i + 1].date) {
-            comoding = arrayBooks[i]
-            arrayBooks[i] = arrayBooks[i + 1]
-            arrayBooks[i + 1] = comoding
-            i=0           
+    //     if (arrayBooks[i+1]==undefined) {
+    //         break
+    //     }
+    //     if (arrayBooks[i].date > arrayBooks[i + 1].date) {
+    //         comoding = arrayBooks[i]
+    //         arrayBooks[i] = arrayBooks[i + 1]
+    //         arrayBooks[i + 1] = comoding
+    //         i=0           
             
-        }        
-    }
+    //     }        
+    // }
 
 
     // return arrayBooks
