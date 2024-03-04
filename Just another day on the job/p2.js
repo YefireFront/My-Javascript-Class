@@ -243,5 +243,4 @@ function recentBook (arrayBooks) {
 
 }
 
-res = recentBook(books)
-console.log(res);
+
