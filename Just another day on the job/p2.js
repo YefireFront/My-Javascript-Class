@@ -182,14 +182,14 @@ function fiveLetter(stringArray) {
 
 
     //%PURELOGICAL
-    // for (let i = 0; i < stringArray.length; i++) {
-    //     const element = stringArray[i];
+    for (let i = 0; i < stringArray.length; i++) {
+        const element = stringArray[i];
         
-    //     if (element.length > 6) {
-    //         arrayFil[arrayFil.length] = element                
-    //     }
+        if (element.length > 6) {
+            arrayFil[arrayFil.length] = element                
+        }
         
-    // }
+    }
 
     return arrayFil
 }
