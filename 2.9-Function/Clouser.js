@@ -79,19 +79,19 @@ MyCajamoney(5);
 */
 
 //Nivel 1
-// function countCrator() {
-//     let cot = 0
+function countCrator() {
+    let cot = 0
 
-//     setTimeout(()=>{
-//         cot += 100
-//     }, 5000)
+    setTimeout(()=>{
+        cot += 100
+    }, 5000)
 
-//     return function increase () {
-//         return cot++
-//     }
-// }
+    return function increase () {
+        return cot++
+    }
+}
 
-// firscounter = countCrator()
+firscounter = countCrator()
 
 //Nivel 1
 
