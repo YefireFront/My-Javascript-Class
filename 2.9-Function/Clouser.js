@@ -2,41 +2,38 @@
 @author PLATZY -- OSCAR BARAJAS  <CLOSURE>
 */
 
-//* Permite accedre a el ambito de una funcion exterior desde una funcion interior 
-//* Se tiene una Clusure cuando una funcion accede a una vareiable fuera de su contexto 
+//* Permite accedre a el ambito de una funcion exterior desde una funcion interior
+//* Se tiene una Clusure cuando una funcion accede a una vareiable fuera de su contexto
 
-
-function moneyBox(coins){
-    let saveConis = 0;
-    saveConis += coins
-    console.log(`MoneyBox = ${saveConis}`)
+function moneyBox(coins) {
+  let saveConis = 0;
+  saveConis += coins;
+  console.log(`MoneyBox = ${saveConis}`);
 }
-moneyBox(5)
-moneyBox(15)
+moneyBox(5);
+moneyBox(15);
 
-
-function Cajamoney(){
-    let saveConis = 0 ;
-    function countConis(coins){
-        saveConis += coins;
-        console.log(` Caja Money: $${saveConis}`)
-    }
-    return countConis
-
+function Cajamoney() {
+  let saveConis = 0;
+  function countConis(coins) {
+    saveConis += coins;
+    console.log(` Caja Money: $${saveConis}`);
+  }
+  return countConis;
 }
 
- const MyCajamoney = Cajamoney();
- const yefferMoney = Cajamoney();
+const MyCajamoney = Cajamoney();
+const yefferMoney = Cajamoney();
 
- 
- MyCajamoney(5);
- yefferMoney(100)
- MyCajamoney(5);
- 
- yefferMoney(100)
- MyCajamoney(5);
+MyCajamoney(5);
+yefferMoney(100);
+MyCajamoney(5);
 
- 
+yefferMoney(100);
+MyCajamoney(5);
+
+yefferMoney(100);
+MyCajamoney(5);
 
 // function veterinaria (){
 //     let animal =[]
@@ -53,25 +50,24 @@ function Cajamoney(){
 //  MarchPets('PERRO')
 //  MarchPets('GATOS')
 
-
 //  function exterior() {
 //     var variableExterior = 10;
-  
+
 //     function interior(p) {
 //       console.log(variableExterior + p);
 //     }
-  
+
 //     return interior;
 //   }
-  
+
 //   let clausura = exterior();
 //   let clausura2 = exterior();
-  
+
 //   clausura(0); // Esto imprimirá "10" en la consola
 //   clausura(15); // Esto imprimirá "10" en la consola
 
 //? CADA VEZ QUE SE EJECUTA UNA FUNCION EN JS, SE CRA UN NUEVO CONTEXTO DE
-//? EJECUCION CON UN NUEVO ENTORNO LÉXICO  
+//? EJECUCION CON UN NUEVO ENTORNO LÉXICO
 
 //! ENTORNO LEXICO
 //* Es un objrto qur tiene los contextos de ejecuco  donde se almacenan los NOMBRES DE LAS VARIABLES
@@ -89,7 +85,7 @@ function Cajamoney(){
 //     let cot = 0
 
 //     setTimeout(()=>{
-//         cot += 100 
+//         cot += 100
 //     }, 5000)
 
 //     return function increase () {
@@ -102,38 +98,40 @@ function Cajamoney(){
 //Nivel 1
 
 function Count() {
-    let cont = 0
+  let cont = 0;
 
-    return {
-        increas:()=>{
-            cont ++
-            return cont
-        },
-        decraese:()=>{
-            cont --
-            return cont
-        },
-        show:()=>{
-            return cont
-        },
-        built:()=>{
-            setTimeout(()=>{
-               cont += 100 
-            },5000)
-        } 
-    }
+  return {
+    increas: () => {
+      cont++;
+      return cont;
+    },
+    decraese: () => {
+      cont--;
+      return cont;
+    },
+    show: () => {
+      return cont;
+    },
+    built: () => {
+      setTimeout(() => {
+        cont += 100;
+      }, 5000);
+    },
+  };
 }
 
-const con1 = Count()
+const con1 = Count();
 
-con1.increas()
-con1.increas()
-con1.built()
-con1.increas()
-con1.decraese()
-con1.decraese()
-con1.built()
+con1.increas();
+con1.increas();
+con1.built();
+con1.increas();
+con1.decraese();
+con1.decraese();
+con1.built();
 console.log(con1.show());
 
-nameOfDog("Elmo"); 
-function nameOfDog(name) { console.log(name); }; 
+nameOfDog("Elmo");
+function nameOfDog(name) {
+  console.log(name);
+}
