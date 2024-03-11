@@ -33,16 +33,16 @@ yefferMoney(100);
 MyCajamoney(5);
 
 
-// function veterinaria (){
-//     let animal =[]
+function veterinaria (){
+    let animal =[]
 
-//    function addpet(pet){
-//     animal.push(pet)
-//     console.log(`Veterianrie List ${animal} and the last pet add is ${pet}`)
+   function addpet(pet){
+    animal.push(pet)
+    console.log(`Veterianrie List ${animal} and the last pet add is ${pet}`)
 
-//    }
-//    return addpet
-// }
+   }
+   return addpet
+}
 
 // const MarchPets = veterinaria()
 //  MarchPets('PERRO')
