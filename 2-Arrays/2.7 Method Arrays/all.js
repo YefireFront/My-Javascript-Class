@@ -35,8 +35,6 @@
 
 // const found = array1.find(element => element > 10);
 
-
-
 //! SOME()
 
 // const aarray = [1,2,3,4,5]
@@ -68,12 +66,15 @@
 
 //! CONCAT()
 
-// const array1 = [10, 30, 39, 29, 10, 13];
-// const array9 = [{Feeling:'Amor', Mentaliuty:'angry'},{Ex:'Leo', Acually:'Me'}];
-// const array = ['yeffer','23 MJ','Boca','Real Madrid']
+const array1 = [10, 30, 39, 29, 10, 13];
+const array9 = [
+  { Feeling: "Amor", Mentaliuty: "angry" },
+  { Ex: "Leo", Acually: "Me" },
+];
+const array = ["yeffer", "23 MJ", "Boca", "Real Madrid"];
 
-// const newArray = array1.concat(array9, array);
-// console.log(newArray)
+const newArray = array1.concat(array9, array);
+console.log(newArray);
 
 //! CONCAT()
 // const elements = ['Fire', 'Air', 'Water'];
@@ -122,22 +123,12 @@
 // console.log(animals.slice(2, -1));
 // console.log(animals.slice());
 
+//*  CREATE AN ARRAY THAT IS SEPARATED BY PACE (SPLIT and JOIN)
 
-  
-  
-
-
-
-  //*  CREATE AN ARRAY THAT IS SEPARATED BY PACE (SPLIT and JOIN)
-
-const bocaFrase = 'El jugador numero 12'
-let bocaFraseSplit = bocaFrase.split(' ')
+const bocaFrase = "El jugador numero 12";
+let bocaFraseSplit = bocaFrase.split(" ");
 console.log(bocaFrase);
 console.log(bocaFraseSplit);
 
-let bocaFraseJoin = bocaFraseSplit.join('/')
+let bocaFraseJoin = bocaFraseSplit.join("/");
 console.log(bocaFraseJoin);
-
-
-
-
