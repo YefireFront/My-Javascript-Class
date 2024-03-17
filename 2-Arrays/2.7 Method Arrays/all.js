@@ -10,7 +10,7 @@
 // const newArray = array.filter(key => key >= 4 )
 // console.log(newArray)
 
-//! FOREACH()
+//? FOREACH()
 
 // const array = ['yeffer','23 MJ','Boca','Real Madrid']
 // const newArray = array.forEach((key, i, a) => console.log(key,i,a))
