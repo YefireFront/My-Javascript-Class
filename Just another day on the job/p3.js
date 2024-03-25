@@ -181,34 +181,33 @@
 
 
 
-async function obtenerListaAnimes() {
-      const response = await fetch(`https://api.jikan.moe/v4/top/anime?limit10`);
-      const result = await response.json();
-      const animeList = result.data
-      // console.log(animeList)
-      // animeList.forEach(element => {
-      //   console.log(element.title)
-      // });
+// async function obtenerListaAnimes() {
+//       const response = await fetch(`https://api.jikan.moe/v4/top/anime?limit10`);
+//       const result = await response.json();
+//       const animeList = result.data
+//       // console.log(animeList)
+//       // animeList.forEach(element => {
+//       //   console.log(element.title)
+//       // });
       
-      const res = animeList.map(anime=> {
-        return {
-          name: anime.title,
-          episodios: anime.episodes,
-          // genero: anime.genres,
-          popularidad: anime.popularity,
-          Puntuacion: anime.score,
-          ranking: anime.rank,
-          // img: anime.images
-        }
-      }) 
-      console.log(res)
+//       const res = animeList.map(anime=> {
+//         return {
+//           name: anime.title,
+//           episodios: anime.episodes,
+//           popularidad: anime.popularity,
+//           Puntuacion: anime.score,
+//           ranking: anime.rank,
+//           // genero: anime.genres,
+//           // img: anime.images
+//         }
+//       }) 
+//       console.log(res)
       
-  }
+//   }
 
 
-  obtenerListaAnimes()
+//   obtenerListaAnimes()
 
 
 
-  //*Implementa una función que realice múltiples solicitudes HTTP en paralelo y devuelva los resultados una vez que todas las solicitudes se completen.
-  
+//! DOM
