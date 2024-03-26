@@ -174,12 +174,7 @@
 
 */
 
-
 //*Crea una función que utilice async/await para consumir una API externa y devolver los datos procesados.
-
-
-
-
 
 // async function obtenerListaAnimes() {
 //       const response = await fetch(`https://api.jikan.moe/v4/top/anime?limit10`);
@@ -189,7 +184,7 @@
 //       // animeList.forEach(element => {
 //       //   console.log(element.title)
 //       // });
-      
+
 //       const res = animeList.map(anime=> {
 //         return {
 //           name: anime.title,
@@ -200,14 +195,120 @@
 //           // genero: anime.genres,
 //           // img: anime.images
 //         }
-//       }) 
+//       })
 //       console.log(res)
-      
-//   }
 
+//   }
 
 //   obtenerListaAnimes()
 
-
-
 //! DOM
+
+var jugadoresNBA = [
+  {
+      nombre: "Michael Jordan",
+      equipo: "Chicago Bulls",
+      posicion: "Escolta",
+      numero: 23,
+      altura: "6'6\" (1.98 m)",
+      peso: "216 lbs (98 kg)",
+      promedioPuntos: 30.1,
+      promedioAsistencias: 5.3,
+      promedioRebotes: 6.2,
+      campeonatos: 6,
+      logros: ["5 veces MVP de la NBA", "10 veces máximo anotador", "14 veces All-Star"]
+  },
+  {
+      nombre: "LeBron James",
+      equipo: "Los Angeles Lakers",
+      posicion: "Alero",
+      numero: 6,
+      altura: "6'9\" (2.06 m)",
+      peso: "250 lbs (113 kg)",
+      promedioPuntos: 27.0,
+      promedioAsistencias: 7.4,
+      promedioRebotes: 7.4,
+      campeonatos: 4,
+      logros: ["4 veces MVP de la NBA", "4 veces campeón de la NBA", "17 veces All-Star"]
+  },
+  {
+      nombre: "Stephen Curry",
+      equipo: "Golden State Warriors",
+      posicion: "Base",
+      numero: 30,
+      altura: "6'3\" (1.91 m)",
+      peso: "185 lbs (84 kg)",
+      promedioPuntos: 24.2,
+      promedioAsistencias: 6.5,
+      promedioRebotes: 4.5,
+      campeonatos: 3,
+      logros: ["2 veces MVP de la NBA", "3 veces campeón de la NBA", "7 veces All-Star"]
+  },
+  {
+      nombre: "Kobe Bryant",
+      equipo: "Los Angeles Lakers",
+      posicion: "Escolta",
+      numero: 24,
+      altura: "6'6\" (1.98 m)",
+      peso: "212 lbs (96 kg)",
+      promedioPuntos: 25.0,
+      promedioAsistencias: 4.7,
+      promedioRebotes: 5.2,
+      campeonatos: 5,
+      logros: ["1 vez MVP de la NBA", "5 veces campeón de la NBA", "18 veces All-Star"]
+  }
+];
+
+const mainDiv = document.querySelector('.main__info')
+
+function changeBg(e) {
+
+  var contenido = e.target.textContent; 
+
+  jugadoresNBA.map(jugador => {
+    
+    
+    if (jugador.nombre == contenido) {
+      mainDiv.innerHTML=''
+      const _table = document.createElement('table')
+      
+      //Heade
+      const _tablehead = document.createElement('thead')
+
+      const _tr1 = document.createElement('tr')
+      _tr1.innerHTML = `<th>Nombre</th> <th>Equipo</th> <th>posicion</th> <th>campeonatos</th> <th>promedioPuntos</th>`
+      _tablehead.appendChild(_tr1)
+
+
+      //Body
+      const _tablebody = document.createElement('tbody')
+      const _trbody1 = document.createElement('tr')
+      _trbody1.innerHTML = `<td>${jugador.nombre}</td> <td>${jugador.equipo}</td> <td>${jugador.posicion}</td> <td>${jugador.campeonatos}</td> <td>${jugador.promedioPuntos}</td>`
+      _tablebody.appendChild(_trbody1)
+
+
+      //Table
+
+
+      _table.appendChild(_tablehead)
+      _table.appendChild(_tablebody)
+      mainDiv.appendChild(_table)
+
+      const _thNombre = document.createElement('th')
+      const _thEquipo = document.createElement('th')
+      const _thPosicion = document.createElement('th')
+      const _thDorsal = document.createElement('th')
+
+
+      //Img
+
+      const img = document.createElement('img')
+
+      img.src = `./img/${jugador.nombre}.jpg`
+      mainDiv.appendChild(img)
+      
+      
+    }
+  })
+
+}
