@@ -96,7 +96,7 @@ const mapa = [
 
 
 
-//%1
+//%1 Sort Array
 function Sort(arr) {
   let comodin1;
   let comodin2;
@@ -112,7 +112,7 @@ function Sort(arr) {
   console.log(arr);
 };
 
-//%2
+//%2 Join two arrays
 function Union(arr, arr2) {
   let arr3 = [];
   console.log(arr.length);
@@ -139,7 +139,7 @@ function Union(arr, arr2) {
   console.log(arr3);
 };
 
-//%3
+//%3 Clon array
 function Clones(arr) {
   let clonArray = [];
   let j = 0;
@@ -152,7 +152,7 @@ function Clones(arr) {
   console.log(clonArray);
 };
 
-//%4
+//%4 find property in a object array
 function FindHokage(arr) {
   let h = 0;
   const hokae = [];
@@ -166,27 +166,26 @@ function FindHokage(arr) {
   console.log(hokae);
 };
 
-//%5
-function manejarTripulacion(arr, elm, acc) {
-  if (acc == "add") {
-    arr[arr.length] = elm;
+//%5 Add or Delete Character
+function manejarTripulacion(array, personaje, accion) {
+  if (accion.toUppercase() == "AGREGAR") {
+    array[array.length] = personaje;
   }
-  if (acc == "del") {
-    let newcrew = [];
+  if (accion.toUppercase() == "ELIMINAR") {
+    let newCrew = [];
     let j = 0;
-    for (let i = 0; i < arr.length; i++) {
-      if (elm != arr[i]) {
-        newcrew[j] = arr[i];
-        j++;
+    for (let i = 0; i < array.length; i++) {
+      if ( array[i] != personaje ) {
+        newCrew[newCrew.length] = array[i];
       }
     }
-    arr = newcrew;
+    array = newCrew;
   }
-  console.log(arr);
+  console.log(array);
 };
 
-//%6
-function encontartesoro(params) {
+//%6 find something y matrix bidimension
+function encontartesoro(mapa) {
   for (let i = 0; i < mapa.length; i++) {
     if (typeof mapa[i] != "object") {
       console.log(mapa[i]);
@@ -201,65 +200,6 @@ function encontartesoro(params) {
   }
 };
 
-//%7
-function ordenarPorNombre(array) {
-//   Inicia la funcion
-  for (let i = 1; i < array.length; i++) {
-    // Inica le ciclo
-    const valorActual = array[i]; // se crea una constante y se le asigna cada objeto en el array que esta en cada indice
-      console.log(valorActual);
-
-    let j = i - 1; // se inicializa la  variable j en el valor de i -1
-
-    while (j >= 0 && array[j].nombre > valorActual.nombre) {
-      array[j + 1] = array[j];
-      j--;
-    }
-    array[j + 1] = valorActual;
-  }
-  return array;
-};
-
-//%8
-function multiplo(num, fin) {
-  let arraMult = [];
-  let j = 0;
-  let Limit = 0;
-
-  for (let i = 1; Limit < fin; i++) {
-    if (i % num == 0) {
-      arraMult[j] = i;
-      j++;
-      Limit++;
-    }
-  }
-  console.log(arraMult);
-};
-
-//%9
-function findFuckPeople(arr, country, age, par, name) {
-  for (let i = 0; i < arr.length; i++) {
-    if (age == undefined && par == undefined && name == undefined) {
-      if (arr[i].país == country) {
-        console.log(arr[i]);
-      }
-    } else if (par == undefined && name == undefined) {
-      if (arr[i].país == country && arr[i].edad == age) {
-        console.log(arr[i]);
-      }
-    } else if (name == undefined) {
-      if (par == "Ma") {
-        if (arr[i].país == country && arr[i].edad > age) {
-          console.log(arr[i]);
-        }
-      } else if (par == "Mi") {
-        if (arr[i].país == country && arr[i].edad < age) {
-          console.log(arr[i]);
-        }
-      }
-    }
-  }
-};
 
 
 
