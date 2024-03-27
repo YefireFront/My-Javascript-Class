@@ -1,3 +1,8 @@
+//!Flyweight
+//!Middleweight
+//!Heavyweigh
+
+
 const li = document.querySelector('h1')
 
 
