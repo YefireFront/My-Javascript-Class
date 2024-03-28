@@ -30,7 +30,6 @@ const datos = [
   { nombre: "Luis", puntaje: 88 },
   { nombre: "Ana", puntaje: 95 },
   { nombre: "Laura", puntaje: 80 },
-  { nombre: "Laura", puntaje: 80 },
 ];
 
 const primerosCinco = ordenarPorPuntaje(datos);
