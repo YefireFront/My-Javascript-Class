@@ -1,4 +1,4 @@
-//!Flyweight
+//!Flyweight 💪
 
 
 //% A
@@ -43,7 +43,7 @@ for (const key in champsions) {
 
 
 
-//!Middleweight
+//!Middleweight 💪
 
 
 /* //*

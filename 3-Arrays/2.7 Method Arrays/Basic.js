@@ -1,6 +1,7 @@
 //*PUSH
 //añade al final
 let arr = [1, 2, 3];
+let rra = ['King', 'AirJordan','Flash']
 arr.push(4);
 
 
@@ -31,3 +32,21 @@ arr
 
 arr.splice(2, 1, 'a', 'b','yeffer'); // Inserta 'a' y 'b' en el índice 2
 arr
+
+
+//*JOIN
+let arrjoin = arr.join()
+arrjoin
+
+//*SORT
+let arrSort = arr.sort((a,b)=> b- a)
+arrSort
+
+
+//*Reverse
+let arrReverse = arr.reverse()
+arrReverse
+
+//*concat
+let arrconcat = arr.concat(rra)
+arrconcat
