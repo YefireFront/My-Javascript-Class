@@ -34,7 +34,3 @@ arr.forEach(element => {
 
 ul.insertAdjacentElement('beforebegin',li_Go)
 ul.insertAdjacentElement('afterbegin',li_Go)
-
-
-ul.insertAdjacentElement('beforeend',li_Go)
-ul.insertAdjacentElement('afterend',li_Go)
