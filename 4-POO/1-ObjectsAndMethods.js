@@ -1,10 +1,10 @@
+//!Flyweight
 
 
 //*METHOD
 
-//!Flyweight
 
-/* //%Object.values()
+/*📌 //%Object.values()
 Este método devuelve un array con los valores de las propiedades propias de un objeto, 
 en el mismo orden en que se obtendrían en un bucle for...in.
  */
