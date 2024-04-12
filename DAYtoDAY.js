@@ -8,5 +8,5 @@ console.log(`April 7th Iam creating a road and example for my first Lab Class`);
 console.log(`April 8th I STARED THE LAB WITH THE GUYS`);
 console.log(`April 9th `);
 console.log(`April 10th `);
-console.log(`April 11th `);
+console.log(`April 11th  we save the oportunity the change day to day`);
 
