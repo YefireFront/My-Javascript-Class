@@ -10,4 +10,5 @@ console.log(`April 9th It was a simple day and i rowked un the pc room`);
 console.log(`April 10th Wonderfull satabase class with the MT 11º `);
 console.log(`April 11th  we save the oportunity the change day to day`);
 console.log(`April 12th  I consfiused abou take the sound`);
+console.log(`April 12th   i didnt feel confitbale, cus  the thesicion was in my head`);
 
