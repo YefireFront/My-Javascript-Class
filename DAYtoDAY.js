@@ -13,4 +13,6 @@ console.log(`April 12th I consfiused abou take the sound`);
 console.log(`April 13th i didnt feel confitbale, cus  the thesicion was in my head`);
 console.log(`April 14th it was an interesting day, trying to reorganize my routine.s `);
 console.log(`April 15th  `);
+console.log(`April 15th  `);
+console.log(`April 15th  `);
 
