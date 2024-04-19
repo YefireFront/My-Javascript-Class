@@ -15,4 +15,5 @@ console.log(`April 14th it was an interesting day, trying to reorganize my routi
 console.log(`April 15th booring day in anormal journary in the collage `);
 console.log(`April 16th it was a good day, I was very strict with my students `);
 console.log(`April 17th it was a grate day with my students practice SQL for the first time  `);
+console.log(`April 17th it was a grate day with my students practice SQL for the first time  `);
 
