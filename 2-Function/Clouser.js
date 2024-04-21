@@ -14,6 +14,7 @@ function moneyBox(coins) {
 }
 moneyBox(5);
 moneyBox(15);
+'Sergio', 'Ramos', '35', 'Real Madrid'
 
 function Cajamoney() {
   let saveConis = 0;
