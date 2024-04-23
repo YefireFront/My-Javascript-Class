@@ -1,7 +1,7 @@
 // Ejercicio de manipulación de arrays:
 // Escribe una función que tome un array de números como entrada y devuelva un nuevo array con solo los números pares.
 
-let arrayNumbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+let arrayNumbers = [1,2,,2,2,2,3,4,4,4,5,6,7,8,9,10,8,7,8,8,20,2211,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
 
 //arrow fuction
 getPar = (arr)=>{
@@ -123,7 +123,6 @@ function cambiarColorDeFondo() {
     document.body.style.backgroundColor = colorAleatorio;
 }
 
-cambiarColorBtn.addEventListener('click', cambiarColorDeFondo);
 
 
 
@@ -177,6 +176,54 @@ const taskManager = {
 
 
 
-taskManager.addTask('go to the gym')
-taskManager.addTask('Star to read a new book')
-taskManager.showTask()
+
+
+//* Prueba 
+
+/*
+Suma de elementos pares: Escribe una función que reciba un array de números
+ y devuelva la suma de todos los elementos pares.
+*/
+
+
+function sumPar(array) {
+    let sum = 0
+
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        if (element %2 ==0) {
+            sum += element
+        }
+        
+    }
+    return sum
+}
+sumPar(arrayNumbers)
+
+
+/*
+Eliminar duplicados: Escribe una función que tome un array como
+ argumento y devuelva un nuevo array con los elementos únicos (sin duplicados).
+ */
+
+ function byeDouble(array) {
+    let arrayNoDuplicados = [array[0]];
+    let dupli = true
+
+    for (let i = 0; i < array.length; i++) {
+
+       for (let j = 0; j < arrayNoDuplicados.length; j++) {
+
+         if (array[i] == arrayNoDuplicados[j] )  dupli = false
+
+       }
+       if (!dupli) {
+        arrayNoDuplicados[arrayNoDuplicados.length] = array[i]
+       }
+        
+    }
+    return arrayNoDuplicados
+ }
+
+let res = byeDouble(arrayNumbers)
+console.log(res)
