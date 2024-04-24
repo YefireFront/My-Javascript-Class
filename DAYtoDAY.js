@@ -19,5 +19,7 @@ console.log(`April 18th  I was working inn the journary `);
 console.log(`April 19th  I felt a good ambiance at school. `);
 console.log(`April 20th  I felt a good ambiance at school. `);
 console.log(`April 21th   `);
-console.log(`April 22th  `);
+console.log(`April 22th  Today was the firts Lab Class, and was intersting`);
+console.log(`April 22th  Today was the firts Lab Class, and was intersting`);
+
 
