@@ -27,6 +27,5 @@ console.log(`April 26th  probelma with the schedule, problem with the computer r
 console.log(`April 27th  💀 `);
 console.log(`April 28th  STAR THE REST OF MY BIG CHANCE`);
 console.log(`April 29th  `);
-console.log(`April 29th  `);
 
 
