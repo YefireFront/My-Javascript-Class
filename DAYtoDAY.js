@@ -22,9 +22,9 @@ console.log(`April 21th  this Sunday was a restart `);
 console.log(`April 22th  Today was the firts Lab Class, and was intersting`);
 console.log(`April 23th  The first time all MT 10th graders come to class`);
 console.log(`April 24th  Speach for MT10`);
-console.log(`April 25th  `);
-console.log(`April 26th  `);
-console.log(`April 27th  `);
-console.log(`April 28th  `);
+console.log(`April 25th  today I was at home doing school homework and did not concentrate on studying well. `);
+console.log(`April 26th  probelma with the schedule, problem with the computer rooms `);
+console.log(`April 27th  💀 `);
+console.log(`April 28th  STAR THE REST OF MY BIG CHANCE`);
 
 
