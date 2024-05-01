@@ -26,6 +26,6 @@ console.log(`April 25th  today I was at home doing school homework and did not c
 console.log(`April 26th  probelma with the schedule, problem with the computer rooms `);
 console.log(`April 27th  💀 `);
 console.log(`April 28th  STAR THE REST OF MY BIG CHANCE`);
-console.log(`April 29th  `);
+console.log(`April 29th  Today  i showed my lab students all my  `);
 
 
