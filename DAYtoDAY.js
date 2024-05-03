@@ -28,5 +28,7 @@ console.log(`April 27th  💀 `);
 console.log(`April 28th  STAR THE REST OF MY BIG CHANCE`);
 console.log(`April 29th  Today  i showed my lab students all my  `);
 console.log(`April 30th  Good class with my  MT 10º studens , with the pet visist  `);
+console.log(`April 1th   today was a holiday and I was working on organizing some things for the study plan. `);
+console.log(`April 2th   Thurdayyy... basci day , but in the end on the day i was workin in the medellin digital `);
 
 
