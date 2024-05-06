@@ -12,9 +12,9 @@ console.log(`April 11th we save the oportunity the change day to day`);
 console.log(`April 12th I consfiused abou take the sound`);
 console.log(`April 13th i didnt feel confitbale, cus  the thesicion was in my head`);
 console.log(`April 14th it was an interesting day, trying to reorganize my routine.s `);
-console.log(`April 15th booring day in anormal journary in the collage `);
-console.log(`April 16th it was a good day, I was very strict with my students `);
-console.log(`April 17th it was a grate day with my students practice SQL for the first time  `);
+console.log(`April 15th  booring day in anormal journary in the collage `);
+console.log(`April 16th  it was a good day, I was very strict with my students `);
+console.log(`April 17th  it was a grate day with my students practice SQL for the first time  `);
 console.log(`April 18th  I was working inn the journary `);
 console.log(`April 19th  I felt a good ambiance at school. `);
 console.log(`April 20th  I Lost the day`);
@@ -32,5 +32,6 @@ console.log(`April 1th   today was a holiday and I was working on organizing som
 console.log(`April 2th   Thurdayyy... basci day , but in the end on the day i was workin in the medellin digital `);
 console.log(`April 3th   friday, simple day `);
 console.log(`April 4th   saturday, i was watching PG, but before i study DOM manipulation `);
+console.log(`April 5th   Wear day , but iam ready to start my change `);
 
 
