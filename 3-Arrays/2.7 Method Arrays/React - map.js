@@ -91,24 +91,24 @@ console.log(`es ${someado} que algun elemento coincide con la condicion`);
 
 
 //%3
+/*   
+  // arrTeam = greatsTeams.map( e => e.team)
+  // arrTeam = greatsTeams.map( e =>{
+  //     return {...e, sport: 'soccer'}
+  // })
+  // console.log(arrTeam);
   
-  arrTeam = greatsTeams.map( e => e.team)
-  arrTeam = greatsTeams.map( e =>{
-      return {...e, sport: 'soccer'}
-  })
-  console.log(arrTeam);
-  
-  title = greatsTeams
-    .map((e) => e.titulos)
-    .reduce((obj, item) => {
-      if (!obj[item]) {
-        obj[item] = 1;
-      } else {
-        obj[item] += 1;
-      }
-      return obj;
-    }, {});
-  
+  // title = greatsTeams
+  //   .map((e) => e.titulos)
+  //   .reduce((obj, item) => {
+  //     if (!obj[item]) {
+  //       obj[item] = 1;
+  //     } else {
+  //       obj[item] += 1;
+  //     }
+  //     return obj;
+  //   }, {});
+   */
   
   let parrafo = "si yo considero que yeffer es una gran persona, entonces yeffer debe, mirar a yeffer y pensarlo bien";
   
@@ -177,4 +177,6 @@ const nueve = personas.map( e => ({
     edad : e.edad,
     fullName: `${e.nombre} is ${e.edad}`
 }));
+
+
 
