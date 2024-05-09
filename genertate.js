@@ -1,43 +1,69 @@
-const numeros = [1, 2, 3, 4, 5];
+let array = [1, 2, 3, 4, 5];
 
+// push()
+array.push(6);
+// Modified Array: [1, 2, 3, 4, 5, 6]
 
-// Método push()
-numeros.push(6);
-console.log(numeros); // Output: [1, 2, 3, 4, 5, 6]
+// pop()
+let popped = array.pop();
+// Popped Element: 6
 
-// Método pop()
-const ultimoNumero = numeros.pop();
-console.log(ultimoNumero); // Output: 6
+// forEach()
+array.forEach(element => {
+    console.log(element);
+});
+// Output:
+// 1
+// 2
+// 3
+// 4
+// 5
 
-// Método shift()
-const primerNumero = numeros.shift();
-console.log(primerNumero); // Output: 1
+// map()
+let doubled = array.map(element => element * 2);
+// Doubled Array: [2, 4, 6, 8, 10]
 
-// Método unshift()
-numeros.unshift(0);
-console.log(numeros); // Output: [0, 2, 3, 4, 5]
+// filter()
+let evenNumbers = array.filter(element => element % 2 === 0);
+// Even Numbers: [2, 4]
 
-// Método slice()
-const subArray = numeros.slice(2, 4);
-console.log(subArray); // Output: [3, 4]
+// reduce()
+let sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// Sum: 15
 
-// Método splice()
-numeros.splice(1, 2);
-console.log(numeros); // Output: [0, 4, 5]
+// find()
+let found = array.find(element => element > 3);
+// Found Element: 4
 
-// Método concat()
-const otroArray = [6, 7, 8];
-const arrayConcatenado = numeros.concat(otroArray);
-console.log(arrayConcatenado); // Output: [0, 4, 5, 6, 7, 8]
+// indexOf()
+let index = array.indexOf(3);
+// Index of 3: 2
 
-// Método join()
-const arrayComoString = numeros.join("-");
-console.log(arrayComoString); // Output: "0-4-5"
+// join()
+let joined = array.join("-");
+// Joined String: "1-2-3-4-5"
 
-// Método reverse()
-numeros.reverse();
-console.log(numeros); // Output: [5, 4, 0]
+// slice()
+let sliced = array.slice(1, 3);
+// Sliced Array: [2, 3]
 
-// Método sort()
-numeros.sort();
-console.log(numeros); // Output: [0, 4, 5]
+// splice()
+array.splice(2, 1);
+// Modified Array: [1, 2, 4, 5]
+
+// shift()
+let shifted = array.shift();
+// Shifted Element: 1
+
+// unshift()
+array.unshift(0);
+// Modified Array: [0, 1, 2, 4, 5]
+
+// every()
+let allGreaterThanZero = array.every(element => element > 0);
+// All greater than zero: false
+
+// includes()
+let includesThree = array.includes(3);
+// Includes 3: false
+
