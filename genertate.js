@@ -295,3 +295,43 @@ let values = array.values();
 // entries()
 let entries = array.entries();
 // Entries: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]
+
+
+
+
+
+
+
+
+// Exercise 1: Multiply each element in the array by 2
+let multipliedArray = array.map(element => element * 2);
+
+// Exercise 2: Convert each element in the array to a string
+let stringArray = array.map(element => String(element));
+
+// Exercise 3: Square each element in the array
+let squaredArray = array.map(element => element ** 2);
+
+// Exercise 4: Convert each element in the array to its absolute value
+let absoluteArray = array.map(element => Math.abs(element));
+
+// Exercise 5: Convert each element in the array to its square root
+let squareRootArray = array.map(element => Math.sqrt(element));
+
+
+
+
+// Exercise 1: Convert each element in the array to uppercase
+let uppercaseArray = array.map(element => element.toUpperCase());
+
+// Exercise 2: Multiply each element in the array by its index
+let multipliedByIndexArray = array.map((element, index) => element * index);
+
+// Exercise 3: Convert each element in the array to its binary representation
+let binaryArray = array.map(element => element.toString(2));
+
+// Exercise 4: Add a prefix to each element in the array
+let prefixedArray = array.map(element => "Prefix " + element);
+
+// Exercise 5: Calculate the square of the sum of each element and its index
+let squaredSumArray = array.map((element, index) => (element + index) ** 2);
