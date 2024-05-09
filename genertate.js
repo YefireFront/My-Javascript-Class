@@ -63,6 +63,7 @@ array.unshift(0);
 let allGreaterThanZero = array.every(element => element > 0);
 // All greater than zero: false
 
+
 // includes()
 let includesThree = array.includes(3);
 // Includes 3: false
