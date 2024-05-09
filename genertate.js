@@ -68,3 +68,51 @@ let allGreaterThanZero = array.every(element => element > 0);
 let includesThree = array.includes(3);
 // Includes 3: false
 
+
+
+
+
+// concat()
+let newArray = array.concat([6, 7, 8]);
+// Concatenated Array: [1, 2, 3, 4, 5, 6, 7, 8]
+
+// reverse()
+let reversedArray = array.reverse();
+// Reversed Array: [5, 4, 3, 2, 1]
+
+// sort()
+let sortedArray = array.sort();
+// Sorted Array: [1, 2, 3, 4, 5]
+
+// fill()
+let filledArray = array.fill(0, 2, 4);
+// Filled Array: [1, 2, 0, 0, 5]
+
+// findIndex()
+let foundIndex = array.findIndex(element => element > 3);
+// Index of Found Element: 3
+
+// lastIndexOf()
+let lastIndex = array.lastIndexOf(2);
+// Last Index of 2: 1
+
+// flat()
+let nestedArray = [1, [2, 3], [4, [5]]];
+let flattenedArray = nestedArray.flat();
+// Flattened Array: [1, 2, 3, 4, [5]]
+
+// flatMap()
+let mappedArray = array.flatMap(element => [element, element * 2]);
+// Mapped Array: [1, 2, 2, 4, 3, 6, 4, 8, 5, 10]
+
+// keys()
+let keys = array.keys();
+// Keys: [0, 1, 2, 3, 4]
+
+// values()
+let values = array.values();
+// Values: [1, 2, 3, 4, 5]
+
+// entries()
+let entries = array.entries();
+// Entries: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]
