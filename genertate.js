@@ -335,3 +335,6 @@ let prefixedArray = array.map(element => "Prefix " + element);
 
 // Exercise 5: Calculate the square of the sum of each element and its index
 let squaredSumArray = array.map((element, index) => (element + index) ** 2);
+
+
+
