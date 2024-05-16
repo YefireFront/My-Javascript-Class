@@ -41,8 +41,8 @@ console.log(`April 10th   talk eith the rector aboyut Programin festival and sta
 console.log(`April 11th   simple day a watch PG`);
 console.log(`April 12th   finished PG`);
 console.log(`April 13th   holly day and did nothing special`);
-console.log(`April 14th   `);
-console.log(`April 15th   `);
+console.log(`April 14th   otganize my routine a practice a little bit`);
+console.log(`April 15th   teachers day. i bought some thin for the house, and practice My SQL`);
 console.log(`April 16th   `);
 
 
