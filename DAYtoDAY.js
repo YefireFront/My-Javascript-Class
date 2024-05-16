@@ -35,7 +35,7 @@ console.log(`April 4th   saturday, i was watching PG, but before i study DOM man
 console.log(`April 5th   Wear day , but iam ready to start my change `);
 console.log(`April 6th   In the lab today practice array method and a bit DOM`);
 console.log(`April 7th   i talked seriusly with the MT 10º, bu a feel wear`);
-console.log(`April 8th   it was a good day`);
+console.log(`April 8th   it was a good day, champions day, but we worked in BD suceccfully`);
 console.log(`April 9th   `);
 console.log(`April 10th   `);
 console.log(`April 11th   `);
