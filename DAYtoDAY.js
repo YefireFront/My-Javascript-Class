@@ -40,7 +40,7 @@ console.log(`April 9th   `);
 console.log(`April 10th   talk eith the rector aboyut Programin festival and star my vacation`);
 console.log(`April 11th   simple day a watch PG`);
 console.log(`April 12th   finished PG`);
-console.log(`April 13th   `);
+console.log(`April 13th   holly day and did nothing special`);
 console.log(`April 14th   `);
 console.log(`April 15th   `);
 console.log(`April 16th   `);
