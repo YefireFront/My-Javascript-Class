@@ -1,27 +1,18 @@
-let cerveza = 20000
-let berad = 20000
-let cerv = 20000
-let get = 20000
+let divi = [10 , 2, 52, 25, 8]
 
+let div = 0
 
+let fn = () =>{
+    for (let i = 0; i < divi.length; i++) {
 
-//Cantiodades 
-
-
-
-const compras = {
-    cerveza : {
-        valor : 1500,
-        cantidad: 4
-    },
-    cocteles :{
-        valor : 1500,
-        cantidad:2
-    },
-    panes : {
-        valor : 20000,
-        cantidad: 8
+        div = divi[i] / divi[i + 1]
+        
+        if(divi[i - 1] == divi[i - 1]){
+            
+        }
+        console.log("el resultado es:" + div)
     }
+ 
 }
 
-
+fn()
