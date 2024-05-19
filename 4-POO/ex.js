@@ -1,20 +1,21 @@
-
 const jugador1 = {
     nombre: "Cristiano Ronaldo",
     edad: 36,
     equipo: "Manchester United",
     nacionalidad: "Portugal",
     posicion: "Delantero",
+    lesionado: false,
     estadisticas: {
         partidosJugados: 900,
         goles: 800,
         asistencias: 200,
         tarjetasAmarillas: 60,
-        tarjetasRojas: 4
-    },
+        tarjetasRojas: 4,
+        estatura: null
+    }, 
     premios: [
         { nombre: "Balón de Oro", año: 2008, descripcion: "Mejor jugador del mundo" },
-        { nombre: "Bota de Oro", año: 2014, descripcion: "Máximo goleador de Europa" },
+        { nombre: "Bota de Oro", año: 2014, descripcion: "Máximo goleador de Europa", activo: true },
         { nombre: "FIFA World Player", año: 2008, descripcion: "Mejor jugador del mundo según la FIFA" }
     ],
     lesiones: [
@@ -24,8 +25,10 @@ const jugador1 = {
     redesSociales: {
         twitter: "@Cristiano",
         instagram: "@Cristiano",
-        facebook: "Cristiano Ronaldo"
-    }
+        facebook: "Cristiano Ronaldo",
+        tikTok: undefined
+    },
+    salarioAnual: null,
 };
 
 const jugador2 = {
@@ -34,6 +37,7 @@ const jugador2 = {
     equipo: "Paris Saint-Germain",
     nacionalidad: "Brasil",
     posicion: "Delantero",
+    salarioAnual: undefined,
     estadisticas: {
         partidosJugados: 600,
         goles: 300,
@@ -53,8 +57,10 @@ const jugador2 = {
     redesSociales: {
         twitter: "@neymarjr",
         instagram: "@neymarjr",
-        facebook: "Neymar Jr"
-    }
+        facebook: "Neymar Jr",
+        linkedin: null
+    },
+    lesionado: true,
 };
 
 const jugador3 = {
@@ -62,6 +68,7 @@ const jugador3 = {
     edad: 33,
     equipo: "Bayern Munich",
     nacionalidad: "Polonia",
+    lesionado: false,
     posicion: "Delantero",
     estadisticas: {
         partidosJugados: 700,
@@ -73,7 +80,7 @@ const jugador3 = {
     premios: [
         { nombre: "Balón de Oro", año: 2021, descripcion: "Mejor jugador del mundo" },
         { nombre: "Bota de Oro", año: 2021, descripcion: "Máximo goleador de Europa" },
-        { nombre: "FIFA World Player", año: 2021, descripcion: "Mejor jugador del mundo según la FIFA" }
+        { nombre: "FIFA World Player", año: 2021, descripcion: "Mejor jugador del mundo según la FIFA", activo: true }
     ],
     lesiones: [
         { tipo: "Lesión en la pierna", duracion: "2 semanas" },
@@ -83,7 +90,8 @@ const jugador3 = {
         twitter: "@lewy_official",
         instagram: "@_rl9",
         facebook: "Robert Lewandowski"
-    }
+    },
+    salarioAnual: null,
 };
 
 const jugador4 = {
@@ -92,6 +100,7 @@ const jugador4 = {
     equipo: "Manchester City",
     nacionalidad: "Bélgica",
     posicion: "Centrocampista",
+    salarioAnual: undefined,
     estadisticas: {
         partidosJugados: 500,
         goles: 100,
@@ -101,7 +110,7 @@ const jugador4 = {
     },
     premios: [
         { nombre: "Balón de Oro", año: 2022, descripcion: "Mejor jugador del mundo" },
-        { nombre: "Bota de Oro", año: 2020, descripcion: "Máximo goleador de Europa" },
+        { nombre: "Bota de Oro", año: 2020, descripcion: "Máximo goleador de Europa", activo: true },
         { nombre: "FIFA World Player", año: 2022, descripcion: "Mejor jugador del mundo según la FIFA" }
     ],
     lesiones: [
@@ -111,8 +120,10 @@ const jugador4 = {
     redesSociales: {
         twitter: "@DeBruyneKev",
         instagram: "@kevindebruyne",
-        facebook: "Kevin De Bruyne"
-    }
+        facebook: "Kevin De Bruyne",
+        linkedin: null
+    },
+    lesionado: true,
 };
 
 const jugador5 = {
@@ -120,6 +131,7 @@ const jugador5 = {
     edad: 35,
     equipo: "Paris Saint-Germain",
     nacionalidad: "España",
+    lesionado: false,
     posicion: "Defensa",
     estadisticas: {
         partidosJugados: 600,
@@ -131,7 +143,7 @@ const jugador5 = {
     premios: [
         { nombre: "Balón de Oro", año: 2014, descripcion: "Mejor jugador del mundo" },
         { nombre: "Bota de Oro", año: 2012, descripcion: "Máximo goleador de Europa" },
-        { nombre: "FIFA World Player", año: 2014, descripcion: "Mejor jugador del mundo según la FIFA" }
+        { nombre: "FIFA World Player", año: 2014, descripcion: "Mejor jugador del mundo según la FIFA", activo: true }
     ],
     lesiones: [
         { tipo: "Lesión en el gemelo", duracion: "2 semanas" },
@@ -141,7 +153,8 @@ const jugador5 = {
         twitter: "@SergioRamos",
         instagram: "@sergioramos",
         facebook: "Sergio Ramos"
-    }
+    },
+    salarioAnual: undefined,
 };
 
 const jugador6 = {
@@ -150,12 +163,14 @@ const jugador6 = {
     equipo: "Paris Saint-Germain",
     nacionalidad: "Francia",
     posicion: "Delantero",
+    lesionado: false,
     estadisticas: {
         partidosJugados: 200,
         goles: 150,
         asistencias: 100,
         tarjetasAmarillas: 20,
-        tarjetasRojas: 0
+        tarjetasRojas: 0,
+        estatura: null
     },
     premios: [
         { nombre: "Balón de Oro", año: 2022, descripcion: "Mejor jugador del mundo" },
@@ -169,8 +184,10 @@ const jugador6 = {
     redesSociales: {
         twitter: "@KMbappe",
         instagram: "@k.mbappe",
-        facebook: "Kylian Mbappé"
-    }
+        facebook: "Kylian Mbappé",
+        tikTok: undefined
+    },
+    salarioAnual: null,
 };
 
 const jugador7 = {
@@ -178,6 +195,7 @@ const jugador7 = {
     edad: 34,
     equipo: "Atlético Madrid",
     nacionalidad: "Uruguay",
+    lesionado: false,
     posicion: "Delantero",
     estadisticas: {
         partidosJugados: 700,
@@ -189,7 +207,7 @@ const jugador7 = {
     premios: [
         { nombre: "Balón de Oro", año: 2014, descripcion: "Mejor jugador del mundo" },
         { nombre: "Bota de Oro", año: 2016, descripcion: "Máximo goleador de Europa" },
-        { nombre: "FIFA World Player", año: 2014, descripcion: "Mejor jugador del mundo según la FIFA" }
+        { nombre: "FIFA World Player", año: 2014, descripcion: "Mejor jugador del mundo según la FIFA", activo: true }
     ],
     lesiones: [
         { tipo: "Lesión en la rodilla", duracion: "3 semanas" },
@@ -199,7 +217,8 @@ const jugador7 = {
         twitter: "@LuisSuarez9",
         instagram: "@luissuarez9",
         facebook: "Luis Suárez"
-    }
+    },
+    salarioAnual: undefined,
 };
 
 const jugador8 = {
@@ -207,46 +226,51 @@ const jugador8 = {
     edad: 29,
     equipo: "Liverpool",
     nacionalidad: "Egipto",
+    lesionado: true,
     posicion: "Delantero",
     estadisticas: {
         partidosJugados: 400,
         goles: 250,
-        asistencias: 100,
-        tarjetasAmarillas: 30,
-        tarjetasRojas: 2
+        asistencias: 150,
+        tarjetasAmarillas: 10,
+        tarjetasRojas: 1,
+        estatura: null
     },
     premios: [
-        { nombre: "Balón de Oro", año: 2018, descripcion: "Mejor jugador del mundo" },
+        { nombre: "Balón de Oro", año: 2021, descripcion: "Mejor jugador del mundo" },
         { nombre: "Bota de Oro", año: 2018, descripcion: "Máximo goleador de Europa" },
-        { nombre: "FIFA World Player", año: 2018, descripcion: "Mejor jugador del mundo según la FIFA" }
+        { nombre: "FIFA World Player", año: 2021, descripcion: "Mejor jugador del mundo según la FIFA" }
     ],
     lesiones: [
         { tipo: "Lesión en el hombro", duracion: "2 semanas" },
-        { tipo: "Lesión en el muslo", duracion: "3 semanas" }
+        { tipo: "Lesión en el pie", duracion: "3 semanas" }
     ],
     redesSociales: {
         twitter: "@MoSalah",
         instagram: "@mosalah",
-        facebook: "Mohamed Salah"
-    }
+        facebook: "Mohamed Salah",
+        tikTok: undefined
+    },
+    salarioAnual: null,
 };
-
 const jugador9 = {
     nombre: "Gareth Bale",
     edad: 32,
     equipo: "Real Madrid",
     nacionalidad: "Gales",
+    lesionado: false,
     posicion: "Delantero",
     estadisticas: {
         partidosJugados: 600,
         goles: 200,
         asistencias: 150,
         tarjetasAmarillas: 40,
-        tarjetasRojas: 1
+        tarjetasRojas: 1,
+        estatura: null
     },
     premios: [
         { nombre: "Balón de Oro", año: 2016, descripcion: "Mejor jugador del mundo" },
-        { nombre: "Bota de Oro", año: 2013, descripcion: "Máximo goleador de Europa" },
+        { nombre: "Bota de Oro", año: 2013, descripcion: "Máximo goleador de Europa", activo: true },
         { nombre: "FIFA World Player", año: 2016, descripcion: "Mejor jugador del mundo según la FIFA" }
     ],
     lesiones: [
@@ -256,8 +280,10 @@ const jugador9 = {
     redesSociales: {
         twitter: "@GarethBale11",
         instagram: "@garethbale11",
-        facebook: "Gareth Bale"
-    }
+        facebook: "Gareth Bale",
+        linkedin: undefined
+    },
+    salarioAnual: null
 };
 
 const jugador10 = {
@@ -265,17 +291,19 @@ const jugador10 = {
     edad: 28,
     equipo: "Tottenham Hotspur",
     nacionalidad: "Inglaterra",
+    lesionado: true,
     posicion: "Delantero",
     estadisticas: {
         partidosJugados: 500,
         goles: 300,
         asistencias: 200,
         tarjetasAmarillas: 50,
-        tarjetasRojas: 2
+        tarjetasRojas: 2,
+        estatura: null
     },
     premios: [
         { nombre: "Balón de Oro", año: 2023, descripcion: "Mejor jugador del mundo" },
-        { nombre: "Bota de Oro", año: 2021, descripcion: "Máximo goleador de Europa" },
+        { nombre: "Bota de Oro", año: 2021, descripcion: "Máximo goleador de Europa", activo: true },
         { nombre: "FIFA World Player", año: 2023, descripcion: "Mejor jugador del mundo según la FIFA" }
     ],
     lesiones: [
@@ -285,9 +313,12 @@ const jugador10 = {
     redesSociales: {
         twitter: "@HKane",
         instagram: "@harrykane",
-        facebook: "Harry Kane"
-    }
+        facebook: "Harry Kane",
+        tikTok: undefined
+    },
+    salarioAnual: null
 };
+
 
 const jugadores = [jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8, jugador9, jugador10];
 
