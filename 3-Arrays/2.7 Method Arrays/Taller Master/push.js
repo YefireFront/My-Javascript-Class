@@ -6,6 +6,7 @@
  */
 
 //* JUNIOR
+
 // 1.	Agregar Elemento: Escribe una función que tome un array y un elemento como argumentos, y utilice el método push() para agregar el elemento al final del array. Devuelve el array actualizado
 
 const arr = [5, 7, 2, 6, 9];
@@ -14,7 +15,6 @@ function add(arr, elm) {
   arr.push(elm);
   return arr;
 }
-let Jres1 = add(arr, 15);
 
 // 2.	Agregar Múltiples Elementos: Crea una función que tome un array y una lista de elementos como argumentos. Utiliza el método push() para agregar cada elemento de la lista al final del array. Devuelve el array actualizado.
 
@@ -23,7 +23,6 @@ function addsome(arr, ...elm) {
   arr.push(...elm);
   return arr;
 }
-let Jres2 = addsome(arr, 15, 21, 5, 8, 6);
 
 // 3.	Agregar Números Pares: Escribe una función que tome un array de números como argumento y agregue todos los números pares del 1 al 10 utilizando el método push(). Devuelve el array actualizado.
 
@@ -38,7 +37,6 @@ function pares(arr) {
 
   return arrPar;
 }
-let Jres3 = pares(arr);
 
 // 4.	Agregar Strings: Crea una función que tome un array y una cadena como argumentos, y use push() para agregar la cadena al final del array. Devuelve el array actualizado.
 
@@ -46,7 +44,6 @@ function addString(arr, str) {
   arr.push(str);
   return arr;
 }
-let Jres4 = addString(arr, "Hola");
 
 // 5.	Agregar Elemento Condicionado: Escribe una función que tome un array y un elemento como argumentos, y use push() para agregar el elemento al final del array solo si el elemento no está presente en el array. Devuelve el array actualizado.
 
@@ -63,7 +60,8 @@ function addElemt(arr, elm) {
   if (!be) arr.push(elm);
   return arr;
 }
-let Jres5 = addElemt(arr, 8);
+
+
 
 //* SEMI
 
@@ -72,6 +70,7 @@ let Jres5 = addElemt(arr, 8);
 
 const arr2 = [1, 2, 3];
 const arr3 = [3, 2, 5];
+
 function addMiddle(arr, elm) {
   let cabeza = [];
   let cola = [];
@@ -98,7 +97,6 @@ function addMiddle(arr, elm) {
     return [...cabeza, ...cola];
   }
 }
-let Mres1 = addMiddle(arr2, 15);
 
 // 2.	Agregar Único: Escribe una función que tome un array y un elemento como argumentos, y utilice push() para agregar el elemento solo si no está presente en el array. Devuelve el array actualizado.
 
@@ -139,10 +137,8 @@ function arrInarr2(arr1, arr2) {
 }
 
 
-
 // 4.	Agregar Elementos Condicionados: Escribe una función que tome un array y una función de condición como argumentos. Utiliza push() 
 // para agregar elementos al array solo si cumplen con la condición proporcionada por la función. Devuelve el array actualizado.
-
 
 
 function par(elm) {
@@ -187,8 +183,3 @@ function addInIndex(arr , index , elm) {
     return [...cabeza,...cola]
 }
 
-
-
-arr
-const Sres5 = addInIndex(arr, 3,'we Will the champíons')
-Sres5

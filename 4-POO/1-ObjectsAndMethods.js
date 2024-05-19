@@ -1,7 +1,7 @@
 //!Flyweight
 
 
-//*METHOD
+//*                                       
 
 
 /*📌 //%Object.values()
