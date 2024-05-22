@@ -47,6 +47,6 @@ console.log(`April 16th   i talked with myself and feel good `);
 console.log(`April 17th   just 3 pull in the bar 😭`);
 console.log(`April 18th   Good day win UI and Valeris Project 😭`);
 console.log(`April 19th   Hard Programing Practice`);
-console.log(`April 21th   🌧 crazy inn the mornig. now i gonna practice recat `);
+console.log(`April 21th   🌧 crazy inn the mornig. now i gonna practice recat. FAILED `);
 
 
