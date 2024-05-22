@@ -1,2 +1,5 @@
-let profesor = ' yeffer'
+let profesor = ''
 
+if (profesor === 'español' || profesor =='ingles') {
+    console.log('valido')
+}
