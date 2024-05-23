@@ -134,7 +134,7 @@ console.log(mapeado_Name);
 console.log(`es ${everyado} que todos los  elementos coinciden con la condicion`);
 
 
-*/
+
 
 
 //%5
