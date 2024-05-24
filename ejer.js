@@ -1,34 +1,54 @@
-let divi = [10 , 2, 52, 25, 8]
-let fruits = ['apple', 'banana', 'orange'];
+function outerFunction() {
+    var outerVariable = 'Hello';
 
+    function innerFunction() {
+        console.log(outerVariable);
+    }
 
-divi.forEach((element) => {
-    console.log(element);
-});
-
-
-fruits.forEach((fruit) => {
-    console.log(fruit);
-});
-
-
-let num = 42;
-
-if (typeof num === 'number') {
-    console.log('The variable num is of type number');
-} else {
-    console.log('The variable num is not of type number');
+    return innerFunction;
 }
 
+var closureExample = outerFunction();
+closureExample(); // Output: Hello
 
 
-let numbers = [5, 8, 12, 15, 20];
 
-let foundNumber = numbers.find((number) => number > 100);
+function createBankAccount(initialBalance) {
+    var balance = initialBalance;
 
-console.log(foundNumber);
+    function deposit(amount) {
+        balance += amount;
+        console.log('Deposit:', amount);
+        console.log('New balance:', balance);
+    }
 
+    function withdraw(amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            console.log('Withdraw:', amount);
+            console.log('New balance:', balance);
+        } else {
+            console.log('Insufficient funds');
+        }
+    }
 
-numbers.forEach(n=>{
-    console.log(n**2)
-})
+    function getBalance() {
+        console.log('Current balance:', balance);
+    }
+
+    return {
+        deposit: deposit,
+        withdraw: withdraw,
+        getBalance: getBalance
+    };
+}
+
+var account1 = createBankAccount(1000);
+account1.deposit(500); // Output: Deposit: 500, New balance: 1500
+account1.withdraw(200); // Output: Withdraw: 200, New balance: 1300
+account1.getBalance(); // Output: Current balance: 1300
+
+var account2 = createBankAccount(2000);
+account2.deposit(1000); // Output: Deposit: 1000, New balance: 3000
+account2.withdraw(5000); // Output: Insufficient funds
+account2.getBalance(); // Output: Current balance: 3000
