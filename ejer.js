@@ -97,4 +97,14 @@ fetchData()
 
     example();
 
-    
+    function multiplyBy(factor) {
+        return function(number) {
+            return number * factor;
+        }
+    }
+
+    var multiplyByTwo = multiplyBy(2);
+    console.log(multiplyByTwo(5)); // Output: 10
+
+    var multiplyByThree = multiplyBy(3);
+    console.log(multiplyByThree(5)); // Output: 15
