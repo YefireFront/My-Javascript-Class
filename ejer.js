@@ -45,7 +45,7 @@ function createBankAccount(initialBalance) {
 
 var account1 = createBankAccount(1000);
 account1.deposit(500); // Output: Deposit: 500, New balance: 1500
-account1.withdraw(200); // Output: Withdraw: 200, New balance: 1300
+account1.withdraw(200); 
 account1.getBalance(); 
 
 var account2 = createBankAccount(2000);
