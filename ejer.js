@@ -114,3 +114,32 @@ fetchData()
 
 
     
+
+    class FootballMatch {
+        constructor(homeTeam, awayTeam) {
+            this.homeTeam = homeTeam;
+            this.awayTeam = awayTeam;
+            this.homeScore = 0;
+            this.awayScore = 0;
+        }
+
+        goal(team) {
+            if (team === this.homeTeam) {
+                this.homeScore++;
+            } else if (team === this.awayTeam) {
+                this.awayScore++;
+            } else {
+                console.log("Invalid team");
+            }
+        }
+
+        getScore() {
+            console.log(`${this.homeTeam} ${this.homeScore} - ${this.awayScore} ${this.awayTeam}`);
+        }
+    }
+
+    const match = new FootballMatch("Team A", "Team B");
+    match.goal("Team A");
+    match.goal("Team B");
+    match.goal("Team A");
+    match.getScore();
