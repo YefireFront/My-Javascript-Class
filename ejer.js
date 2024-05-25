@@ -108,3 +108,13 @@ fetchData()
 
     var multiplyByThree = multiplyBy(3);
     console.log(multiplyByThree(5)); // Output: 15
+
+
+
+
+
+    function greet(name) {
+        console.log('Hello, ' + name + '!');
+    }
+
+    greet('John'); // Output: Hello, John!
