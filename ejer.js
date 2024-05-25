@@ -49,7 +49,7 @@ account1.withdraw(200); // Output: Withdraw: 200, New balance: 1300
 account1.getBalance(); // Output: Current balance: 1300
 
 var account2 = createBankAccount(2000);
-account2.deposit(1000); // Output: Deposit: 1000, New balance: 3000
+account2.deposit(1000); 
 account2.withdraw(5000); 
 account2.getBalance(); 
 
