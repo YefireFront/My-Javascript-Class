@@ -55,3 +55,44 @@ account2.getBalance();
 
 
 
+
+
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        // Simulating an asynchronous operation
+        setTimeout(() => {
+            const data = 'Data fetched successfully';
+            resolve(data);
+        }, 2000);
+    });
+}
+
+fetchData()
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+
+
+    async function fetchData() {
+        return new Promise((resolve, reject) => {
+            // Simulating an asynchronous operation
+            setTimeout(() => {
+                const data = 'Data fetched successfully';
+                resolve(data);
+            }, 2000);
+        });
+    }
+
+    async function example() {
+        try {
+            const data = await fetchData();
+            console.log(data);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    example();
