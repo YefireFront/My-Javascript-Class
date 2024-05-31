@@ -134,7 +134,6 @@
 // match.getScore();
 
 
-let num = 52
 
 // Par
 // Impar
