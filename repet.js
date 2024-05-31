@@ -29,7 +29,5 @@
 };
 
 
-console.log(jugador.nombre);
-console.log(jugador["edad"]);
  
 
