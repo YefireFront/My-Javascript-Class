@@ -20,14 +20,4 @@
 // console.log(numerosRepetidos); 
 
 
- {
-    nombre: "John",
-    edad: 25,
-    equipo: null,
-    precio : 100
-    
-};
-
-
- 
 
