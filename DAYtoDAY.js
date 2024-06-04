@@ -59,5 +59,5 @@ console.log(`April 29th   Battle with Dofus`);
 console.log(`April 30th   Simple day..  stay dofus. i hope that the last dance`);
 console.log(`June  01th   it june WTF... RESET DAY`)
 console.log(`June  02th    ☠`)
-console.log(`June  03th    `)
+console.log(`June  03th    Really Sick`)
 
