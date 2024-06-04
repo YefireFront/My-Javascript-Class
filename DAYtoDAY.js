@@ -36,7 +36,7 @@ console.log(`April 5th   Wear day , but iam ready to start my change `);
 console.log(`April 6th   In the lab today practice array method and a bit DOM`);
 console.log(`April 7th   i talked seriusly with the MT 10º, bu a feel wear`);
 console.log(`April 8th   it was a good day, champions day, but we worked in BD suceccfully`);
-console.log(`April 9th   `);
+console.log(`April 9th   Lose this day`);
 console.log(`April 10th   talk eith the rector aboyut Programin festival and star my vacation`);
 console.log(`April 11th   simple day a watch PG`);
 console.log(`April 12th   finished PG`);
@@ -57,7 +57,7 @@ console.log(`April 27th   Im battling with my self`);
 console.log(`April 28th   MY DAD is here`);
 console.log(`April 29th   Battle with Dofus`);
 console.log(`April 30th   Simple day..  stay dofus. i hope that the last dance`);
-console.log(`June  01th    it june WTF... RESET DAY`)
-console.log(`June  02th    `)
+console.log(`June  01th   it june WTF... RESET DAY`)
+console.log(`June  02th    ☠`)
 console.log(`June  03th    `)
 
