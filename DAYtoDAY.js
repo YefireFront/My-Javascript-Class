@@ -61,6 +61,6 @@ console.log(`June  01th   it june WTF... RESET DAY`)
 console.log(`June  02th    ☠`)
 console.log(`June  03th    Really Sick`)
 console.log(`June  04th    START MY NEW LIFE`)
-console.log(`June  05th    `)
+console.log(`June  05th    Bad Notice about my little girl`)
 console.log(`June  05th    `)
 
