@@ -52,7 +52,10 @@ const jugador3 = new Jugador("Charlie", 20, 5);
 // Crear instancia de CasaDeApuestas
 const casaDeApuestas = new CasaDeApuestas();
 
-
+// Agregar jugadores a la casa de apuestas
+casaDeApuestas.agregarJugador(jugador1);
+casaDeApuestas.agregarJugador(jugador2);
+casaDeApuestas.agregarJugador(jugador3);
 
 // Iniciar el juego
 casaDeApuestas.iniciarJuego();
