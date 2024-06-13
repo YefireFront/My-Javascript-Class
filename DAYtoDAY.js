@@ -69,6 +69,6 @@ console.log(`June  09th   Final the rest of shit`)
 console.log(`June  10th   Holy day`) 
 console.log(`June  11th   Great class with the complete group LAB 10º`) 
 console.log(`June  12th   Sell Monitr & sell Nev & buy Bet`) 
-console.log(`June  13th   Sell Monitr & sell Nev & buy Bet`) 
+console.log(`June  13th   OJOOOOOO....`) 
 
 
