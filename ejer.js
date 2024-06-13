@@ -110,3 +110,83 @@ casaDeApuestas.iniciarJuego();
 
 
 
+
+
+// Clase Producto
+class Producto {
+    constructor(id, nombre, precio) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+}
+
+// Clase CarritoDeCompras
+class CarritoDeCompras {
+    constructor() {
+        this.productos = [];
+    }
+
+    agregarProducto(producto) {
+        this.productos.push(producto);
+    }
+
+    eliminarProducto(id) {
+        this.productos = this.productos.filter(producto => producto.id !== id);
+    }
+
+    obtenerTotal() {
+        return this.productos.reduce((total, producto) => total + producto.precio, 0);
+    }
+
+    vaciarCarrito() {
+        this.productos = [];
+    }
+}
+
+// Clase Orden
+class Orden {
+    constructor(cliente, productos) {
+        this.cliente = cliente;
+        this.productos = productos;
+        this.total = this.calcularTotal();
+        this.fecha = new Date();
+    }
+
+    calcularTotal() {
+        return this.productos.reduce((total, producto) => total + producto.precio, 0);
+    }
+}
+
+// Clase Cliente
+class Cliente {
+    constructor(id, nombre) {
+        this.id = id;
+        this.nombre = nombre;
+        this.carrito = new CarritoDeCompras();
+    }
+
+    realizarCompra() {
+        if (this.carrito.productos.length === 0) {
+            console.log("El carrito está vacío.");
+            return;
+        }
+
+        const orden = new Orden(this, this.carrito.productos);
+        this.carrito.vaciarCarrito();
+        console.log(`Orden realizada por ${this.nombre} el ${orden.fecha}`);
+        console.log(`Total de la orden: $${orden.total.toFixed(2)}`);
+        return orden;
+    }
+}
+
+// Ejemplo de uso
+const cliente1 = new Cliente(1, "Juan Pérez");
+const producto1 = new Producto(101, "Laptop", 1000);
+const producto2 = new Producto(102, "Mouse", 50);
+
+cliente1.carrito.agregarProducto(producto1);
+cliente1.carrito.agregarProducto(producto2);
+
+console.log(`Total en el carrito: $${cliente1.carrito.obtenerTotal().toFixed(2)}`);
+const orden1 = cliente1.realizarCompra();
