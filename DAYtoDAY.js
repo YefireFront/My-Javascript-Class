@@ -66,8 +66,8 @@ console.log(`June  06th   recovery my health`)
 console.log(`June  07th   Rset day`) 
 console.log(`June  08th   Day to day to day`) 
 console.log(`June  09th   Final the rest of shit`) 
-console.log(`June  10th   `) 
-console.log(`June  10th   `) 
-console.log(`June  11th   `) 
+console.log(`June  10th   Holy day`) 
+console.log(`June  11th   Great class with the complete group LAB 10º`) 
 console.log(`June  12th   `) 
+
 
