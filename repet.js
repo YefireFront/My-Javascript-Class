@@ -93,7 +93,11 @@ const teams = [
     new Team("Team D")
 ];
 
-
+const tournament = new Tournament(teams);
+tournament.playTournament();
+tournament.displayStandings();
+const winner = tournament.getWinner();
+console.log(`The winner is ${winner.getName()} with ${winner.getPoints()} points!`);
 
 
 
