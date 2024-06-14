@@ -104,7 +104,7 @@ casaDeApuestas.agregarJugador(jugador2);
 casaDeApuestas.agregarJugador(jugador3);
 
 // Iniciar el juego
-casaDeApuestas.iniciarJuego();
+
 
 
 
