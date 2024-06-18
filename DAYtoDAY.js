@@ -73,6 +73,6 @@ console.log(`June  13th   OJOOOOOO....`)
 console.log(`June  14th   Figthing with my self`) 
 console.log(`June  15th   In the Alanas examn dopler, she is okay... CC birthday, i dont know whether to go, i can `) 
 console.log(`June  16th   MY QUEEN BIRTH DAY ♥  🎉`) 
-console.log(`June  16th   MY QUEEN BIRTH DAY `) 
+console.log(`June  16th   MY  `) 
 
 
