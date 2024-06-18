@@ -29,7 +29,7 @@ class Jugador {
     // Método para actualizar el dinero del jugador después de una ronda
     actualizarDinero(resultado) {
         if (resultado) {
-            this.dinero += this.apuesta * 4; // El jugador gana 5 veces su apuesta, incluida la original
+            this.dinero += this.apuesta * 2; // El jugador gana 5 veces su apuesta, incluida la original
         } else {
             this.dinero -= this.apuesta;
         }
@@ -68,7 +68,7 @@ class CasaDeApuestas {
             jugador.mostrarInfo();
             const gano = jugador.numeroElegido === numeroGenerado;
             if (gano) {
-                console.log(`¡Felicidades ${jugador.nombre}! Has ganado ${jugador.apuesta * 5} unidades.`);
+                console.log(`¡Felicidades ${jugador.nombre}! Has ganado ${jugador.apuesta * 2} unidades.`);
             } else {
                 console.log(`Lo siento, ${jugador.nombre}. Has perdido tu apuesta de ${jugador.apuesta} unidades.`);
             }
@@ -78,23 +78,23 @@ class CasaDeApuestas {
     }
 
     // Método para iniciar el juego con múltiples rondas
-    iniciarJuego() {
-        let ronda = 1;
-        while (this.jugadores.some(jugador => jugador.tieneDinero())) {
-            console.log(`\n--- Ronda ${ronda} ---`);
-            this.jugadores.forEach(jugador => {
-                if (jugador.tieneDinero()) {
-                    const apuesta = parseInt(prompt(`¿Cuánto quieres apostar, ${jugador.nombre}?`));
-                    const numeroElegido = parseInt(prompt(`Elige un número entre 1 y 5, ${jugador.nombre}.`));
-                    if (jugador.realizarApuesta(apuesta, numeroElegido)) {
-                        this.iniciarRonda();
-                    }
-                }
-            });
-            ronda++;
-        }
-        console.log("El juego ha terminado.");
-    }
+    // iniciarJuego() {
+    //     let ronda = 1;
+    //     while (this.jugadores.some(jugador => jugador.tieneDinero())) {
+    //         console.log(`\n--- Ronda ${ronda} ---`);
+    //         this.jugadores.forEach(jugador => {
+    //             if (jugador.tieneDinero()) {
+    //                 const apuesta = parseInt(prompt(`¿Cuánto quieres apostar, ${jugador.nombre}?`));
+    //                 const numeroElegido = parseInt(prompt(`Elige un número entre 1 y 5, ${jugador.nombre}.`));
+    //                 if (jugador.realizarApuesta(apuesta, numeroElegido)) {
+    //                     this.iniciarRonda();
+    //                 }
+    //             }
+    //         });
+    //         ronda++;
+    //     }
+    //     console.log("El juego ha terminado.");
+    // }
 }
 
 // Crear instancias de Jugador
