@@ -9,10 +9,13 @@ class Jugador {
     realizarApuesta(apuesta, numeroElegido) {
         if (apuesta > this.dinero) {
             console.log(`No tienes suficiente dinero para apostar ${apuesta} unidades. Apostaras todo tu monot que es ${this.dinero}`);
-           
-        }else{
-            this.apuesta = apuesta;
+            this.apuesta = this.dinero;
             this.numeroElegido = numeroElegido;
+            
+        }else{
+            
+            this.numeroElegido = numeroElegido;
+            this.apuesta = apuesta;
 
         }
         
