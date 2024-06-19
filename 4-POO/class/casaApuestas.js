@@ -114,3 +114,4 @@ casaDeApuestas.agregarJugador(jugador3);
 jugador3.realizarApuesta(50, 3)
 jugador2.realizarApuesta(40, 1)
 jugador1.realizarApuesta(20, 2)
+jugador1.realizarApuesta(20, 2)
