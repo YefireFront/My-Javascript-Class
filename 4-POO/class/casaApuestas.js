@@ -110,10 +110,7 @@ casaDeApuestas.agregarJugador(jugador1);
 casaDeApuestas.agregarJugador(jugador2);
 casaDeApuestas.agregarJugador(jugador3);
 
-// Iniciar el juego
-
-
-
-
-
-
+// Jugadores Apuestan
+jugador3.realizarApuesta(50, 3)
+jugador2.realizarApuesta(40, 1)
+jugador1.realizarApuesta(20, 2)
