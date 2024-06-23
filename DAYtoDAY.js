@@ -78,7 +78,7 @@ console.log(`June  18th   DOFUS  `)
 console.log(`June  19th   DOFUS.. Iàm realluy confuse  `) 
 console.log(`June  20th   DOFUS`) 
 console.log(`June  21th   DOFUS I REALIZE a ispend 305K in this shit `) 
-console.log(`June  22th   Wonderfull Day with ALANA Paint `) 
+console.log(`June  22th   Wonderfull Day with ALANA Paint and My maind Shake`) 
 console.log(`June  23th    `) 
 
 
