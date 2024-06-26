@@ -82,6 +82,6 @@ console.log(`June  22th   Wonderfull Day with ALANA Paint and My maind Shake`)
 console.log(`June  23th   Desicive Day `) 
 console.log(`June  24th   👑 It's Over. Show me win `) 
 console.log(`June  25th    I Read again`) 
-console.log(`June  26th    `) 
+console.log(`June  26th    Reorganize my life`) 
 
 
