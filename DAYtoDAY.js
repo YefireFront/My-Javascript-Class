@@ -81,6 +81,6 @@ console.log(`June  21th   DOFUS I REALIZE a ispend 305K in this shit `)
 console.log(`June  22th   Wonderfull Day with ALANA Paint and My maind Shake`) 
 console.log(`June  23th   Desicive Day `) 
 console.log(`June  24th   👑 It's Over. Show me win `) 
-console.log(`June  25th    `) 
+console.log(`June  25th    I Read again`) 
 
 
