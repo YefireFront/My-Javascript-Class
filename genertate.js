@@ -34,8 +34,3 @@ promiseFunction()
 
 
 
-    try {
-        // Code to be executed here
-    } catch (error) {
-        console.error("Error:", error);
-    }
