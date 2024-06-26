@@ -31,3 +31,11 @@ promiseFunction()
     .catch(error => {
         console.error("Error en la promesa:", error);
     });
+
+
+
+    try {
+        // Code to be executed here
+    } catch (error) {
+        console.error("Error:", error);
+    }
