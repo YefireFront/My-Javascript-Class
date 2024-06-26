@@ -24,3 +24,10 @@ function promiseFunction() {
 asyncFunction();
 
 // Llamada a la promesa
+promiseFunction()
+    .then(() => {
+        console.log("Promesa resuelta");
+    })
+    .catch(error => {
+        console.error("Error en la promesa:", error);
+    });
