@@ -327,7 +327,5 @@ function validarGoles(jugadores) {
     return jugadoresConMasDe500Goles;
 }
 
-const jugadoresConMasDe500Goles = validarGoles(jugadores);
-console.log(jugadoresConMasDe500Goles);
 
 
