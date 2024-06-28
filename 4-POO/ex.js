@@ -1,9 +1,4 @@
 
-
-const jugadores = [jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8, jugador9, jugador10];
-
-
-
 const libro = {
     titulo: "Cien Años de Soledad",
     autor: "Gabriel García Márquez",

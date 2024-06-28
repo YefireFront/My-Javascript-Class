@@ -1,5 +1,5 @@
-// Clase Jugador
-class Jugador {
+// Clase Apostador
+class Apostador {
     constructor(nombre, dinero) {
         this.nombre = nombre;
         this.dinero = dinero;
@@ -97,10 +97,10 @@ class CasaDeApuestas {
     // }
 }
 
-// Crear instancias de Jugador
-const jugador1 = new Jugador("Alice", 100);
-const jugador2 = new Jugador("Bob", 100);
-const jugador3 = new Jugador("Charlie", 100);
+// Crear instancias de Apostador
+const jugador1 = new Apostador("Alice", 100);
+const jugador2 = new Apostador("Bob", 100);
+const jugador3 = new Apostador("Charlie", 100);
 
 // Crear instancia de CasaDeApuestas
 const casaDeApuestas = new CasaDeApuestas();
