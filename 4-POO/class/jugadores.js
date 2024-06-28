@@ -328,4 +328,6 @@ function validarGoles(jugadores) {
 }
 
 const jugadoresConMasDe500Goles = validarGoles(jugadores);
-console.log(jugadoresConMasDe500Goles);
+
+
+
