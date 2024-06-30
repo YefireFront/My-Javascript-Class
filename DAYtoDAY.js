@@ -87,6 +87,6 @@ console.log(`June  27th   I went to bed late talking to ka`)
 console.log(`June  28th   Important figthing day `) 
 console.log(`June  29th   Thinking day`) 
 console.log(`June  30th   THE LAST DANCE`) 
-console.log(`June  01th   `) 
+console.log(`June  01th    `) 
 
 
