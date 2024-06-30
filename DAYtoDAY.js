@@ -84,7 +84,7 @@ console.log(`June  24th   👑 It's Over. Show me win `)
 console.log(`June  25th   I Read again`) 
 console.log(`June  26th   Reorganize my life`) 
 console.log(`June  27th   I went to bed late talking to ka`) 
-console.log(`June  28th   Important figthing day  `) 
-console.log(`June  28th   Important figthing day  `) 
+console.log(`June  28th   Important figthing day `) 
+console.log(`June  28th   `) 
 
 
