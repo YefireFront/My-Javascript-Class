@@ -83,7 +83,7 @@ console.log(`June  23th   Desicive Day `)
 console.log(`June  24th   👑 It's Over. Show me win `) 
 console.log(`June  25th   I Read again`) 
 console.log(`June  26th   Reorganize my life`) 
-console.log(`June  27th   S `) 
-console.log(`June  27th   S `) 
+console.log(`June  27th    `) 
+console.log(`June  28th   S `) 
 
 
