@@ -88,5 +88,6 @@ console.log(`June  28th   Important figthing day `)
 console.log(`June  29th   Thinking day`) 
 console.log(`June  30th   THE LAST DANCE`) 
 console.log(`June  01th    `) 
+console.log(`June  01th    `) 
 
 
