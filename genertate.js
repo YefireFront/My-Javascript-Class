@@ -2,5 +2,10 @@
 class People {
     name;
     code;
-    prhase;
+    phrase;
+
+    sayHello() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
 }
+
