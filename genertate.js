@@ -51,4 +51,3 @@ partido2.simularResultado();
 // Imprimir los puntos de cada equipo
 console.log(`${equipo1.nombre}: ${equipo1.puntos} puntos`);
 console.log(`${equipo2.nombre}: ${equipo2.puntos} puntos`);
-console.log(`${equipo3.nombre}: ${equipo3.puntos} puntos`);
