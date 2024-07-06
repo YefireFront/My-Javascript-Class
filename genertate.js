@@ -49,4 +49,3 @@ partido1.simularResultado();
 partido2.simularResultado();
 
 // Imprimir los puntos de cada equipo
-console.log(`${equipo1.nombre}: ${equipo1.puntos} puntos`);
