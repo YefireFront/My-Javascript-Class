@@ -52,4 +52,3 @@ partido2.simularResultado();
 console.log(`${equipo1.nombre}: ${equipo1.puntos} puntos`);
 console.log(`${equipo2.nombre}: ${equipo2.puntos} puntos`);
 console.log(`${equipo3.nombre}: ${equipo3.puntos} puntos`);
-console.log(`${equipo4.nombre}: ${equipo4.puntos} puntos`);
