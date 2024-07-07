@@ -93,6 +93,6 @@ console.log(`July  03th    RECOVERY`)
 console.log(`July  04th    RECOVERY`) 
 console.log(`July  05th    KAROL BRK`) 
 console.log(`July  06th    preparing my return`) 
-console.log(`July  06th    `) 
+console.log(`July  06th    MY LAST DANCE`) 
 
 
