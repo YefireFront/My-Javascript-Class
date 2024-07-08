@@ -322,12 +322,5 @@ const jugador10 = {
 
 const jugadores = [jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8, jugador9, jugador10];
 
-function validarGoles(jugadores) {
-    const jugadoresConMasDe500Goles = jugadores.filter(jugador => jugador.estadisticas.goles > 500);
-    return jugadoresConMasDe500Goles;
-}
-
-const jugadoresConMasDe500Goles = validarGoles(jugadores);
-console.log(jugadoresConMasDe500Goles);
 
 
