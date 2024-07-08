@@ -41,10 +41,10 @@ class Tournament {
     }
 
     displayStandings() {
-        this.teams.sort((a, b) => b.points - a.points || b.goalsFor - b.goalsAgainst - (a.goalsFor - a.goalsAgainst));
+        this.teams.sort((a, b) => b.points - a.points || (b.goalsFor - b.goalsAgainst) - (a.goalsFor - a.goalsAgainst));
         console.log('Team\tPoints\tGF\tGA');
         for (let team of this.teams) {
-            console.log(`${team.name}\t${team.points}\t${team.goalsFor}\t${team.goalsAgainst}`);
+            console.log(`${team.name}  \t${team.points}\t${team.goalsFor}\t${team.goalsAgainst}`);
         }
     }
 }
@@ -54,8 +54,9 @@ let teams = teamNames.map(name => new Team(name));
 
 let tournament = new Tournament(teams);
 
-
 tournament.playMatch(teams[0], teams[1], 2, 1);
 tournament.playMatch(teams[2], teams[3], 0, 0);
 tournament.playMatch(teams[4], teams[5], 1, 3);
 tournament.playMatch(teams[6], teams[7], 4, 2);
+
+tournament.displayStandings();
