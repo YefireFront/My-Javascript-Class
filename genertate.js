@@ -1,62 +1,63 @@
-class Team {
-    constructor(name) {
-        this.name = name;
-        this.points = 0;
-        this.goalsFor = 0;
-        this.goalsAgainst = 0;
+class Equipo {
+    constructor(nombre) {
+        this.nombre = nombre;
+        this.puntos = 0;
+        this.golesAFavor = 0;
+        this.golesEnContra = 0;
     }
 
-    updateStats(goalsFor, goalsAgainst) {
-        this.goalsFor += goalsFor;
-        this.goalsAgainst += goalsAgainst;
+    actualizarEstadisticas(golesAFavor, golesEnContra) {
+        this.golesAFavor += golesAFavor;
+        this.golesEnContra += golesEnContra;
 
-        if (goalsFor > goalsAgainst) {
-            this.points += 3; // Win
-        } else if (goalsFor === goalsAgainst) {
-            this.points += 1; // Draw
+        if (golesAFavor > golesEnContra) {
+            this.puntos += 3; // Victoria
+        } else if (golesAFavor === golesEnContra) {
+            this.puntos += 1; // Empate
         }
-        // No points for a loss
+        // No hay puntos por una derrota
     }
 }
 
-class Tournament {
-    constructor(teams) {
-        this.teams = teams;
-        this.schedule = this.generateSchedule();
+class Torneo {
+    constructor(equipos) {
+        this.equipos = equipos;
     }
 
-    generateSchedule() {
-        let schedule = [];
-        for (let i = 0; i < this.teams.length; i++) {
-            for (let j = i + 1; j < this.teams.length; j++) {
-                schedule.push([this.teams[i], this.teams[j]]);
-            }
-        }
-        return schedule;
+
+
+    jugarPartido(equipo1, equipo2, goles1, goles2) {
+        equipo1.actualizarEstadisticas(goles1, goles2);
+        equipo2.actualizarEstadisticas(goles2, goles1);
     }
 
-    playMatch(team1, team2, goals1, goals2) {
-        team1.updateStats(goals1, goals2);
-        team2.updateStats(goals2, goals1);
-    }
-
-    displayStandings() {
-        this.teams.sort((a, b) => b.points - a.points || (b.goalsFor - b.goalsAgainst) - (a.goalsFor - a.goalsAgainst));
-        console.log('Team\tPoints\tGF\tGA');
-        for (let team of this.teams) {
-            console.log(`${team.name}  \t${team.points}\t${team.goalsFor}\t${team.goalsAgainst}`);
+    mostrarClasificacion() {
+        this.equipos.sort((a, b) => b.puntos - a.puntos || (b.golesAFavor - b.golesEnContra) - (a.golesAFavor - a.golesEnContra));
+        console.log('Equipo\t        Puntos\tGF\tGC');
+        for (let equipo of this.equipos) {
+            console.log(`${equipo.nombre} \t${equipo.puntos}\t${equipo.golesAFavor}\t${equipo.golesEnContra}`);
         }
     }
 }
 
-let teamNames = ["Team A", "Team B", "Team C", "Team D", "Team E", "Team F", "Team G", "Team H"];
-let teams = teamNames.map(name => new Team(name));
+let nombresEquipos = [
+    "Leones Rojos   ", 
+    "Tigres Azules  ", 
+    "Águilas Doradas", 
+    "Lobos Plateados", 
+    "Pumas Verdes   ", 
+    "Osos Negros    ", 
+    "Halcones Blancos", 
+    "Serpientes Verdes"
+];
 
-let tournament = new Tournament(teams);
+let equipos = nombresEquipos.map(nombre => new Equipo(nombre));
 
-tournament.playMatch(teams[0], teams[1], 2, 1);
-tournament.playMatch(teams[2], teams[3], 0, 0);
-tournament.playMatch(teams[4], teams[5], 1, 3);
-tournament.playMatch(teams[6], teams[7], 4, 2);
+let torneo = new Torneo(equipos);
 
-tournament.displayStandings();
+torneo.jugarPartido(equipos[0], equipos[1], 2, 1);
+torneo.jugarPartido(equipos[2], equipos[3], 0, 0);
+torneo.jugarPartido(equipos[4], equipos[5], 1, 3);
+torneo.jugarPartido(equipos[6], equipos[7], 4, 2);
+
+torneo.mostrarClasificacion();
