@@ -48,3 +48,8 @@ class Tournament {
         }
     }
 }
+
+let teamNames = ["Team A", "Team B", "Team C", "Team D", "Team E", "Team F", "Team G", "Team H"];
+let teams = teamNames.map(name => new Team(name));
+
+let tournament = new Tournament(teams);
