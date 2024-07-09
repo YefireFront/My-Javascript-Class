@@ -1,30 +1,21 @@
-
-let variable1 = 13;
-
-let variable2 = 13;
-
-let suma = variable1 + variable2;
-
-console.log(suma)
-
-
-if ( variable1 == variable2 ) {
-
-    console.log(variable1, "es igual a ", variable2);
-}
+let nombre = "Lebron James";
+let edad = 36;
+let estatura = 2.03;
+let peso = 113;
+let equipo = "Los Angeles Lakers";
+let posicion = "Alero";
+let salario = 39219565;
+let esposa = 'Savannah Brinson';
+let nacionalidad = 'Estadounidense';
 
 
 
-
-
-
-
-
-if ( variable1 > variable2 ) {
-
-    console.log(variable1, "es mayor que ", variable2);
-    
-}else{
-
-    console.log(variable2, "es mayor que ", variable1);
-}
+console.log("Nombre: ", nombre);
+console.log("Edad: ", edad);
+console.log("Estatura: ", estatura);
+console.log("Peso: ", peso);
+console.log("Equipo: ", equipo);
+console.log("Posicion: ", posicion);
+console.log("Salario: ", salario);
+console.log("Esposa: ", esposa);
+console.log("Nacionalidad: ", nacionalidad);
