@@ -146,5 +146,64 @@ const Equipo2 = {
   },
 };
 
+const Equipo3 = {
+    nombre: "Manchester United",
+    jugadores: [],
+    presupuesto: 1200,
+    puntos: 0,
+
+    comprarJugador: function (jugador) {
+        if (jugador.equipo === undefined) {
+            if (jugador.precio <= this.presupuesto) {
+                this.jugadores.push(jugador);
+                this.presupuesto -= jugador.precio;
+                jugador.equipo = this.nombre;
+                this.puntos += jugador.puntos;
+                console.log(`El Jugador ${jugador.nombre} fue comprado con éxito por el equipo ${this.nombre}`);
+            } else {
+                console.log(
+                    `No tienes suficiente presupuesto para comprar a ${jugador.nombre}`
+                );
+            }
+        } else {
+                if (jugador.equipo === this.nombre) {
+                        console.log(`El Jugador ${jugador.nombre} ya pertenece a este equipo`)
+                }else{
+                        console.log(`El Jugador ${jugador.nombre} juega en el quipo ${jugador.equipo}`);
+                }
+        }
+    },
+};
 
 
+class Partido {
+    constructor(equipoLocal, equipoVisitante, golesLocal, golesVisitante) {
+        this.equipoLocal = equipoLocal;
+        this.equipoVisitante = equipoVisitante;
+        this.golesLocal = golesLocal;
+        this.golesVisitante = golesVisitante;
+    }
+
+    jugarPartido() {
+        console.log(`¡Comienza el partido entre ${this.equipoLocal.nombre} y ${this.equipoVisitante.nombre}!`);
+        console.log(`Resultado final: ${this.equipoLocal.nombre} ${this.golesLocal} - ${this.golesVisitante} ${this.equipoVisitante.nombre}`);
+        
+        if (this.golesLocal > this.golesVisitante) {
+            this.equipoLocal.puntos += 3;
+            console.log(`${this.equipoLocal.nombre} gana el partido y suma 3 puntos.`);
+        } else if (this.golesLocal < this.golesVisitante) {
+            this.equipoVisitante.puntos += 3;
+            console.log(`${this.equipoVisitante.nombre} gana el partido y suma 3 puntos.`);
+        } else {
+            this.equipoLocal.puntos += 1;
+            this.equipoVisitante.puntos += 1;
+            console.log(`El partido termina en empate y ambos equipos suman 1 punto.`);
+        }
+    }
+}
+
+const partido1 = new Partido(Equipo1, Equipo2, 2, 1);
+partido1.jugarPartido();
+
+const partido2 = new Partido(Equipo3, Equipo1, 0, 0);
+partido2.jugarPartido();
