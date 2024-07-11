@@ -95,7 +95,7 @@ console.log(`July  05th    KAROL BRK`)
 console.log(`July  06th    preparing my return`) 
 console.log(`July  07th    MY LAST DANCE`) 
 console.log(`July  08th    `) 
-console.log(`July  09th    `) 
+console.log(`July  09th    BACK TO THE SCHOOL`) 
 console.log(`July  10th    `) 
 
 
