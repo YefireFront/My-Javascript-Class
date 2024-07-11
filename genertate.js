@@ -205,3 +205,5 @@ class Partido {
 const partido1 = new Partido(Equipo1, Equipo2, 2, 1);
 partido1.jugarPartido();
 
+const partido2 = new Partido(Equipo3, Equipo1, 0, 0);
+partido2.jugarPartido();
