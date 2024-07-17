@@ -100,5 +100,6 @@ console.log(`July  10th    Good day with 11º, project preparation`)
 console.log(`July  11th    Simple day... an treying to organize de rest ogf the computer `) 
 console.log(`July  12th    `) 
 console.log(`July  13th    `) 
+console.log(`July  14th    `) 
 
 
