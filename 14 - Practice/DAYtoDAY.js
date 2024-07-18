@@ -101,7 +101,7 @@ console.log(`July  11th    Simple day... an treying to organize de rest ogf the 
 console.log(`July  12th    Star`) 
 console.log(`July  13th    2`) 
 console.log(`July  14th    3`) 
-console.log(`July  15th    `) 
+console.log(`July  15th    4`) 
 console.log(`July  16th    Finish`) 
 console.log(`July  17th    Recovery `) 
 console.log(`July  18th     `) 
