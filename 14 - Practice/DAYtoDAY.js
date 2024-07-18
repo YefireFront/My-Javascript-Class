@@ -103,6 +103,7 @@ console.log(`July  13th    `)
 console.log(`July  14th    `) 
 console.log(`July  15th    `) 
 console.log(`July  16th    Finish`) 
-console.log(`July  17th    Recovery`) 
+console.log(`July  17th    Recovery `) 
+console.log(`July  17th    Recovery `) 
 
 
