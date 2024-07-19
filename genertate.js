@@ -211,3 +211,5 @@ partido2.jugarPartido();
 
 const partido3 = new Partido(Equipo2, Equipo3, 3, 2);
 partido3.jugarPartido();
+const partido4 = new Partido(Equipo1, Equipo3, 1, 2);
+partido4.jugarPartido();
