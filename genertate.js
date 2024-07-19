@@ -214,3 +214,95 @@ partido3.jugarPartido();
 const partido4 = new Partido(Equipo1, Equipo3, 1, 2);
 partido4.jugarPartido();
 
+const Equipo4 = {
+  nombre: "Juventus",
+  jugadores: [],
+  presupuesto: 900,
+  puntos: 0,
+
+  comprarJugador: function (jugador) {
+    if (jugador.equipo === undefined) {
+      if (jugador.precio <= this.presupuesto) {
+        this.jugadores.push(jugador);
+        this.presupuesto -= jugador.precio;
+        jugador.equipo = this.nombre;
+        this.puntos += jugador.puntos;
+        console.log(`El Jugador ${jugador.nombre} fue comprado con éxito por el equipo ${this.nombre}`);
+      } else {
+        console.log(
+          `No tienes suficiente presupuesto para comprar a ${jugador.nombre}`
+        );
+      }
+    } else {
+        if (jugador.equipo === this.nombre) {
+            console.log(`El Jugador ${jugador.nombre} ya pertenece a este equipo`)
+        }else{
+            console.log(`El Jugador ${jugador.nombre} juega en el quipo ${jugador.equipo}`);
+        }
+    }
+  },
+};
+
+const Equipo5 = {
+  nombre: "Bayern Munich",
+  jugadores: [],
+  presupuesto: 1100,
+  puntos: 0,
+
+  comprarJugador: function (jugador) {
+    if (jugador.equipo === undefined) {
+      if (jugador.precio <= this.presupuesto) {
+        this.jugadores.push(jugador);
+        this.presupuesto -= jugador.precio;
+        jugador.equipo = this.nombre;
+        this.puntos += jugador.puntos;
+        console.log(`El Jugador ${jugador.nombre} fue comprado con éxito por el equipo ${this.nombre}`);
+      } else {
+        console.log(
+          `No tienes suficiente presupuesto para comprar a ${jugador.nombre}`
+        );
+      }
+    } else {
+        if (jugador.equipo === this.nombre) {
+            console.log(`El Jugador ${jugador.nombre} ya pertenece a este equipo`)
+        }else{
+            console.log(`El Jugador ${jugador.nombre} juega en el quipo ${jugador.equipo}`);
+        }
+    }
+  },
+};
+
+const Equipo6 = {
+  nombre: "Liverpool",
+  jugadores: [],
+  presupuesto: 950,
+  puntos: 0,
+
+  comprarJugador: function (jugador) {
+    if (jugador.equipo === undefined) {
+      if (jugador.precio <= this.presupuesto) {
+        this.jugadores.push(jugador);
+        this.presupuesto -= jugador.precio;
+        jugador.equipo = this.nombre;
+        this.puntos += jugador.puntos;
+        console.log(`El Jugador ${jugador.nombre} fue comprado con éxito por el equipo ${this.nombre}`);
+      } else {
+        console.log(
+          `No tienes suficiente presupuesto para comprar a ${jugador.nombre}`
+        );
+      }
+    } else {
+        if (jugador.equipo === this.nombre) {
+            console.log(`El Jugador ${jugador.nombre} ya pertenece a este equipo`)
+        }else{
+            console.log(`El Jugador ${jugador.nombre} juega en el quipo ${jugador.equipo}`);
+        }
+    }
+  },
+};
+
+const partido5 = new Partido(Equipo4, Equipo5, 2, 2);
+partido5.jugarPartido();
+
+const partido6 = new Partido(Equipo6, Equipo4, 1, 3);
+partido6.jugarPartido();
