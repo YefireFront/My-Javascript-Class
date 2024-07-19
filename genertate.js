@@ -210,4 +210,4 @@ partido2.jugarPartido();
 
 
 const partido3 = new Partido(Equipo2, Equipo3, 3, 2);
-partido3.jugarPartido();
+partido3.jugarPartido(); 
