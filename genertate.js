@@ -213,3 +213,21 @@ const partido3 = new Partido(Equipo2, Equipo3, 3, 2);
 partido3.jugarPartido();
 const partido4 = new Partido(Equipo1, Equipo3, 1, 2);
 partido4.jugarPartido();
+
+const equipos = [Equipo1, Equipo2, Equipo3];
+
+function faseClasificatoria() {
+  console.log("Comienza la fase clasificatoria del torneo");
+
+  for (let i = 0; i < equipos.length; i++) {
+    for (let j = i + 1; j < equipos.length; j++) {
+      const golesLocal = Math.floor(Math.random() * 5);
+      const golesVisitante = Math.floor(Math.random() * 5);
+
+      const partido = new Partido(equipos[i], equipos[j], golesLocal, golesVisitante);
+      partido.jugarPartido();
+    }
+  }
+}
+
+faseClasificatoria();
