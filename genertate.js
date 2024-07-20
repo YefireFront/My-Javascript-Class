@@ -209,5 +209,3 @@ const partido2 = new Partido(Equipo3, Equipo1, 0, 0);
 partido2.jugarPartido();
 
 
-const partido3 = new Partido(Equipo2, Equipo3, 3, 2);
-partido3.jugarPartido(); 
