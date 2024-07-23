@@ -104,10 +104,10 @@ console.log(`July  14th    3`)
 console.log(`July  15th    4`) 
 console.log(`July  16th    Finish`) 
 console.log(`July  17th    Recovery `) 
-console.log(`July  18th     `) 
+console.log(`July  18th     go to the MT riunion iun the poblado`) 
 console.log(`July  19th     `) 
 console.log(`July  20th     `) 
 console.log(`July  21th     `) 
-console.log(`July  22th     `) 
+console.log(`July  22th     i ll back to the school great class with the lab`) 
 
 
