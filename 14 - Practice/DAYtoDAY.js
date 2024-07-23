@@ -105,5 +105,9 @@ console.log(`July  15th    4`)
 console.log(`July  16th    Finish`) 
 console.log(`July  17th    Recovery `) 
 console.log(`July  18th     `) 
+console.log(`July  19th     `) 
+console.log(`July  20th     `) 
+console.log(`July  21th     `) 
+console.log(`July  22th     `) 
 
 
