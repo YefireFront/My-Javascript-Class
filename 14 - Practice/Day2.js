@@ -45,7 +45,7 @@ let books = [
         titulo: "Cien dates de soledad", 
         autor: "Gabriel García Márquez", 
         date: 1967, 
-        paginas: 432 
+        paginas: 432
     },
     { 
         titulo: "El Señor de los Anillos", 
