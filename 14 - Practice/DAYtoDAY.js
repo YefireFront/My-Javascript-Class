@@ -110,5 +110,6 @@ console.log(`July  20th     good practice with Node js`)
 console.log(`July  21th     Crating BD for the 11' project`) 
 console.log(`July  22th     i ll back to the school great class with the lab`) 
 console.log(`July  23th     Great exercise with the 10º  takl about the the teacher`) 
+console.log(`July  23th     Great exercise with the 10º  takl about the the teacher`) 
 
 
