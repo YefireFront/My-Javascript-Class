@@ -34,3 +34,6 @@ class Biblioteca{
   
 }
 
+
+const biblioteca1 = new Biblioteca("Biblioteca Central", "Calle Principal 123");
+const biblioteca2 = new Biblioteca("Biblioteca Municipal", "Avenida Secundaria 456");
