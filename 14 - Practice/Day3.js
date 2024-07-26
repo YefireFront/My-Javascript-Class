@@ -1,4 +1,4 @@
-/*
+
 //!Manipulación de Arrays:
 //*Crea una función que reciba un array de números y devuelva la suma de los números pares.
 
@@ -172,7 +172,6 @@
 
 
 
-*/
 
 //*Crea una función que utilice async/await para consumir una API externa y devolver los datos procesados.
 
