@@ -70,33 +70,3 @@ let mensaje = esMayor ? "La suma es mayor que 10" : "La suma es 10 o menor"; // 
 let persona2 = { nombre: "Ana", edad: 25 };
 let saludoCompleto = "Hola, " + persona2.nombre; // "Hola, Ana"
 
-console.log("Resultados de las Operaciones:");
-console.log("Suma:", suma);      // 15
-console.log("Resta:", resta);    // 5
-console.log("Multiplicación:", multiplicacion); // 50
-console.log("División:", division);   // 2
-console.log("Módulo:", modulo);      // 0
-console.log("Exponenciación:", exponenciacion); // 100000
-console.log("Es igual:", esIgual);   // false
-console.log("Es estrictamente igual:", esEstrictoIgual); // false
-console.log("No es igual:", noIgual);   // true
-console.log("Es estrictamente no igual:", estrictoNoIgual); // true
-console.log("Mayor que:", mayorQue);   // true
-console.log("Mayor o igual que:", mayorOIgualQue); // true
-console.log("Menor que:", menorQue);    // false
-console.log("Menor o igual que:", menorOIgualQue); // false
-console.log("AND:", and);       // true
-console.log("OR:", or);        // true
-console.log("NOT:", not);       // false
-console.log("Incremento:", incremento);   // 10
-console.log("Decremento:", decremento);   // 5
-console.log("Mensaje Concatenado:", mensajeConcatenado); // "Hola, Mundo"
-console.log("Nombre:", persona.nombre);   // "Juan"
-console.log("Edad:", persona["edad"]);    // 30
-console.log("Tipo:", tipo);      // "adulto"
-console.log("Tipo de 123:", typeof 123);   // "number"
-console.log("Tipo de 'abc':", typeof "abc"); // "string"
-console.log("Tipo de true:", typeof true);  // "boolean"
-console.log("Fecha es instancia de Date:", fecha instanceof Date); // true
-console.log("Saludo Completo:", saludoCompleto); // "Hola, Ana"
-console.log("Mensaje:", mensaje); // "La suma es mayor que 10"
