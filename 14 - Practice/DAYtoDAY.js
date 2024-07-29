@@ -113,5 +113,6 @@ console.log(`July  23th     Great exercise with the 10º  takl about the the tea
 console.log(`July  24th     advising my group with the projects`) 
 console.log(`July  25th     simple day in the room watching green feet `) 
 console.log(`July  26th      `) 
+console.log(`July  27th      `) 
 
 
