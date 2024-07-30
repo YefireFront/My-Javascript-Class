@@ -1,39 +1,31 @@
-class Libro {
-  constructor(titulo, autor, fecha, ){
-    this.titulo = titulo;
-    this.autor = autor;
-    this.fecha = fecha;
-    this.prestado = false
-  }
+let puntos = 0;
 
+// Pregunta 1
+let respuesta1 = prompt("¿Cuál es tu color favorito?\n1: Rojo\n2: Azul\n3: Verde\n4: Amarillo");
+if (respuesta1 === '2') {
+    puntos +=1 ;
 }
 
-const libro1 = new Libro("Harry Potter", "J.K. Rowling", "2001");
-const libro2 = new Libro("To Kill a Mockingbird", "Harper Lee", "1960");
-const libro3 = new Libro("The Great Gatsby", "F. Scott Fitzgerald", "1925");
-const libro4 = new Libro("1984", "George Orwell", "1949");
-const libro5 = new Libro("The Catcher in the Rye", "J.D. Salinger", "1951");
-
-
-
-class Biblioteca{
-  constructor(nombre, direccion){
-    this.nombre = nombre;
-    this.direccion = direccion;
-  }
-
-  prestarLibro(libro){
-      if (libro.prestado === true) {
-        console.log(`El libro ${libro.titulo} no esta diusponible `)
-      }else{
-        libro.prestado = true
-        console.log(`has prestado el libro ${libro.titulo}`)
-      }
-  }
-
-  
+// Pregunta 2
+let respuesta2 = prompt("¿Cuál es tu comida favorita?\n1: Pizza\n2: Hamburguesa\n3: Sushi\n4: Ensalada");
+if (respuesta2 === '1') {
+    puntos += 1;
 }
 
+// Pregunta 3
+let respuesta3 = prompt("¿Qué deporte prefieres?\n1: Fútbol\n2: Baloncesto\n3: Tenis\n4: Natación");
+if (respuesta3 === '3') {
+    puntos += 1;
+}
 
-const biblioteca1 = new Biblioteca("Biblioteca Central", "Calle Principal 123");
-const biblioteca2 = new Biblioteca("Biblioteca Municipal", "Avenida Secundaria 456");
+// Pregunta 4
+let respuesta4 = prompt("¿Cuál es tu animal favorito?\n1: Perro\n2: Gato\n3: Pájaro\n4: Pez");
+if (respuesta4 === '2') {
+    puntos += 1;
+}
+
+// Mostrar resultado final
+alert("Tu puntuación final es: " + puntos);
+
+
+
