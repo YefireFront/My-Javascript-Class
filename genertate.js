@@ -12,9 +12,3 @@ if (respuesta2 === '1') {
     puntos += 1;
 }
 
-// Pregunta 3
-let respuesta3 = prompt("¿Qué deporte prefieres?\n1: Fútbol\n2: Baloncesto\n3: Tenis\n4: Natación");
-if (respuesta3 === '3') {
-    puntos += 1;
-}
-
