@@ -6,9 +6,3 @@ if (respuesta1 === '2') {
     puntos +=1 ;
 }
 
-// Pregunta 2
-let respuesta2 = prompt("¿Cuál es tu comida favorita?\n1: Pizza\n2: Hamburguesa\n3: Sushi\n4: Ensalada");
-if (respuesta2 === '1') {
-    puntos += 1;
-}
-
