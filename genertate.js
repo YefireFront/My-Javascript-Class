@@ -18,12 +18,3 @@ if (respuesta3 === '3') {
     puntos += 1;
 }
 
-// Pregunta 4
-let respuesta4 = prompt("¿Cuál es tu animal favorito?\n1: Perro\n2: Gato\n3: Pájaro\n4: Pez");
-if (respuesta4 === '2') {
-    puntos += 1;
-}
-
-// Mostrar resultado final
-alert("Tu puntuación final es: " + puntos);
-
