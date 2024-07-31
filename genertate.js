@@ -25,19 +25,8 @@ if (respuesta4 === '2') {
 }
 
 // Mostrar resultado final
-alert("Tu puntuación final es: " + puntos);
+console.log("Tu puntuación final es: " + puntos);
 
-
-
-  // Accumulator example
-  let numbers = [1, 2, 3, 4, 5];
-  let sum = 0;
-
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-
-  console.log("The sum of the numbers is: " + sum);
 
 
 
