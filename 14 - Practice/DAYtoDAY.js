@@ -116,5 +116,6 @@ console.log(`July  26th      Waiting`)
 console.log(`July  27th      Back to the big study`) 
 console.log(`July  28th      ALANA 💘`) 
 console.log(`July  29th      love at first sight A ❤`) 
+console.log(`July  29th      love at first sight A ❤`) 
 
 
