@@ -118,6 +118,6 @@ console.log(`July  28th      ALANA 💘`)
 console.log(`July  29th      love at first sight A ❤`) 
 console.log(`July  30th      `) 
 console.log(`July  31th      `) 
-console.log(`Agos  01th      `) 
+console.log(`Agos  01th      Lab 10 Amagzing class`) 
 
 
