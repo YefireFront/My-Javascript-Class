@@ -119,7 +119,7 @@ console.log(`July  29th      love at first sight A ❤`)
 console.log(`July  30th      `) 
 console.log(`July  31th      `) 
 console.log(`Agos  01th      NO MORE TIME. TAKE THE FUCK DECISIONT ⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛ `) 
-console.log(`Agos  02th      `) 
+console.log(`Agos  02th      GYM TIME`) 
 console.log(`Agos  03th      `) 
 
 
