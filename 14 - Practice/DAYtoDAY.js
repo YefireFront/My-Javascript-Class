@@ -121,6 +121,6 @@ console.log(`July  31th      `)
 console.log(`Agos  01th      NO MORE TIME. TAKE THE FUCK DECISIONT ⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛⌛ `) 
 console.log(`Agos  02th      GYM TIME`) 
 console.log(`Agos  03th      Reset All`) 
-console.log(`Agos  03th      `) 
+console.log(`Agos  04th      `) 
 
 
