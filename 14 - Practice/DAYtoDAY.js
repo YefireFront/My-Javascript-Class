@@ -123,7 +123,7 @@ console.log(`Agos  02th     GYM TIME`)
 console.log(`Agos  03th     Reset All`) 
 console.log(`Agos  04th     Shit`) 
 console.log(`Agos  05th     POO class with 100 MT `) 
-console.log(`Agos  06th     `) 
+console.log(`Agos  06th     Working in `) 
 console.log(`Agos  07th     HOLLY DAY`) 
 
 
