@@ -31,13 +31,3 @@ function fetchData() {
 }
 
 // Using the fetchData function with async/await
-async function getData() {
-    try {
-        const data = await fetchData();
-        console.log(data);
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-getData();
