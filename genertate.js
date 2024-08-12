@@ -21,13 +21,3 @@ fetchData()
 
 // Example 2: Using async/await
 
-// Function that returns a Promise
-function fetchData() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('Data fetched successfully!');
-        }, 2000);
-    });
-}
-
-// Using the fetchData function with async/await
