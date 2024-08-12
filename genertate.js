@@ -10,7 +10,7 @@ class Perro {
 
 class rotwailler extends Perro {
     constructor(nombre) {
-        super();
+        super(nombre , 50 , 80);
         
     }
 }
@@ -20,3 +20,4 @@ class rotwailler extends Perro {
 
 let perro1 = new rotwailler('Toby')
 console.log(perro1)
+
