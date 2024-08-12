@@ -9,15 +9,4 @@ function fetchData() {
     });
 }
 
-// Using the fetchData function
-fetchData()
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
-
-
-// Example 2: Using async/await
 
