@@ -1,6 +1,4 @@
-
-
-const gestorDeTurnos = {
+    const gestorDeTurnos = {
     jugadores: [],
     indiceTurnoActual: 0,
 
@@ -21,48 +19,72 @@ const gestorDeTurnos = {
         console.log(`Es el turno de ${this.jugadores[this.indiceTurnoActual].nombre}`);
     },
 
+    mostrarTablaDePosiciones() {
+        console.log("\nTabla de Posiciones:");
+        this.jugadores.sort((a, b) => b.puntos - a.puntos).forEach((jugador, index) => {
+            console.log(`${index + 1}. ${jugador.nombre} - ${jugador.puntos} puntos`);
+        });
+        console.log(""); // Espacio adicional para legibilidad
+    },
+
     iniciar() {
         console.log(`Comienza la partida. Es el turno de ${this.jugadores[this.indiceTurnoActual].nombre}`);
     }
 };
 
-const LeBron = {
-    nombre: "LeBron James",
+const anderson = {
+    nombre: "Anderson",
     puntos: 0,
     anotarPuntos(cantidad) {
         if (!gestorDeTurnos.esTurno(this)) return;
         this.puntos += cantidad;
         console.log(`${this.nombre} anotó ${cantidad} puntos!`);
+        gestorDeTurnos.mostrarTablaDePosiciones();
         gestorDeTurnos.finalizarTurno();
     },
 };
 
-const Curry = {
-    nombre: "Stephen Curry",
+const mateo = {
+    nombre: "Mateo",
     puntos: 0,
     anotarPuntos(cantidad) {
         if (!gestorDeTurnos.esTurno(this)) return;
         this.puntos += cantidad;
         console.log(`${this.nombre} anotó ${cantidad} puntos!`);
+        gestorDeTurnos.mostrarTablaDePosiciones();
         gestorDeTurnos.finalizarTurno();
     },
 };
 
-const Durant = {
-    nombre: "Kevin Durant",
+const brandon = {
+    nombre: "Brandon",
     puntos: 0,
     anotarPuntos(cantidad) {
         if (!gestorDeTurnos.esTurno(this)) return;
         this.puntos += cantidad;
         console.log(`${this.nombre} anotó ${cantidad} puntos!`);
+        gestorDeTurnos.mostrarTablaDePosiciones();
+        gestorDeTurnos.finalizarTurno();
+    },
+};
+
+const valery = {
+    nombre: "Valery",
+    puntos: 0,
+    anotarPuntos(cantidad) {
+        if (!gestorDeTurnos.esTurno(this)) return;
+        this.puntos += cantidad;
+        console.log(`${this.nombre} anotó ${cantidad} puntos!`);
+        gestorDeTurnos.mostrarTablaDePosiciones();
         gestorDeTurnos.finalizarTurno();
     },
 };
 
 // Agregar jugadores al gestor de turnos
-gestorDeTurnos.agregarJugador(LeBron);
-gestorDeTurnos.agregarJugador(Curry);
-gestorDeTurnos.agregarJugador(Durant);
+gestorDeTurnos.agregarJugador(anderson);
+gestorDeTurnos.agregarJugador(mateo);
+gestorDeTurnos.agregarJugador(brandon);
+gestorDeTurnos.agregarJugador(valery);
 
 // Iniciar el sistema de turnos
 gestorDeTurnos.iniciar();
