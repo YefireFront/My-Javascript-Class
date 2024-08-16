@@ -129,7 +129,9 @@ console.log(`Agos  08th     Vaccination day for the queen`)
 console.log(`Agos  09th     Trying to fix the computer `) 
 console.log(`Agos  10th     i was with Alana`) 
 console.log(`Agos  11th     In the process to fix me`) 
-console.log(`Agos  11th     DAY 1`) 
-console.log(`Agos  11th     DAY 2`) 
+console.log(`Agos  12th     DAY 1`) 
+console.log(`Agos  13th     DAY 2`) 
+console.log(`Agos  14th     DAY 3`) 
+console.log(`Agos  15th     DAY 4`) 
 
 
