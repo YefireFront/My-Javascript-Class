@@ -134,5 +134,9 @@ console.log(`Agos  13th     DAY 2`)
 console.log(`Agos  14th     DAY 3`) 
 console.log(`Agos  15th     DAY 4`) 
 console.log(`Agos  16th     DAY 5`) 
+console.log(`Agos  17th     DAY 6`) 
+console.log(`Agos  18th     DAY 7`) 
+console.log(`Agos  19th     DAY 8`) 
+console.log(`Agos  20th     DAY 9`) 
 
 
