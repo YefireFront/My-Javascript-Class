@@ -58,4 +58,4 @@ function generateCards(cards) {
     });
 }
 
-// generateCards(cardsArray2);
+generateCards(cardsArray2);
