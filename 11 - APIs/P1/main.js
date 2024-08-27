@@ -29,4 +29,3 @@ reload();
 
 const btn = document.querySelector("#btn");
 btn.style.display = "block";
-// console.log(btn);
