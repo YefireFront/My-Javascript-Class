@@ -144,6 +144,6 @@ console.log(`Agos  23th     DAY 12`)
 console.log(`Agos  24th     DAY 13`) 
 console.log(`Agos  25th     DAY 14`) 
 console.log(`Agos  26th     10k Acou NEVER AGAIN`) 
-console.log(`Agos  27th     10k Acou `) 
+console.log(`Agos  27th      `) 
 
 
