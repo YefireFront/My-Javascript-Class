@@ -15,14 +15,6 @@ class Personaje {
         }
     }
     
-    agotado() {
-        if (this.energia < 70) return true;
-    }
-    
-    cansado() {
-        if (this.energia < 30) return true;
-    }
-    
     atacar(objetivo) {
         if (this.estaMuerto(objetivo)) return false;
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
@@ -39,14 +31,7 @@ class Personaje {
             );
         }
         
-        if (this.constructor.name == 'Guerrero') {
-            this.especial++;
-            if (this.especial == 2) {
-                this.atk += 10;
-                this.especial = 0;
-            }
-        }
-        
+ 
         GestorDeTurnos.finalizarTurno(); // Finalizar turno después de atacar
     }
 }
@@ -58,11 +43,23 @@ class Guerrero extends Personaje {
         this.atk = 60;
         this.def = 40;
     }
-    
+
+    atacar(objetivo) {
+        super.atacar(objetivo)
+        if (this.constructor.name == 'Guerrero') {
+            this.especial++;
+            if (this.especial == 2) {
+                this.atk += 10;
+                this.especial = 0;
+            }
+        }
+        
+
+    }
+
     blindar() {
         if (this.estaMuerto()) return false;
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
-        if (this.cansado()) return false;
         
         this.def += 15;
         this.energia -= 30;
@@ -73,7 +70,6 @@ class Guerrero extends Personaje {
     iraYopuka(objetivo) {
         if (this.estaMuerto(objetivo)) return false;
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
-        if (this.agotado()) return false;
         
         let dif = this.atk - objetivo.def;
         if (dif >= 30) {
@@ -96,7 +92,6 @@ class Sanador extends Personaje {
     curar(objetivo) {
         if (this.estaMuerto()) return false;
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
-        if (this.cansado()) return false;
         
         objetivo.vida += 30;
         this.energia -= 30;
@@ -110,7 +105,6 @@ class Sanador extends Personaje {
     sacrificio(objetivo) {
         if (this.estaMuerto()) return false;
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
-        if (this.agotado()) return false;
         
         let cantidad = 100 - objetivo.vida;
         if (cantidad < this.vida) {
@@ -131,7 +125,6 @@ class Sanador extends Personaje {
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
         if (this.vida === 0) return false;  
         if (objetivo.vida > 0) return false;            
-        if (this.agotado()) return false;
         
         objetivo.vida = 40;
         this.energia -= 70;
@@ -152,7 +145,6 @@ class Hechicero extends Personaje {
     mejorar(objetivo) {
         if (this.estaMuerto()) return false;
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
-        if (this.cansado()) return false;
         
         objetivo.atk += 10;
         objetivo.def += 10;
@@ -164,7 +156,6 @@ class Hechicero extends Personaje {
     peste(objetivo) {
         if (this.estaMuerto()) return false;
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
-        if (this.agotado()) return false;
         
         objetivo.atk -= 20;
         objetivo.def -= 20;
@@ -205,12 +196,8 @@ const Yeffer = new Guerrero({ nombre: "Yeffer", iniciativa: 10 });
 const Arley = new Hechicero({ nombre: "Arley", iniciativa: 8 });
 const Walter = new Sanador({ nombre: "Walter", iniciativa: 9 });
 
-
-
 GestorDeTurnos.agregarPersonaje(Yeffer);
 GestorDeTurnos.agregarPersonaje(Arley);
 GestorDeTurnos.agregarPersonaje(Walter);
-
-
 
 GestorDeTurnos.iniciar();
