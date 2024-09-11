@@ -159,7 +159,7 @@ console.log(`Sept  06th     `)
 console.log(`Sept  07th     `) 
 console.log(`Sept  08th     `) 
 console.log(`Sept  09th     GAME PROJECT START`) 
-console.log(`Sept  10th     `) 
+console.log(`Sept  10th     simple class with M10 that makes me see the importance of understanding the simple.`) 
 console.log(`Sept  11th     `) 
 
 
