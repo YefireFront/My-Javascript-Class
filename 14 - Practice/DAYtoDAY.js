@@ -176,7 +176,7 @@ console.log(`Sept  23th     RPG GAME BEST MODE`)
 console.log(`Sept  24th     `) 
 console.log(`Sept  25th     `) 
 console.log(`Sept  26th     `) 
-console.log(`Sept  27th     `) 
+console.log(`Sept  27th     Stay at home cus, i deserve it`)
 console.log(`Sept  28th     `) 
 console.log(`Sept  29th     `) 
 
