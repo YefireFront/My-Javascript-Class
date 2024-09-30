@@ -177,7 +177,7 @@ console.log(`Sept  24th     `)
 console.log(`Sept  25th     `) 
 console.log(`Sept  26th     `) 
 console.log(`Sept  27th     Stay at home cus, i deserve it`)
-console.log(`Sept  28th     `) 
+console.log(`Sept  28th     RETAKIN REATC `) 
 console.log(`Sept  29th     talking with ITM teacher about the MT`)
 
 
