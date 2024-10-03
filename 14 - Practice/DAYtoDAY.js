@@ -180,5 +180,6 @@ console.log(`Sept  27th     Stay at home cus, i deserve it`)
 console.log(`Sept  28th     RETAKIN REATC `) 
 console.log(`Sept  29th     talking with ITM teacher about the MT`)
 console.log(`Sept  30th     Star to teach the VidoGame build`)
+console.log(`Sept  30th     Star to teach the VidoGame build`)
 
 
