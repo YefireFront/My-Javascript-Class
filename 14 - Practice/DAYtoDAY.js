@@ -181,5 +181,6 @@ console.log(`Sept  28th     RETAKIN REATC `)
 console.log(`Sept  29th     talking with ITM teacher about the MT`)
 console.log(`Sept  30th     Star to teach the VidoGame build`)
 console.log(`Sept  01th     All 9ª Reunion`)
+console.log(`Sept  02th     `)
 
 
