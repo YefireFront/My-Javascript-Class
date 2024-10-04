@@ -182,7 +182,7 @@ console.log(`Sept  29th     talking with ITM teacher about the MT`)
 console.log(`Sept  30th     Star to teach the VidoGame build`)
 console.log(`Sept  01th     All 9ª Reunion and Mt 10ª class`)
 console.log(`Sept  02th     Evoid class with MT 11º`)
-console.log(`Sept  03th     `)
+console.log(`Sept  03th     Simple day i fuck with M&M`)
 console.log(`Sept  03th     `)
 
 
