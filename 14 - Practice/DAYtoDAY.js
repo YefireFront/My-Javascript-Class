@@ -184,6 +184,6 @@ console.log(`Sept  01th     All 9ª Reunion and Mt 10ª class`)
 console.log(`Sept  02th     Evoid class with MT 11º`)
 console.log(`Sept  03th     Simple day i fuck with M&M`)
 console.log(`Sept  04th     Rest day and no more....`)
-console.log(`Sept  04th     Rest day and no )
+console.log(`Sept  04th     `)
 
 
