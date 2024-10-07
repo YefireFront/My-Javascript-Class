@@ -185,6 +185,6 @@ console.log(`Sept  02th     Evoid class with MT 11º`)
 console.log(`Sept  03th     Simple day i fuck with M&M`)
 console.log(`Sept  04th     Rest day and no more....`)
 console.log(`Sept  05th     REST... HOME... `)
-console.log(`Sept  05th      `)
+console.log(`Sept  06th      `)
 
 
