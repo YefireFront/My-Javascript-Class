@@ -187,5 +187,6 @@ console.log(`Octo  04th     Rest day and no more....`)
 console.log(`Octo  05th     REST... HOME... `)
 console.log(`Octo  06th     Summonewr wars Day`)
 console.log(`Octo  07th     Virtual reunion `)
+console.log(`Octo  08th      `)
 
 
