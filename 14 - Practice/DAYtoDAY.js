@@ -191,6 +191,8 @@ console.log(`Octo  08th     Figthing with my self `)
 console.log(`Octo  09th     `)
 console.log(`Octo  10th     ALANA and HADES II`)
 console.log(`Octo  11th     Went to the debtist `)
+console.log(`Octo  11th     Went to the debtist `)
+console.log(`Octo  11th     Went to the debtist `)
  
 
 
