@@ -192,7 +192,7 @@ console.log(`Octo  09th     `)
 console.log(`Octo  10th     ALANA and HADES II`)
 console.log(`Octo  11th     Went to the dentist 🦷`)
 console.log(`Octo  12th     `)
-console.log(`Octo  13th     `)
+console.log(`Octo  13th     Dragon Ball Z sparking zero `)
  
 
 
