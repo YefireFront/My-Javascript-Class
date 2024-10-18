@@ -197,7 +197,7 @@ console.log(`Octo  14th     I feel that this time `)
 console.log(`Octo  15th     ALL SATRT 🧇`)
 console.log(`Octo  16th     Back to de school, and start with the Game`)
 console.log(`Octo  17th     Working from home, and organize my ideas`)
-console.log(`Octo  18th     Working from home, and organize my ideas`)
+console.log(`Octo  18th     `)
  
 
 
