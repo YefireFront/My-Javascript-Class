@@ -202,7 +202,7 @@ console.log(`Octo  19th     5AM AGAIN`)
 console.log(`Octo  20th     5AM AGAIN`)
 console.log(`Octo  21th     5AM AGAIN`)
 console.log(`Octo  22th     5AM AGAIN`)
-console.log(`Octo  23th     `)
+console.log(`Octo  23th     Rest Class Paro `)
 console.log(`Octo  24th     I AM SICK`)
 console.log(`Octo  25th     LAB Working in the Video Game`)
  
