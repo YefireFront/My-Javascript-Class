@@ -214,8 +214,8 @@ console.log(`Octo  31th     `)
 console.log(`Octo  01th     uLTIMATE DETAIL FINAL PULL VIDEO GAME`)
 console.log(`Octo  02th     🍹`)
 console.log(`Octo  03th     🍹`)
-console.log(`Octo  03th     🍹`)
-console.log(`Octo  03th     🍹`)
+console.log(`Octo  04th     🍹`)
+console.log(`Octo  05th     🍹`)
  
 
 
