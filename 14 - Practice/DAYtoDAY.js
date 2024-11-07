@@ -216,7 +216,7 @@ console.log(`Octo  02th     🍹`)
 console.log(`Octo  03th     🍹🍹`)
 console.log(`Octo  04th      Back home a rest`)
 console.log(`Octo  05th      MT 10 Final Maquet exam `)
-console.log(`Octo  05th      `)
+console.log(`Octo  06th      evoid the school PARO`)
  
 
 
