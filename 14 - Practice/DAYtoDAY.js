@@ -208,3 +208,15 @@ console.log(`Octo  25th     LAB Working in the Video Game`)
 console.log(`Octo  26th     `)
 console.log(`Octo  27th     `)
 console.log(`Octo  28th     `)
+console.log(`Octo  29th     `)
+console.log(`Octo  30th     `)
+console.log(`Octo  31th     `)
+console.log(`Octo  01th     ULTIMATE DETAIL FINAL PULL VIDEO GAME`)
+console.log(`Octo  02th     🍹`)
+console.log(`Octo  03th      `)
+console.log(`Octo  04th      `)
+console.log(`Octo  05th      `)
+console.log(`Octo  05th      `)
+ 
+
+
