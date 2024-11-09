@@ -215,9 +215,7 @@ console.log(`Octo  01th     Personal Pro ULTIMATE DETAIL FINAL PULL VIDEO GAME`)
 console.log(`Octo  02th     🍹`)
 console.log(`Octo  03th     🍹🍹`)
 console.log(`Octo  04th     Back home a rest`)
-console.log(`Octo  05th     MT 10 Final Maquet exam `)
-console.log(`Octo  06th     evoid the school PARO`)
-console.log(`Octo  07th     Prepare examen  9`)
+console.log(`Octo  05th     MT 10 
  
 
 
