@@ -206,10 +206,4 @@ console.log(`Octo  23th     Rest Class Paro `)
 console.log(`Octo  24th     I AM SICK`)
 console.log(`Octo  25th     LAB Working in the Video Game`)
 console.log(`Octo  26th     `)
-console.log(`Octo  27th     `)
-console.log(`Octo  28th     Ultimate Detail VIDEO GAME `)
-console.log(`Octo  29th     ULTIMATE DETAIL VIDEO GAME  and organize prsentation`)
-console.log(`Octo  30th     INGENIA TEC DAY`)
-console.log(`Octo  31th     Organize Mate para la vida`)
-
-
+console.log
