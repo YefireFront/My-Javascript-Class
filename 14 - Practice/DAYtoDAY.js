@@ -211,11 +211,5 @@ console.log(`Octo  28th     Ultimate Detail VIDEO GAME `)
 console.log(`Octo  29th     ULTIMATE DETAIL VIDEO GAME  and organize prsentation`)
 console.log(`Octo  30th     INGENIA TEC DAY`)
 console.log(`Octo  31th     Organize Mate para la vida`)
-console.log(`Octo  01th     Personal Pro ULTIMATE DETAIL FINAL PULL VIDEO GAME`)
-console.log(`Octo  02th     🍹`)
-console.log(`Octo  03th     🍹🍹`)
-console.log(`Octo  04th     Back home a rest`)
-console.log(`Octo  05th     MT 10 
- 
 
 
