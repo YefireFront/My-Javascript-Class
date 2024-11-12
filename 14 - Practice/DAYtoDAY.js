@@ -221,7 +221,7 @@ console.log(`Octo  07th     Prepare examen  9`)
 console.log(`Octo  08th     `)
 console.log(`Octo  09th     🍹`)
 console.log(`Octo  10th     🍹`)
-console.log(`Octo  10th     Reser my mind`)
+console.log(`Octo  10th     Reset my mind`)
  
 
 
