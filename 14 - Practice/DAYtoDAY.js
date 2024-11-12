@@ -218,10 +218,10 @@ console.log(`Octo  04th     Back home a rest`)
 console.log(`Octo  05th     MT 10 Final Maquet exam `)
 console.log(`Octo  06th     evoid the school PARO`)
 console.log(`Octo  07th     Prepare examen  9`)
-console.log(`Octo  07th     Prepare examen  9`)
-console.log(`Octo  07th     Prepare examen  9`)
-console.log(`Octo  07th     Prepare examen  9`)
-console.log(`Octo  07th     Prepare examen  9`)
+console.log(`Octo  07th     `)
+console.log(`Octo  07th     `)
+console.log(`Octo  07th     `)
+console.log(`Octo  07th     `)
  
 
 
