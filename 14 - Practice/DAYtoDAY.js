@@ -222,7 +222,7 @@ console.log(`Octo  08th     `)
 console.log(`Octo  09th     🍹`)
 console.log(`Octo  10th     🍹`)
 console.log(`Octo  11th     Reset my mind`)
-console.log(`Octo  12th     THE OPORTUNITY OF MY LIFE, ALL CAN CHANGE I NEED YOUN GOD 🙏`)
+console.log(`Octo  12th     THE OPORTUNITY OF MY LIFE, ALL CAN CHANGE I NEED YOUN GOD 🙏, PLEASE DONT FORGET ME 💙`)
  
 
 
