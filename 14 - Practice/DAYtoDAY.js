@@ -226,6 +226,7 @@ console.log(`Octo  12th     THE OPORTUNITY OF MY LIFE, ALL CAN CHANGE I NEED YOU
 console.log(`Octo  13th     Feria Creatividad`)
 console.log(`Octo  14th     Un 14 de noviembre Inicia un gran deseo`)
 console.log(`Octo  15th     A prayer `)
+console.log(`Octo  16th     🎊🎊 "Hemos recibido tu postulación a Talento Tech"`)
  
 
 
