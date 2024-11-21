@@ -229,7 +229,8 @@ console.log(`Novb  15th     A prayer `)
 console.log(`Novb  16th     🎊🎊 "Hemos recibido tu postulación a Talento Tech"`)
 console.log(`Novb  17th     🌊i☀ 🖤`)
 console.log(`Novb  18th     Watch A desaster class`)
-console.log(`Novb  18th     Watch A desaster class`)
+console.log(`Novb  21th     `)
+console.log(`Novb  20th     `)
  
 
 
