@@ -230,7 +230,7 @@ console.log(`Novb  16th     🎊🎊 "Hemos recibido tu postulación a Talento T
 console.log(`Novb  17th     🌊i☀ 🖤`)
 console.log(`Novb  18th     Watch A desaster class`)
 console.log(`Novb  21th     `)
-console.log(`Novb  20th     `)
+console.log(`Novb  20th     I Get de Permition for reset`)
  
 
 
