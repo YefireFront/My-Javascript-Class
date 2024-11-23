@@ -1,6 +1,3 @@
-//!Flyweight
-//!Middleweight
-//!Heavyweigh
 
 
 async function getUserInfo(userIds) {
