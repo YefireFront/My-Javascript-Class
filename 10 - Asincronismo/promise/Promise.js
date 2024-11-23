@@ -272,6 +272,32 @@ const operValidation = (num)=>{
 
 
 
+//% Ejercicio 5
+function checkStock(item) {
+  const stockDatabase = {
+    apple: 10,
+    banana: 0,
+    orange: 5,
+  };
+
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (stockDatabase[item] > 0) {
+        resolve(`The item "${item}" is in stock with quantity: ${stockDatabase[item]}`);
+      } else {
+        reject(`The item "${item}" is out of stock`);
+      }
+    }, 1500);
+  });
+}
+
+checkStock('banana')
+  .then(result => {
+    console.log(result);
+  })
+  .catch(error => {
+    console.error(error);
+  });
 
 
 
