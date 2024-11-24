@@ -232,7 +232,7 @@ console.log(`Novb  18th     Watch A desaster class`)
 console.log(`Novb  19th     `)
 console.log(`Novb  20th     I Get de Permition for reset`)
 console.log(`Novb  21th     Back to thr GYM and rewrite  GOALS`)
-console.log(`Novb  22th     `)
+console.log(`Novb  22th     Rest Time`)
 console.log(`Novb  23th     organize and delete excess information`)
 console.log(`Novb  24th     English class retaked`)
  
