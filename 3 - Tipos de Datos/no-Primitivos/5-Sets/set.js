@@ -28,4 +28,11 @@ languagesSet.add('Python');
 languagesSet.delete('C++');
 
 // Comprobar si un lenguaje está en el Set
-co
+console.log(languagesSet.has('Java')); // true
+console.log(languagesSet.has('C++')); // false
+
+// Recorrer y mostrar los elementos del Set
+languagesSet.forEach(language => console.log(language));
+
+// Obtener el tamaño del Set
+console.log(`Número de lenguajes en el Set: ${languagesSet.size}`);
