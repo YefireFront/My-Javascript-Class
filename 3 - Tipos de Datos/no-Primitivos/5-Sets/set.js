@@ -13,3 +13,26 @@ const playerunique = [... new Set (playersArray)]
 
 console.log(playerunique)
 
+
+
+// Crear un Set con algunos lenguajes de programación
+const languagesSet = new Set(['JavaScript', 'Python', 'Java', 'C++', 'Ruby']);
+
+// Añadir un nuevo lenguaje al Set
+languagesSet.add('Go');
+
+// Intentar añadir un lenguaje duplicado no tendrá efecto
+languagesSet.add('Python');
+
+// Eliminar un lenguaje del Set
+languagesSet.delete('C++');
+
+// Comprobar si un lenguaje está en el Set
+console.log(languagesSet.has('Java')); // true
+console.log(languagesSet.has('C++')); // false
+
+// Recorrer y mostrar los elementos del Set
+languagesSet.forEach(language => console.log(language));
+
+// Obtener el tamaño del Set
+console.log(`Número de lenguajes en el Set: ${languagesSet.size}`);
