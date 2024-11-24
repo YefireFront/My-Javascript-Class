@@ -125,3 +125,79 @@ class Sanador extends Personaje {
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
         if (this.vida === 0) return false;  
         if (objetivo.vida > 0) return false;            
+        
+        objetivo.vida = 40;
+        this.energia -= 70;
+        this.especial = 0;
+        
+        GestorDeTurnos.finalizarTurno(); // Finalizar turno después de revivir
+    }
+}
+
+class Hechicero extends Personaje {
+    constructor({ nombre, iniciativa }) {
+        super({ nombre, iniciativa });
+        this.especial = 1;
+        this.atk = 70;
+        this.def = 30;
+    }
+    
+    mejorar(objetivo) {
+        if (this.estaMuerto()) return false;
+        if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
+        
+        objetivo.atk += 10;
+        objetivo.def += 10;
+        this.energia -= 30;
+        
+        GestorDeTurnos.finalizarTurno(); // Finalizar turno después de mejorar
+    }
+    
+    peste(objetivo) {
+        if (this.estaMuerto()) return false;
+        if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
+        
+        objetivo.atk -= 20;
+        objetivo.def -= 20;
+        this.energia -= 70;
+        
+        GestorDeTurnos.finalizarTurno(); // Finalizar turno después de lanzar la peste
+    }
+}
+
+class GestorDeTurnos {
+    static personajes = [];
+    static indiceTurnoActual = 0;
+
+    static agregarPersonaje(personaje) {
+        this.personajes.push(personaje);
+        this.personajes.sort((a, b) => b.iniciativa - a.iniciativa); 
+    }
+
+    static esTurno(personaje) {
+        if (this.personajes[this.indiceTurnoActual] !== personaje) {
+            console.log(`No es tu turno, ${personaje.nombre}. Es el turno de ${this.personajes[this.indiceTurnoActual].nombre}`);
+            return false;
+        }
+        return true;
+    }
+
+    static finalizarTurno() {
+        this.indiceTurnoActual = (this.indiceTurnoActual + 1) % this.personajes.length;
+        console.log(`Es el turno de ${this.personajes[this.indiceTurnoActual].nombre}`);
+    }
+
+    static iniciar() {
+        console.log(`Comienza la partida. Es el turno de ${this.personajes[this.indiceTurnoActual].nombre}`);
+    }
+}
+
+const Yeffer = new Guerrero({ nombre: "Yeffer", iniciativa: 10 });
+const Arley = new Hechicero({ nombre: "Arley", iniciativa: 8 });
+const Walter = new Sanador({ nombre: "Walter", iniciativa: 9 });
+
+GestorDeTurnos.agregarPersonaje(Yeffer);
+GestorDeTurnos.agregarPersonaje(Arley);
+GestorDeTurnos.agregarPersonaje(Walter);
+
+GestorDeTurnos.iniciar();
