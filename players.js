@@ -14,17 +14,3 @@ const gestorDeTurnos = {
         }`
       );
       return false;
-    }
-    return true;
-  },
-
-  finalizarTurno() {
-    this.indiceTurnoActual =
-      (this.indiceTurnoActual + 1) % this.jugadores.length;
-    console.log(
-      `Es el turno de ${this.jugadores[this.indiceTurnoActual].nombre}`
-    );
-  },
-
-  mostrarTablaDePosiciones() {
-    console.log("\nTabla de Posiciones:");
