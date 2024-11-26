@@ -95,14 +95,3 @@ const valery = {
   },
 };
 
-// Agregar jugadores al gestor de turnos
-gestorDeTurnos.agregarJugador(anderson);
-gestorDeTurnos.agregarJugador(mateo);
-gestorDeTurnos.agregarJugador(brandon);
-gestorDeTurnos.agregarJugador(valery);
-
-// Iniciar el sistema de turnos
-gestorDeTurnos.iniciar();
-
-
-console.log(gestorDeTurnos.jugadores);
