@@ -235,6 +235,12 @@ console.log(`Novb  21th     Back to thr GYM and rewrite  GOALS`)
 console.log(`Novb  22th     Rest Time`)
 console.log(`Novb  23th     organize and delete excess information`)
 console.log(`Novb  24th     English class retaked`)
+console.log(`Novb  24th     English class retaked`)
+console.log(`Novb  24th     English class retaked`)
+console.log(`Novb  24th     English class retaked`)
+console.log(`Novb  24th     English class retaked`)
+console.log(`Novb  24th     English class retaked`)
+console.log(`Novb  24th     English class retaked`)
  
 
 
