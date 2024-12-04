@@ -241,6 +241,7 @@ console.log(`Novb  27th     `)
 console.log(`Novb  28th     `)
 console.log(`Novb  29th     New Hair style`)
 console.log(`Novb  30th     Al, Inc`)
+console.log(`Novb  30th     Al, Inc`)
  
 
 
