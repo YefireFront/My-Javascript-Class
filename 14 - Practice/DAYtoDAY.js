@@ -230,19 +230,4 @@ console.log(`Novb  16th     🎊🎊 "Hemos recibido tu postulación a Talento T
 console.log(`Novb  17th     🌊i☀ 🖤`)
 console.log(`Novb  18th     Watch A desaster class`)
 console.log(`Novb  19th     `)
-console.log(`Novb  20th     I Get de Permition for reset`)
-console.log(`Novb  21th     Back to thr GYM and rewrite  GOALS`)
-console.log(`Novb  22th     Rest Time`)
-console.log(`Novb  23th     organize and delete excess information`)
-console.log(`Novb  24th     English class retaked`)
-console.log(`Novb  25th     `)
-console.log(`Novb  26th     `)
-console.log(`Novb  27th     `)
-console.log(`Novb  28th     `)
-console.log(`Novb  29th     New Hair style`)
-console.log(`Novb  30th     Al, Inc`)
-console.log(`Novb  30th     Al, Inc`)
-console.log(`Novb  30th     Al, Inc`)
- 
-
 
