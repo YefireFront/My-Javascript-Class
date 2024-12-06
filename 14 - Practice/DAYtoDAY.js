@@ -244,7 +244,7 @@ console.log(`Nov  30th     Al, Inc`)
 console.log(`Nov  01th     INC in the builing`) 
 console.log(`Dic  02th     Drinking with CC and empty`) 
 console.log(`Dic  03th     Back Home and rest`) 
-console.log(`Dic  04th     `) 
+console.log(`Dic  04th     JUst Home`) 
 console.log(`Dic  05th     Organize all details`) 
 console.log(`Dic  06th     Go to CHOQUI`) 
  
