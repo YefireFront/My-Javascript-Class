@@ -10,7 +10,3 @@ function publicFunction() {
     // Código de la función pública
 }
 
-// Exporta las funciones públicas del módulo
-module.exports = {
-    publicFunction
-};
