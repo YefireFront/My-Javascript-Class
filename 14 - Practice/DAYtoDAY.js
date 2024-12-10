@@ -247,5 +247,10 @@ console.log(`Dic  03th     Back Home and rest`)
 console.log(`Dic  04th     JUst Home`) 
 console.log(`Dic  05th     Organize all details`) 
 console.log(`Dic  06th     Go to CHOQUI`) 
+console.log(`Dic  06th     Go to CHOQUI`) 
+console.log(`Dic  06th     Go to CHOQUI`) 
+console.log(`Dic  06th     Go to CHOQUI`) 
+console.log(`Dic  06th     Go to CHOQUI`) 
+console.log(`Dic  06th     Go to CHOQUI`) 
  
 
