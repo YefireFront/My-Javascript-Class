@@ -29,10 +29,4 @@ function sqrt2(num) {
 
 //% Manejo de Excepciones:
 
-// Escribe un bloque try...catch que intente convertir una cadena en un número usando parseInt.
-function trc(e) {
-  try {
-    console.log(e);
-    newn = parseInt(e);
-    console.log(newn);
-  } catch (error) {
+// Escribe un bloqu
