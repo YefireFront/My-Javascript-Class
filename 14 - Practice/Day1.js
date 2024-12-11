@@ -12,21 +12,5 @@ function AVG(arr) {
 
 //% Utiliza un bucle for of para recorrer el array y calcular la suma de los números.
 let sum = 0;
-for (let i = 0; i < numberArray.length; i++) {
-  const element = numberArray[i];
-  sum += element;
-}
-// console.log(sum/numberArray.length);
 
-//% Funciones y Datos Primitivos:
-
-// Define una función llamada calcularCuadrado que tome un número como argumento y devuelva el cuadrado de ese número.
-const sqrt = (num) => num * num;
-// Utiliza una declaración de función para definir la función.
-function sqrt2(num) {
-  console.log(num * num);
-}
-
-//% Manejo de Excepciones:
-
-// Escribe un bloqu
+  
