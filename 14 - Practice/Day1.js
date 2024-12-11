@@ -103,14 +103,3 @@ async function mostrarDatosUsuario() {
 
 // // Llamar a la función para mostrar los datos del usuario
 // mostrarDatosUsuario();
-
-function yef(a = 2, b = 20) {
-    b = 90
-  console.log(a);
-  console.info(arguments[0]);
-
-  console.log(b);
-  console.info(arguments[1]);
-}
-
-yef(12.1,1);
