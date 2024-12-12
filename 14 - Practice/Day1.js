@@ -52,30 +52,3 @@ const arrayDeObjetos = [
   { nombre: "Juan", edad: "5", email: "juan@example.com" },
   { nombre: "María", edad: 30, email: "" },
   { nombre: "", edad: "", email: "" },
-];
-
-function forlabel(arr) {
-  
-  mainfor: for (let i = 0; i < arrayDeObjetos.length; i++) {
-    const element = arrayDeObjetos[i];
-  
-    for (const key in element) {
-      if (element[key] == "") {
-        console.error(`the property ${key} is empty ${element[key]}`);
-        break mainfor;
-      } else {
-        console.log(`${key} ${element[key]}`);
-      }
-    }
-  }
-}
-
-//% Async/Await y Promesas:
-
-// Crea una función asincrónica llamada obtenerDatosUsuario que simule una llamada a una API para obtener los datos de un usuario.
-// Dentro de esta función, utiliza fetch para hacer una solicitud a una URL ficticia que devuelve datos de usuario.
-// Utiliza await para esperar la respuesta del servidor.
-// Captura cualquier error usando try...catch y muestra un mensaje de error si la solicitud falla.
-
-function obtenerDatosUsuario() {
-  return new Promise((resolve, reject) => {
