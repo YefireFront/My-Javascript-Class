@@ -52,3 +52,66 @@ const arrayDeObjetos = [
   { nombre: "Juan", edad: "5", email: "juan@example.com" },
   { nombre: "María", edad: 30, email: "" },
   { nombre: "", edad: "", email: "" },
+];
+
+function forlabel(arr) {
+  
+  mainfor: for (let i = 0; i < arrayDeObjetos.length; i++) {
+    const element = arrayDeObjetos[i];
+  
+    for (const key in element) {
+      if (element[key] == "") {
+        console.error(`the property ${key} is empty ${element[key]}`);
+        break mainfor;
+      } else {
+        console.log(`${key} ${element[key]}`);
+      }
+    }
+  }
+}
+
+//% Async/Await y Promesas:
+
+// Crea una función asincrónica llamada obtenerDatosUsuario que simule una llamada a una API para obtener los datos de un usuario.
+// Dentro de esta función, utiliza fetch para hacer una solicitud a una URL ficticia que devuelve datos de usuario.
+// Utiliza await para esperar la respuesta del servidor.
+// Captura cualquier error usando try...catch y muestra un mensaje de error si la solicitud falla.
+
+function obtenerDatosUsuario() {
+  return new Promise((resolve, reject) => {
+    // Simulando una solicitud a una API con un retraso de 2 segundos
+    setTimeout(() => {
+      const datosUsuario = {
+        nombre: "Juan",
+        apellido: "Pérez",
+        edad: 30,
+      };
+      resolve(datosUsuario);
+    }, 2000);
+  });
+}
+
+async function mostrarDatosUsuario() {
+  try {
+    console.log("Obteniendo datos del usuario...");
+    const datosUsuario = await obtenerDatosUsuario();
+    console.log("Datos del usuario:", datosUsuario);
+  } catch (error) {
+    console.error("Error al obtener los datos del usuario:", error);
+  }
+}
+
+// // Llamar a la función para mostrar los datos del usuario
+// mostrarDatosUsuario();
+
+function yef(a = 2, b = 20) {
+    b = 90
+  console.log(a);
+  console.info(arguments[0]);
+
+  console.log(b);
+  console.info(arguments[1]);
+}
+
+yef(12.1,1);
+yef(12.1,1);
