@@ -92,22 +92,3 @@ function obtenerDatosUsuario() {
 }
 
 async function mostrarDatosUsuario() {
-  try {
-    console.log("Obteniendo datos del usuario...");
-    const datosUsuario = await obtenerDatosUsuario();
-    console.log("Datos del usuario:", datosUsuario);
-  } catch (error) {
-    console.error("Error al obtener los datos del usuario:", error);
-  }
-}
-
-// // Llamar a la función para mostrar los datos del usuario
-// mostrarDatosUsuario();
-
-function yef(a = 2, b = 20) {
-    b = 90
-  console.log(a);
-  console.info(arguments[0]);
-
-  console.log(b);
-  console.info(arguments[1]);
