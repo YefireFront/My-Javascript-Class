@@ -79,16 +79,3 @@ function forlabel(arr) {
 
 function obtenerDatosUsuario() {
   return new Promise((resolve, reject) => {
-    // Simulando una solicitud a una API con un retraso de 2 segundos
-    setTimeout(() => {
-      const datosUsuario = {
-        nombre: "Juan",
-        apellido: "Pérez",
-        edad: 30,
-      };
-      resolve(datosUsuario);
-    }, 2000);
-  });
-}
-
-async function mostrarDatosUsuario() {
