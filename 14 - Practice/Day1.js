@@ -111,7 +111,3 @@ function yef(a = 2, b = 20) {
 
   console.log(b);
   console.info(arguments[1]);
-}
-
-yef(12.1,1);
-yef(12.1,1);
