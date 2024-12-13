@@ -73,19 +73,4 @@ function forlabel(arr) {
 //% Async/Await y Promesas:
 
 // Crea una función asincrónica llamada obtenerDatosUsuario que simule una llamada a una API para obtener los datos de un usuario.
-// Dentro de esta función, utiliza fetch para hacer una solicitud a una URL ficticia que devuelve datos de usuario.
-// Utiliza await para esperar la respuesta del servidor.
-// Captura cualquier error usando try...catch y muestra un mensaje de error si la solicitud falla.
-
-function obtenerDatosUsuario() {
-  return new Promise((resolve, reject) => {
-    // Simulando una solicitud a una API con un retraso de 2 segundos
-    setTimeout(() => {
-      const datosUsuario = {
-        nombre: "Juan",
-        apellido: "Pérez",
-        edad: 30,
-      };
-      resolve(datosUsuario);
-    }, 2000);
-  });
+// 
