@@ -42,13 +42,4 @@ function trc(e) {
 
 // trc('24')
 
-//% Bucles y Control de Flujo:
-
-// Utiliza un bucle for para iterar sobre un array de objetos.
-// Dentro del bucle, utiliza un if para verificar si alguna propiedad de cada objeto es un string vacío.
-// Si encuentras una propiedad vacía, usa break para salir del bucle.
-const arrayDeObjetos = [
-  { nombre: "yeffer", edad: 25, email: "correo@example.com" },
-  { nombre: "Juan", edad: "5", email: "juan@example.com" },
-  { nombre: "María", edad: 30, email: "" },
-  { nombr
+//% Bucl
