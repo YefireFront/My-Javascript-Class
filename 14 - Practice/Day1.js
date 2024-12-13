@@ -89,9 +89,3 @@ function obtenerDatosUsuario() {
       resolve(datosUsuario);
     }, 2000);
   });
-}
-
-async function mostrarDatosUsuario() {
-  try {
-    console.log("Obteniendo datos del usuario...");
-    const datosUsuario = await obtenerDatosUsuario();
