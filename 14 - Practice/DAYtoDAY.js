@@ -257,6 +257,6 @@ console.log(`Dic  13th     Go to CHOQUI`)
 console.log(`Dic  14th     Go to CHOQUI`) 
 console.log(`Dic  15th     Go to CHOQUI`) 
 console.log(`Dic  16th     Go to CHOQUI`) 
-// console.log(`Dic  17th     Go to CHOQUI`) 
+console.log(`Dic  17th     Go to CHOQUI`) 
  
 
