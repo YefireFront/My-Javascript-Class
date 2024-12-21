@@ -100,6 +100,3 @@ async function mostrarDatosUsuario() {
     console.error("Error al obtener los datos del usuario:", error);
   }
 }
-
-// // Llamar a la función para mostrar los datos del usuario
-// mostrarDatosUsuario();
