@@ -134,6 +134,35 @@ class Sanador extends Personaje {
     }
 }
 
+class Hechicero extends Personaje {
+    constructor({ nombre, iniciativa }) {
+        super({ nombre, iniciativa });
+        this.especial = 1;
+        this.atk = 70;
+        this.def = 30;
+    }
+    
+    mejorar(objetivo) {
+        if (this.estaMuerto()) return false;
+        if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
+        
+        objetivo.atk += 10;
+        objetivo.def += 10;
+        this.energia -= 30;
+        
+        GestorDeTurnos.finalizarTurno(); // Finalizar turno después de mejorar
+    }
+    
+    peste(objetivo) {
+        if (this.estaMuerto()) return false;
+        if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
+        
+        objetivo.atk -= 20;
+        objetivo.def -= 20;
+        this.energia -= 70;
+        
+        GestorDeTurnos.finalizarTurno(); // Finalizar turno después de lanzar la peste
+    }
+}
 
-
-
+    
