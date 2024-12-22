@@ -153,7 +153,7 @@ class Hechicero extends Personaje {
         GestorDeTurnos.finalizarTurno(); // Finalizar turno después de mejorar
     }
     
-    peste(objetivo) {
+    peste(objetivo)
         if (this.estaMuerto()) return false;
         if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
         
