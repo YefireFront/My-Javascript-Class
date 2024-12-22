@@ -134,19 +134,4 @@ class Sanador extends Personaje {
     }
 }
 
-class Hechicero extends Personaje {
-    constructor({ nombre, iniciativa }) {
-        super({ nombre, iniciativa });
-  
-        if (this.estaMuerto()) return false;
-        if (!GestorDeTurnos.esTurno(this)) return false; // Verificación de turno
-        
-        objetivo.atk -= 20;
-        objetivo.def -= 20;
-        this.energia -= 70;
-        
-        GestorDeTurnos.finalizarTurno(); // Finalizar turno después de lanzar la peste
-    }
-}
 
-    
