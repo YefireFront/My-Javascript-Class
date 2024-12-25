@@ -4,7 +4,6 @@ const gestorTurnos = {
 
     siguienteTurno() {
         this.indiceActual = this.indiceActual === this.jugadores.length - 1 ? 0 : this.indiceActual + 1;
-        const jugadorActual = this.jugadores[this.indiceActual];
-
+        con
 
 
