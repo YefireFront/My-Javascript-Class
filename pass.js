@@ -3,7 +3,6 @@ const gestorTurnos = {
     indiceActual: 0,
 
     siguienteTurno() {
-        this.indiceActual = this.indiceActual === this.jugadores.length - 1 ? 0 : this.indiceActual + 1;
-        con
+        this.indiceActual = thi
 
 
