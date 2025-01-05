@@ -104,5 +104,3 @@ gestorDeTurnos.agregarJugador(valery);
 // Iniciar el sistema de turnos
 gestorDeTurnos.iniciar();
 
-
-console.log(gestorDeTurnos.jugadores);
