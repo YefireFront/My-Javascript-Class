@@ -200,4 +200,3 @@ GestorDeTurnos.agregarPersonaje(Yeffer);
 GestorDeTurnos.agregarPersonaje(Arley);
 GestorDeTurnos.agregarPersonaje(Walter);
 
-GestorDeTurnos.iniciar();
