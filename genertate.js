@@ -196,7 +196,4 @@ const Yeffer = new Guerrero({ nombre: "Yeffer", iniciativa: 10 });
 const Arley = new Hechicero({ nombre: "Arley", iniciativa: 8 });
 const Walter = new Sanador({ nombre: "Walter", iniciativa: 9 });
 
-GestorDeTurnos.agregarPersonaje(Yeffer);
-GestorDeTurnos.agregarPersonaje(Arley);
-GestorDeTurnos.agregarPersonaje(Walter);
 
