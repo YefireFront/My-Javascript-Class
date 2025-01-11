@@ -71,3 +71,4 @@ export const moduleVar = "I am in a module";
 
 import { moduleVar } from './module1.js';
 console.log(moduleVar); // I am in a module
+
