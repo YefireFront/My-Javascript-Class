@@ -28,6 +28,3 @@ function getDayName(dayNumber) {
     return dayName;
 }
 
-// Ejemplo de uso
-console.log(getDayName(3)); // Output: Wednesday
-console.log(getDayName(8)); // Output: Invalid day number
