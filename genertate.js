@@ -20,3 +20,6 @@ console.log('reduce:', sum);
 // find: Encontrar el primer número par
 const firstEven = numbers.find(number => number % 2 === 0);
 console.log('find:', firstEven);
+
+// some: Comprobar si hay algún número par
+const hasEven = numbers.some(number => number % 2 === 0);
