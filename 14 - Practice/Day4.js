@@ -30,11 +30,4 @@ console.log(uniqueRoadmaps4);
 
 //*5
 
-const uniqueRoadmap5s = [];
-for (const roadmap of roadmaps) {
-  if (!uniqueRoadmap5s.includes(roadmap)) {
-    uniqueRoadmap5s.push(roadmap);
-  }
-}
-console.log(uniqueRoadmap5s);
-console.log(uniqueRoadmap5s);
+
