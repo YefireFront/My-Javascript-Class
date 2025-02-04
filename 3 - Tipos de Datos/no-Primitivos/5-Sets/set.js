@@ -31,3 +31,8 @@ languagesSet.delete('C++');
 // Comprobar si un lenguaje está en el Set
 console.log(languagesSet.has('Java')); // true
 console.log(languagesSet.has('C++')); // false
+
+// Convertir el Set a un Array
+const languagesArray = [...languagesSet];
+
+console.log(languagesArray); // ['JavaScript', 'Python', 'Java', 'Ruby', 'Go']
