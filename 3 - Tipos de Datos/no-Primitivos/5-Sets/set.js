@@ -1,5 +1,6 @@
 // Crear un Set con 5 nombres de jugadores
-const playersSet = new Set(['Lionel', 'Cristiano', 'Kylian', 'Neymar', 'Kevin']);
+const playersSet = new Set(['Lionel', 'Cristiano', 'Kylian', 'Neymar', 'Kevin', 'Neymar']);
+console.log(playersSet);
 
 // Crear un array con 10 nombres de jugadores, incluyendo 3 nombres repetidos
 const playersArray = ['Lionel', 'Cristiano', 'Kylian', 'Neymar', 'Kevin', 'Lionel', 'Cristiano', 'Kevin', 'Sadio', 'Eden'];
@@ -30,3 +31,8 @@ languagesSet.delete('C++');
 // Comprobar si un lenguaje está en el Set
 console.log(languagesSet.has('Java')); // true
 console.log(languagesSet.has('C++')); // false
+
+// Convertir el Set a un Array
+const languagesArray = [...languagesSet];
+
+console.log(languagesArray); // ['JavaScript', 'Python', 'Java', 'Ruby', 'Go']
