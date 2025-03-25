@@ -13,4 +13,4 @@ function cambiarFondo() {
 
 console.log("Espera 5 segundos para cambiar el fondo...");
 
-setTimeout(cambiarFondo, 5000);
+setTimeout(cambiarFondo, 5000);                                                                                                                                                                                                                                                                             5                                                                                   CX
