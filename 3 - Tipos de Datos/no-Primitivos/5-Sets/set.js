@@ -35,7 +35,6 @@ console.log(languagesSet.has('C++')); // false
 // Convertir el Set a un Array
 const languagesArray = [...languagesSet];
 
-console.log(languagesArray); // otro ejemplo
 
 
 
