@@ -42,24 +42,6 @@ for (const key in champsions) {
 
 
 
+// Ejemplo for in  en array
 
-//!Middleweight 💪
-
-
-/* //*
- ercicio 1: Conteo de propiedades de un objeto
-Escribe una función llamada contarPropiedades que tome un objeto como argumento y devuelva el número de propiedades que tiene.
-
-Ejercicio 2: Obtener valores pares de un array
-Escribe una función llamada valoresPares que tome un array que contenga números como valores 
-y devuelva un array con solo los valores pares.
-
-Ejercicio 3: Concatenación de claves y valores
-Escribe una función llamada concatenarClavesYValores que tome un objeto como argumento 
-y devuelva una cadena que contenga todas las claves y valores del objeto concatenados en un formato legible. 
- */
-
-
-
-
-
+const array = [1, 2, 3, 4, 5];
