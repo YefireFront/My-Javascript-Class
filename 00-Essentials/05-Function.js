@@ -7,6 +7,8 @@ const ingredient = function (amount, unit, name) {
   }
   console.log(`${ingredientAmount} ${unit} ${name}`);
 };
+
+
 ingredient(1, "lata", "garbanzos");
 ingredient(0.25, "taza", "tahini");
 ingredient(0.25, "taza", "jugo de limón");
@@ -58,4 +60,23 @@ const jordan = nbaPlayer('Michael Jordan', 'Chicago Bulls', 'Chicago');
 const kobe = nbaPlayer('Kobe Bryant', 'Los Angeles Lakers', 'Los Angeles');
 
 console.log(jordan)
-kobe
+
+
+// Funcion declarada 
+
+function add(a, b) {
+  return a + b;
+}
+
+add(1, 2);
+
+
+// Funcion expresada
+
+const add = function (a, b) {
+  return a + b;
+}
+
+add(1, 2);
+
+
