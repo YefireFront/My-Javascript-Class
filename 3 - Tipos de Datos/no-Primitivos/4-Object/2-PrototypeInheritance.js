@@ -1,3 +1,0 @@
-//!Flyweight
-//!Middleweight
-//!Heavyweigh

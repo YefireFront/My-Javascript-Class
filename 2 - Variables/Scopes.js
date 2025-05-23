@@ -10,11 +10,11 @@ function checkGlobalScope() {
   console.log(globalConst); // I am globally constant
 }
 
-checkGlobalScope();
+// checkGlobalScope();
 
-console.log(globalVar);   // I am global
-console.log(globalLet);   // I am also global
-console.log(globalConst); // I am globally constant
+// console.log(globalVar);   // I am global
+// console.log(globalLet);   // I am also global
+// console.log(globalConst); // I am globally constant
 
 
 
@@ -32,7 +32,7 @@ function checkFunctionScope() {
     console.log(functionConst); // I am constant in a function
   }
   
-  checkFunctionScope();
+  // checkFunctionScope();
   
   // console.log(functionVar); // Error: functionVar is not defined
   // console.log(functionLet); // Error: functionLet is not defined
@@ -45,7 +45,7 @@ function checkFunctionScope() {
 //   Block Scope
 
 
-if (true) {
+if (false) {
     var blockVar = "I am a var inside a block";
     let blockLet = "I am a let inside a block";
     const blockConst = "I am a const inside a block";
@@ -55,7 +55,7 @@ if (true) {
     console.log(blockConst); // I am a const inside a block
   }
   
-  console.log(blockVar); // I am a var inside a block
+  // console.log(blockVar); // I am a var inside a block
   // console.log(blockLet); // Error: blockLet is not defined
   // console.log(blockConst); // Error: blockConst is not defined
   
