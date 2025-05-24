@@ -63,3 +63,19 @@ function JugadorNBA(nombre, equipo, posicion) {
 
 const LeBronJames = new JugadorNBA('LeBron James', 'Los Angeles Lakers', 'Ala-Pívot');
 
+
+
+
+
+let persona = {
+    nombre: 'yeffer'
+};
+
+persona.altura = 186;
+console.log(persona); 
+
+delete persona.altura;
+console.log(persona); 
+
+
+
