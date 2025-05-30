@@ -45,3 +45,19 @@ function checkFunctionScope() {
 //   Block Scope
 
 
+if (false) {  = "I am a var inside a block";
+    let blockLet = "I am a let inside a block";
+    const blockConst = "I am a const inside a block";
+    
+    console.log(blockVar);   // I am a var inside a block
+    console.log(blockLet);   // I am a let inside a block
+    console.log(blockConst); // I am a const inside a block
+  }
+  
+  // console.log(blockVar); // I am a var inside a block
+  // console.log(blockLet); // Error: blockLet is not defined
+  // console.log(blockConst); // Error: blockConst is not defined
+  
+
+
+
