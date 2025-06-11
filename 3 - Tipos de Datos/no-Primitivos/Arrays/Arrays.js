@@ -102,3 +102,6 @@ let jugadores = [
 jugadores.forEach(j => {
   console.log(`${j.nombre} juega ${j.deporte}`);
 });
+
+
+
