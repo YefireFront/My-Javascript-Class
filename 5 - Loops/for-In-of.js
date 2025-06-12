@@ -35,10 +35,6 @@ console.log("🔢 for...in con array (índices):");
 for (let indice in juegos) {
   console.log(indice + " =>", juegos[indice]);
 }
-// Resultado:
-// 0 => FIFA
-// 1 => GTA
-// 2 => Zelda
 
 
 // --------------------------------------------
