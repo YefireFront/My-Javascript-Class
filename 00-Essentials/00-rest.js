@@ -1,7 +1,3 @@
-let yeffer = "We are  agreatrer programer";
-let a = 119;
-let b = 115;
-
 let c = a + b;
 var f = undefined;
 
