@@ -7,4 +7,10 @@ console.log(typeof undefined)
 console.log(typeof null)
 
 
-// No Primiti
+// No Primitivos
+console.log(typeof {})
+console.log(typeof [])
+
+
+
+
