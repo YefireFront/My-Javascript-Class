@@ -35,8 +35,9 @@ console.log(`Jul 04th Procesing...`)
 console.log(`Jul 05th I Gonna make today happen`)
 console.log(`Jul 06th `)
 console.log(`Jul 07th Sick`)
-console.log(`Jul 08th Sick`)
+console.log(`Jul 08th Apply for a job offer`)
 console.log(`Jul 09th Sick`)
+console.log(`Jul 10th Sick`)
 
 
 
