@@ -41,7 +41,7 @@ console.log(`Jul 10th advance to the interview stage`)
 console.log(`Jul 11th Great interview`)
 console.log(`Jul 12th creating my video class F J`)
 console.log(`Jul 13th THAT PAIN`)
-console.log(`Jul 14th `)
+console.log(`Jul 14th 15 DAY 😂😀`)
 
 
 
