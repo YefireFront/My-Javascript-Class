@@ -43,7 +43,7 @@ console.log(`Jul 12th creating my video class F J`)
 console.log(`Jul 13th THAT PAIN`)
 console.log(`Jul 14th 15 DAY 😂😀`)
 console.log(`Jul 15th THE SECOUND `)
-console.log(`Jul 16th `)
+console.log(`Jul 16th Rstingg...`)
 console.log(`Jul 17th get de oparation day`)
 
 
