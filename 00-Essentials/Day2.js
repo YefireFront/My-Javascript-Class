@@ -44,7 +44,7 @@ console.log(`Jul 13th THAT PAIN`)
 console.log(`Jul 14th 15 DAY 😂😀`)
 console.log(`Jul 15th THE SECOUND `)
 console.log(`Jul 16th `)
-console.log(`Jul 17th `)
+console.log(`Jul 17th get de oparation day`)
 
 
 
