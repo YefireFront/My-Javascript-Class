@@ -46,7 +46,7 @@ console.log(`Jul 15th THE SECOUND `)
 console.log(`Jul 16th Rstingg...`)
 console.log(`Jul 17th get de oparation day`)
 console.log(`Jul 18th Lokking for maestrias `)
-console.log(`Jul 18th Lokking for maestrias `)
+console.log(`Jul 19th `)
 
 
 
