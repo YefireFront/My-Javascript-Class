@@ -48,7 +48,7 @@ console.log(`Jul 17th get de oparation day`)
 console.log(`Jul 18th Lokking for maestrias `)
 console.log(`Jul 19th Lose`)
 console.log(`Jul 20th Nothing...`)
-console.log(`Jul 21th `)
+console.log(`Jul 21th My operation 👁`)
 
 
 
