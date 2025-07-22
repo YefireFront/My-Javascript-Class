@@ -49,6 +49,7 @@ console.log(`Jul 18th Lokking for maestrias `)
 console.log(`Jul 19th Lose`)
 console.log(`Jul 20th Nothing...`)
 console.log(`Jul 21th My operation 👁`)
+console.log(`Jul 21th  TDEA`)
 
 
 
