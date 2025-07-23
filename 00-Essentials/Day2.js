@@ -50,6 +50,7 @@ console.log(`Jul 19th Lose`)
 console.log(`Jul 20th Nothing...`)
 console.log(`Jul 21th My operation 👁`)
 console.log(`Jul 21th  TDEA`)
+console.log(`Jul 21th  TDEA`)   
 
 
 
