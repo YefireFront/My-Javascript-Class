@@ -51,7 +51,7 @@ console.log(`Jul 20th Nothing...`)
 console.log(`Jul 21th My operation 👁`)
 console.log(`Jul 21th  TDEA`)
 console.log(`Jul 22th  Cita`)   
-console.log(`Jul 23th  Stay at home `)   
+console.log(`Jul 23th  Stay at home`)   
 
 
 
