@@ -56,6 +56,7 @@ console.log(`Jul 24th General Aful exam `)
 console.log(`Jul 25th Another ? `)   
 console.log(`Jul 26th Talento Tech `)   
 console.log(`Jul 27th stared with all`)   
+console.log(`Jul 27th `)   
 
 
 
