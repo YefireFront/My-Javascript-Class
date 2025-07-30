@@ -57,7 +57,7 @@ console.log(`Jul 25th Another ? `)
 console.log(`Jul 26th Talento Tech `)   
 console.log(`Jul 27th stared with all`)   
 console.log(`Jul 28th We tried and fail`)   
-console.log(`Jul 29th `)   
+console.log(`Jul 29th TdeA in trouble`)   
 
 
 
