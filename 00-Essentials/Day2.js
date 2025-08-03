@@ -61,7 +61,7 @@ console.log(`Jul 29th TdeA in trouble`)
 console.log(`Jul 30th Talento teach`)   
 console.log(`Jul 31th its NOW`)   
 console.log(`Ago 01th Please`)   
-console.log(`Ago 01th BIG TIME`)   
+console.log(`Ago 02th BIG TIME`)   
 
 
 
