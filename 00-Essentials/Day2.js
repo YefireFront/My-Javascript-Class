@@ -65,6 +65,7 @@ console.log(`Ago 02th BIG TIME`)
 console.log(`Ago 03th Thinking about BIG descition `)   
 console.log(`Ago 04th Cordal Extarer finished`)   
 console.log(`Ago 05th Last deatil`)   
+console.log(`Ago 06th Stared`)   
 
 
 
