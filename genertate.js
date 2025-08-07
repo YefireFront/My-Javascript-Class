@@ -133,17 +133,15 @@ for (let i = 0; i < 11; i++) {
 // Fibonacci (opcional)
 // Muestra los primeros N números de la serie de Fibonacci.
 
-let diasAnio = 321
 
-if((diasAnio % 4 == 0 && diasAnio%100 != 0)|| (diasAnio % 400 ==0)){ 
-    console.log(`Bisiest`)
-}else{
-    
-    console.log(`No Bisiest`)
+function bis(diasAnio) {
+    if((diasAnio % 4 == 0 && diasAnio%100 != 0)|| (diasAnio % 400 ==0)){ 
+        console.log(`Bisiest`)
+    }else{
+        
+        console.log(`No Bisiest`)
+    }
 }
-
-
-
 
 
 function invertirMetodos(palabra) {
@@ -161,7 +159,6 @@ function invertirMetodos(palabra) {
     }
 }
 
-invertirMetodos('1221')
 
 function invertir (palabra){
     // Convertimos a minúsculas y quitamos espacios (opcional para mejorar la verificación)
@@ -186,4 +183,100 @@ function invertir (palabra){
 
 }
 
-// invertir('cac')
+
+function contarVocales(palabra) {
+    let cont = 0;
+    palabra = palabra.toLowerCase(); // Reasignar la cadena en minúsculas
+
+    for (let i = 0; i < palabra.length; i++) {
+        let letra = palabra[i];
+        if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+            cont++;
+        }
+    }
+
+    if (cont > 0) {
+        console.log(`La palabra "${palabra}" tiene ${cont} vocal(es).`);
+    } else {
+        console.log(`La palabra "${palabra}" no tiene vocales.`);
+    }
+}
+
+
+function fibonachi(numero) {
+    let ant = 0
+    let pos = 1
+    let suma = 0
+
+    for (let i = 0; i <= numero ; i++) {
+        if (i == 0){
+            console.log(`${i}`);
+            continue
+        }
+        if (i == 1){
+            console.log(`${i}`);
+            continue
+        }
+        if(i > 1){
+            suma = ant + pos
+            ant = pos
+            pos = suma
+
+            console.log(`${suma}`)
+
+        }
+
+
+    
+    }
+
+    // console.log(`el fibonachi de ${numero} es ${fibonachiResul}`)
+}
+
+
+const prompt = require('prompt-sync')();
+let saldo = 15000
+
+while (true) {
+    
+    console.log("🟡 Bienvenido al Cajero Automático 🟡\n\n" +
+    "1. Ver saldo\n" +
+    "2. Retirar dinero\n" +
+    "3. Depositar dinero\n" +
+    "4. Salir\n\n");
+    let res = prompt("Elige una opción (1-4):")
+
+    if (res == 1) {
+        console.log(`Viendo saldo...\n`)
+        console.log(`Tu saldo es ${saldo}\n`)
+    }
+    
+    if (res == 2) {
+        console.log(`\n RETIRANDO...`)
+        console.log(`Tu saldo es ${saldo}\n`)
+        let cantidadRetiro = prompt("Cuanto dinero deseas retirar")
+        console.log(`Saldo: ${saldo}`)
+        saldo = saldo - cantidadRetiro
+        console.log(`acaba de retirar ${cantidadRetiro}\n nuevo saldo ${saldo}`)
+        
+        
+    }
+
+    if (res == 3){
+        console.log(`\n\nDEPORSITANDO SALDO...`)
+        let cantidadDepositar = parseInt(prompt("Cuanto dinero deseas depositar"))
+        console.log(`Saldo: ${saldo}`)
+        saldo = saldo + cantidadDepositar
+        console.log(`acaba de deporistar ${cantidadDepositar}\n nuevo saldo ${saldo}`)
+    }
+
+    if (res == 4) {
+        console.log(`\n\nBYE BYE BYE\n\n\n`)
+        break
+    }
+
+   
+
+    
+}
+
