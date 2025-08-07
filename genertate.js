@@ -144,26 +144,46 @@ if((diasAnio % 4 == 0 && diasAnio%100 != 0)|| (diasAnio % 400 ==0)){
 
 
 
-let palabra = prompt("Ingresa una palabra para verificar si es un palíndromo:");
 
-// Convertimos a minúsculas y quitamos espacios (opcional para mejorar la verificación)
-let palabraLimpia = palabra.toLowerCase().replace(/\s+/g, '');
 
-// Invertimos la palabra
-let palabraInvertida = palabraLimpia.split('').reverse().join('');
-
-// Comparamos
-if (palabraLimpia === palabraInvertida) {
-  alert(`"${palabra}" es un palíndromo.`);
-} else {
-  alert(`"${palabra}" no es un palíndromo.`);
+function invertirMetodos(palabra) {
+    // Convertimos a minúsculas y quitamos espacios (opcional para mejorar la verificación)
+    let palabraLimpia = palabra.toLowerCase().replace(/\s+/g, '');
+    
+    // Invertimos la palabra
+    let palabraInvertida = palabraLimpia.split('').reverse().join('');
+    
+    // Comparamos
+    if (palabraLimpia === palabraInvertida) {
+      console.log(`"${palabra}" es un palíndromo.`);
+    } else {
+      console.log(`"${palabra}" no es un palíndromo.`);
+    }
 }
 
-
+invertirMetodos('1221')
 
 function invertir (palabra){
     // Convertimos a minúsculas y quitamos espacios (opcional para mejorar la verificación)
-    
+    if (palabra[palabra.length - 1] === ' '  ||palabra[0] === ' ' ){
+        console.log(`la palabra contiene espacios`)
+        return false
+    }
 
+     // Invertir la palabra (opcional)
+    let invertida = '';
+    for (let i = palabra.length - 1; i >= 0; i--) {
+        invertida += palabra[i];
+    }
+
+    if(palabra == invertida){
+        console.log(`Palabra palindromo`)
+        return true
+    }else{
+        console.log(`Palabra no palindromo`)
+        return false
+    }
 
 }
+
+// invertir('cac')
