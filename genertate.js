@@ -85,19 +85,85 @@ let n = 10
 let suma = 0
 for (let i = 0; i <= n ; i++) {
     suma+=i
-    console.log(`${i}`)
+    // console.log(`${i}`)
 }
-console.log(`${suma}`)
+// console.log(`${suma}`)
 
 
 for (let i = 0; i < 11; i++) {
-    console.log(`5 x ${i} = ${5*i}`)
+    // console.log(`5 x ${i} = ${5*i}`)
 }
 
 
-let guess = 4
-while(num != guess){
+// // Generar número aleatorio entre 1 y 10
+// let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+// let intentos = 3;
+
+// while (intentos > 0) {
+//   let adivinanza = parseInt(prompt(`Adivina el número (1 al 10). Te quedan ${intentos} intento(s):`));
+
+//   if (adivinanza === numeroSecreto) {
+//     alert("¡Felicidades! Adivinaste el número secreto.");
+//     break;
+//   } else {
+//     alert("Incorrecto.");
+//     intentos--;
+//   }
+
+//   if (intentos === 0) {
+//     alert(`Se te acabaron los intentos. El número era ${numeroSecreto}.`);
+//   }
+// }
+
+
+
+
+// Parte 4: Problemas de lógica
+// ¿Es año bisiesto?
+// Escribe un programa que determine si un año es bisiesto.
+// (Un año es bisiesto si es divisible por 4, pero no por 100, salvo que también sea divisible por 400.)
+
+// Palíndromo
+// Pide una palabra y determina si se lee igual al revés.
+
+// Contador de vocales
+// Pide una frase y cuenta cuántas vocales tiene.
+
+// Fibonacci (opcional)
+// Muestra los primeros N números de la serie de Fibonacci.
+
+let diasAnio = 321
+
+if((diasAnio % 4 == 0 && diasAnio%100 != 0)|| (diasAnio % 400 ==0)){ 
+    console.log(`Bisiest`)
+}else{
+    
+    console.log(`No Bisiest`)
+}
+
+
+
+let palabra = prompt("Ingresa una palabra para verificar si es un palíndromo:");
+
+// Convertimos a minúsculas y quitamos espacios (opcional para mejorar la verificación)
+let palabraLimpia = palabra.toLowerCase().replace(/\s+/g, '');
+
+// Invertimos la palabra
+let palabraInvertida = palabraLimpia.split('').reverse().join('');
+
+// Comparamos
+if (palabraLimpia === palabraInvertida) {
+  alert(`"${palabra}" es un palíndromo.`);
+} else {
+  alert(`"${palabra}" no es un palíndromo.`);
+}
+
+
+
+function invertir (palabra){
+    // Convertimos a minúsculas y quitamos espacios (opcional para mejorar la verificación)
     
 
-}
 
+}
