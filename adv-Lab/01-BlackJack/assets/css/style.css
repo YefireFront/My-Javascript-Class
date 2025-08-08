@@ -1,0 +1,22 @@
+html,body{
+    margin: 0;
+    background: #2f4f30;
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    background: #000;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+.cartas{
+    position: relative;
+    width: 100px;
+    left:10px ;
+    margin-left: -75px;
+}
