@@ -10,15 +10,11 @@ class Persona {
         console.log(`I am ${this.nombre}`);
     }
 }
-
-
 const Yeffer = new Persona('yeffer', 15)
 
 const Persona2 = new Persona('Chris Brown', 29)
 
 
-
-    
 class Equipo {
     constructor(nombre , pais){
 
