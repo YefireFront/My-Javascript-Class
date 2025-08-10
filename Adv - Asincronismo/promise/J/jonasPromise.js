@@ -46,34 +46,15 @@ const getCountryAndNei = function (country) {
 }
 
 
-// getCountryAndNei('portugal')
 
-function getCountryFetch(country) {
-    fetch(`https://restcountries.com/v2/name/${country}`)
-    .then((response)=> response.json())
-    .then((data)=>{
-        const [pasiVecino1 , paisVecino2] = data[0]?.borders
-        if (!pasiVecino1) return false
-
-        fetch(`https://restcountries.com/v2/alpha/${pasiVecino1}`)
-        .then((response)=>response.json())
-        .then((data)=>{
-            console.log(data)
-        })
-        if (!paisVecino2) return false
-
-        fetch(`https://restcountries.com/v2/alpha/${paisVecino2}`)
-        .then((response)=>response.json())
-        .then((data)=>{
-            console.log(data)
-        })
-
-    })
-}
 
 function getCountryFetchJ(country) {
     fetch(`https://restcountries.com/v2/name/${country}`)
-    .then((response)=> response.json())
+    .then((response)=>{
+
+        if (!response.ok) throw new Error (`country nor found (${response.status})`)
+        return response.json()
+    })
     .then((data)=>{
         const [pasiVecino1 , paisVecino2] = data[0]?.borders
         if (!pasiVecino1) return false
@@ -86,25 +67,11 @@ function getCountryFetchJ(country) {
         console.log(data)
     })
     .catch(err =>{
-        throw new Error(err);
+        console.error(`${err} XXX`);
         
     })
 }
 
-getCountryFetch('usa')
-getCountryFetchJ('portugal')
+getCountryFetchJ('portugaal')
 
 
-// function getCountryFetchLimpia(country) {
-//     const Promise_Fetch = fetch(`https://restcountries.com/v2/name/${country}`)
-    
-//     console.warn(Promise_Fetch)
-    
-//     const Promise_Json = Promise_Fetch.then((response)=> response.json())
-    
-//     console.warn(Promise_Json)
-    
-//     Promise_Json.then((data)=>console.log(data))
-// }
-
-// getCountryFetchLimpia('usa')
