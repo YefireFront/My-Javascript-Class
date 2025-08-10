@@ -82,7 +82,6 @@ async function getPostByID(id) {
 }
 
 
-
 function postsUser(idUser) {
     fetch(`https://jsonplaceholder.typicode.com/users/${idUser}`)
     .then(res =>{
@@ -90,6 +89,7 @@ function postsUser(idUser) {
             throw new Error (`Erro HTTP : ${res.status}`)
         }
 
+        console.log(res)
         return res.json()
     })
     .then(data =>{
@@ -114,7 +114,6 @@ function postsUser(idUser) {
     })
 }
 
-// postsUser(1)
 
 
 async function asyncPostsUser(userID) {
@@ -145,17 +144,23 @@ function getMultipleUsers([user1, user2, user3]) {
         fetch(`https://jsonplaceholder.typicode.com/users/${user2}`),
         fetch(`https://jsonplaceholder.typicode.com/users/${user3}`),
     ])
-    .then(response => {
-        return Promise.all(response.map(res=>{
-            return res.json()
-        }))
-    })
+    .then(response =>  Promise.all(response.map(res=> res.json())))
     .then(([user1, user2, user3])=>{
-        console.log(`${user1.name}`)
+        console.log(`${user1.name}, -- ${user2} -- ${user3.name}`)
     })
 
 }
 
 
 
-getMultipleUsers([2, 4, 6])
+// getMultipleUsers([2, 4, 6])
+
+
+async function obtenerUsuarios([user1, user2, user3]) {
+    const [res1, res2, res3] = await  Promise.all([
+        fetch(`https://jsonplaceholder.typicode.com/users/${user1}`),
+        fetch(`https://jsonplaceholder.typicode.com/users/${user2}`),
+        fetch(`https://jsonplaceholder.typicode.com/users/${user3}`),
+    ])
+
+}
