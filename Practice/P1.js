@@ -120,7 +120,7 @@ const numSort = numsort.sort((a , b)=> b - a)
 numSort
 
 
-// sort (strings)
+
 // Ordena el array ["Naruto", "Goku", "Luffy", "Ichigo"] alfabéticamente.
 const pNaruto = ["Naruto", "Goku", "Luffy", "Ichigo"];
 const pNarutoSort = pNaruto.sort()
