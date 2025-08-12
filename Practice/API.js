@@ -205,7 +205,7 @@ async function getPokemonList() {
     const pokemonData = await Promise.all(pokemonPromises);
 
     pokemonData.forEach(poke =>{
-        console.log(poke.name)
+        console.log(poke)
     })
 }
 
