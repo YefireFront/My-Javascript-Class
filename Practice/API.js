@@ -212,3 +212,49 @@ async function getPokemonList() {
 getPokemonList();
 
 
+
+
+
+
+// Función de timeout que rechaza la promesa tras ms milisegundos
+function timeout(ms) {
+    return new Promise((_, reject) => {
+        setTimeout(() => reject("Tiempo de espera excedido"), ms);
+    });
+}
+
+// Petición con .then() usando Promise.race
+Promise.race([
+    fetch("https://jsonplaceholder.typicode.com/users/1"),
+    timeout(2000)
+])
+.then(response => {
+    if (!response.ok) throw new Error("Error en la respuesta de la API");
+    return response.json();
+})
+.then(data => {
+    console.log("Usuario obtenido:", data.name, "-", data.email);
+})
+.catch(error => {
+    console.error("Error:", error);
+});
+
+
+
+async function obtenerUsuarioConTimeout() {
+    try {
+        const respuesta = await Promise.race([
+            fetch("https://jsonplaceholder.typicode.com/users/1"),
+            timeout(2000)
+        ]);
+
+        if (!respuesta.ok) throw new Error("Error en la respuesta de la API");
+
+        const usuario = await respuesta.json();
+        console.log("Usuario obtenido:", usuario.name, "-", usuario.email);
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+obtenerUsuarioConTimeout();
