@@ -240,3 +240,20 @@ Promise.race([
 });
 
 
+
+async function obtenerUsuarioConTimeout() {
+    try {
+        const respuesta = await Promise.race([
+            fetch("https://jsonplaceholder.typicode.com/users/1"),
+            timeout(2000)
+        ]);
+
+        if (!respuesta.ok) throw new Error("Error en la respuesta de la API");
+
+        const usuario = await respuesta.json();
+        console.log("Usuario obtenido:", usuario.name, "-", usuario.email);
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
