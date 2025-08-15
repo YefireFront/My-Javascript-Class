@@ -73,6 +73,7 @@ console.log(`Ago 10th Practice`)
 console.log(`Ago 11th extra puntos`)   
 console.log(`Ago 12th Rertake 11 MT`)   
 console.log(`Ago 13th Rertake 10 MT`)   
+console.log(`Ago 14th Little figth`)   
 
 
 
