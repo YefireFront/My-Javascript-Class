@@ -63,3 +63,14 @@ const {
 
 // Destructuring con arrays independientes
 // Extrae los tres primeros valores del array recompensas.anteriores en variables primeraRecompensa, segundaRecompensa, terceraRecompensa.
+
+
+const [recompensa1 ,recompensa2, recompensa3] = personajeAnime.recompensas.anteriores
+
+console.log(`Recompensa1: ${recompensa1} Berries`)
+console.log(`Recompensa2: ${recompensa2} Berries`)
+console.log(`Recompensa3: ${recompensa3} Berries`)
+
+
+const{ origen:{ mentor:{nombre: nombreMentor , apodo: nikcName}}} = personajeAnime
+console.log(nombreMentor)
