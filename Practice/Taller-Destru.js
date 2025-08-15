@@ -73,4 +73,3 @@ console.log(`Recompensa3: ${recompensa3} Berries`)
 
 
 const{ origen:{ mentor:{nombre: nombreMentor , apodo: nikcName}}} = personajeAnime
-console.log(nombreMentor)
