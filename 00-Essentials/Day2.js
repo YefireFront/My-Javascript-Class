@@ -74,9 +74,9 @@ console.log(`Ago 11th extra puntos`)
 console.log(`Ago 12th Rertake 11 MT`)   
 console.log(`Ago 13th Rertake 10 MT`)   
 console.log(`Ago 14th Little figth`)   
-console.log(`Ago 14th Little figth`)   
-console.log(`Ago 14th Little figth`)   
-console.log(`Ago 14th Little figth`)   
+console.log(`Ago 15th Travelin to CQT`)   
+console.log(`Ago 16th ALANA Moment`)   
+console.log(`Ago 17th Back to medallo`)   
 
 
 
