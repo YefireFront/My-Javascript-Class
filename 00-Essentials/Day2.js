@@ -77,7 +77,3 @@ console.log(`Ago 14th Little figth`)
 console.log(`Ago 15th Travelin to CQT`)   
 console.log(`Ago 16th ALANA Moment`)   
 console.log(`Ago 17th Back to medallo`)   
-
-
-
- 
