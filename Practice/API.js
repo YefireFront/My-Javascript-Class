@@ -257,3 +257,41 @@ async function obtenerUsuarioConTimeout() {
     }
 }
 
+
+
+
+
+// Simulamos que el usuario ingresa un número (ejemplo: userId = 3)
+let userId = 3;
+
+fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Error en la petición");
+    }
+    return response.json();
+  })
+  .then(posts => {
+    console.log(`Posts del usuario con ID ${userId}:`);
+    posts.forEach(post => console.log(`- ${post.title}`));
+  })
+  .catch(error => console.error("Ocurrió un error:", error.message));
+
+
+  // Simulamos que el usuario ingresa un número (ejemplo: userId = 5)
+
+async function obtenerPostsPorUsuario(id) {
+  try {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`);
+    if (!response.ok) {
+      throw new Error("Error en la petición");
+    }
+    const posts = await response.json();
+    console.log(`Posts del usuario con ID ${id}:`);
+    posts.forEach(post => console.log(`- ${post.title}`));
+  } catch (error) {
+    console.error("Ocurrió un error:", error.message);
+  }
+}
+
+obtenerPostsPorUsuario(userId);
