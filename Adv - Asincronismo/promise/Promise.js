@@ -1,8 +1,3 @@
-//!Flyweight
-//!Middleweight
-//!Heavyweigh
-
-
 
 let phone = {
   Brand: "Iphone",
