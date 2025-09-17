@@ -105,7 +105,8 @@ console.log(`Ago 11th `)
 console.log(`Ago 12th La H`)   
 console.log(`Ago 13th LA H 2`)   
 console.log(`Ago 14th Rest`)   
-console.log(`Ago 15th Gym again`)
+console.log(`Ago 15th `)
+console.log(`Ago 15th `)
 
 
 
