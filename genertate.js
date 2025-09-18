@@ -1,49 +1,47 @@
-const NBAplayerarray = [
-    "LeBron James",
-    "Kevin Durant",
-    "Stephen Curry",
-    "Giannis Antetokounmpo",
-    "Luka Dončić",
-    "Nikola Jokić",
-    "Joel Embiid",]
+// Clase JugadorFutbol
+class JugadorFutbol {
+    constructor(nombre, edad, posicion) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.posicion = posicion;
+    }
+}
 
-const NBA_player_OBJ= {
-    "LeBron James": {
-        team: "Los Angeles Lakers", 
-        position: "Small Forward",
-        height: "6 ft 9 in",
-        weight: "250 lb",
-        college: "None",
-        birthdate: "December 30, 1984", 
-    },
-    "Kevin Durant": {   
-        team: "Brooklyn Nets", 
-        position: "Small Forward",
-        height: "6 ft 10 in",
-        weight: "240 lb",
-        college: "Texas",
-        birthdate: "September 29, 1988", 
-    }}
+
+// Clase Equipo
+class Equipo {
+    constructor(nombre, ciudad ,jugadorEstrella, jugadorActual) {
+        this.nombre = nombre;
+        this.ciudad = ciudad;
+        this.jugadorEstrella = jugadorEstrella;
+        this.jugadorActual = jugadorActual;
+    }
+}
 
 
 
-const {team : equipo = 'Eats' , position: lugar, ring : anillos = 0 } = NBA_player_OBJ["LeBron James"]
-
-equipo
-lugar
-anillos
-// team
-// position
-
-
-
-const [player1 , player2, ...RestyPlayers] = NBAplayerarray
-
-player1
-player2
-RestyPlayers
+class Entrenador{
+    constructor(nombre, edad, equipo){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.equipo = equipo;
+    }
+}
 
 
-const {team , position, ...data} =  NBA_player_OBJ["LeBron James"];
-data
+var jugador1 = new JugadorFutbol("Lionel Messi", 36, "Delantero");
+var jugador2 = new JugadorFutbol("Erling Haaland", 23, "Delantero");
+var jugador3 = new JugadorFutbol("Kylian Mbappé", 24,  "Delantero");
+var jugador4 = new JugadorFutbol("Robert Lewandowski", 33, "Delantero");
 
+// Instancias de equipos
+var equipo1 = new Equipo("Inter Miami", "Miami", jugador1, jugador2);
+var equipo2 = new Equipo("Manchester City", "Manchester", jugador3, jugador4);
+
+var entrenador1 = new Entrenador("Pep Guardiola", 50, equipo1);
+var entrenador2 = new Entrenador("Jorge Sampaoli", 55, equipo2);
+
+
+console.log(equipo1);
+console.log(equipo2);
+console.log(entrenador1);
