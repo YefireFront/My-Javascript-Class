@@ -109,7 +109,7 @@ console.log(`Ago 15th holy day `)
 console.log(`Ago 16th 11 Exam`)
 console.log(`Ago 17th 10 class regular`)
 console.log(`Ago 18th Give up with 10`)
-console.log(`Ago 19th UPb reunion`)
+console.log(`Ago 19th UPB reunion`)
 
 
 
