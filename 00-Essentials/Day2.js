@@ -111,7 +111,7 @@ console.log(`Ago 17th 10 class regular`)
 console.log(`Ago 18th Give up with 10`)
 console.log(`Ago 19th UPB reunion`)
 console.log(`Ago 20th Organize house`)
-console.log(`Ago 21th Organize house`)
+console.log(`Ago 21th `)
 
 
 
