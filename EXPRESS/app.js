@@ -1,5 +1,5 @@
 const express = require('express');
-const { testConnection } = require('./database');
+const { testConnection } = require('./DB/database');
 const jugadoresRouter = require('./routes/jugadores');
 
 const app = express();

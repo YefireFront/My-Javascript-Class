@@ -1,5 +1,5 @@
 const express = require('express');
-const { query } = require('../database');
+const { query } = require('../DB/database');
 
 const router = express.Router();
 
