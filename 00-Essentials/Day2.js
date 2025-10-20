@@ -140,5 +140,6 @@ console.log(`Oct 14th Talking with coordi for the OSFT`)
 console.log(`Oct 15th Last Talento Tech Class`)
 console.log(`Oct 15th Last Talento Tech Class`)
 console.log(`Oct 15th Last Talento Tech Class`)
-console.log(`Oct 18th `)
+console.log(`Oct 18th Intesive practice NexNes`)
+console.log(`Oct 18th Burnout `)
 
