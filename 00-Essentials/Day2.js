@@ -143,5 +143,5 @@ console.log(`Oct 15th Last Talento Tech Class`)
 console.log(`Oct 18th Intesive practice NexNes`)
 console.log(`Oct 19th Burnout `)
 console.log(`Oct 20th Extration teeth`) 
-console.log(`Oct 21th `) 
+console.log(`Oct 21th Frs CRUD`) 
 
