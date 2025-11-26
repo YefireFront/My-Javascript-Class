@@ -44,4 +44,5 @@ var entrenador2 = new Entrenador("Jorge Sampaoli", 55, equipo2);
 
 // console.log(equipo1);
 // console.log(equipo2);
+
 console.log(entrenador1);
