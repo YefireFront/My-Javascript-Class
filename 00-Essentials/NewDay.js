@@ -5,5 +5,6 @@ console.log(`Jun 04th Light Off`)
 console.log(`Jun 05th Arrived to Mes`)    
 console.log(`Jun 06th Arranca o no Arranca`)    
 console.log(`Jun 07th GPT Explai like a master`)    
-console.log(`Jun 08th `)    
+console.log(`Jun 08th Organize`)    
+console.log(`Jun 08th Internet is home`)    
     
