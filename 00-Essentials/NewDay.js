@@ -7,4 +7,5 @@ console.log(`Jun 06th Arranca o no Arranca`)
 console.log(`Jun 07th GPT Explai like a master`)    
 console.log(`Jun 08th Organize`)    
 console.log(`Jun 08th Internet is home`)    
+console.log(`Jun 10th Gina `)    
     
