@@ -8,4 +8,5 @@ console.log(`Jun 07th GPT Explai like a master`)
 console.log(`Jun 08th Organize`)    
 console.log(`Jun 08th Internet is home`)    
 console.log(`Jun 10th Gina `)    
+console.log(`Jun 11th Ready or not `)    
     
