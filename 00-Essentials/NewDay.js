@@ -10,5 +10,6 @@ console.log(`Jun 08th Internet is home`)
 console.log(`Jun 10th Gina `)    
 console.log(`Jun 11th Ready or not `)    
 console.log(`Jun 11th Cant haen again`)    
-console.log(`Jun 11th Cant haen again`)    
+console.log(`Jun 12th Talk with Plumaman and close decisione`)    
+console.log(`Jun 13th Back to the project`)    
     
