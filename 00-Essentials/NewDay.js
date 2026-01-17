@@ -14,4 +14,6 @@ console.log(`Jun 13th Talk with Plumaman and close decisione`)
 console.log(`Jun 14th Back to the project`)    
 console.log(`Jun 15th Reunion with frend rector to talk`)    
 console.log(`Jun 16th Project reunion`)    
+
+console.log(`Jun 16th Project reunion`)    
     
