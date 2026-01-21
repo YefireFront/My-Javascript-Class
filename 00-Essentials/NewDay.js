@@ -17,4 +17,5 @@ console.log(`Jun 16th Project reunion`)
 console.log(`Jun 17th Working in the Saas`)    
 console.log(`Jun 18th Blueblos 1 cap and Working in the Saas`)    
 console.log(`Jun 19th Final Day`)    
+console.log(`Jun 20th The decision`)    
     
