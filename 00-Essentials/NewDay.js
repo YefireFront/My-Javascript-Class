@@ -19,4 +19,5 @@ console.log(`Jun 18th Blueblos 1 cap and Working in the Saas`)
 console.log(`Jun 19th Final Day`)    
 console.log(`Jun 20th The decision`)    
 console.log(`Jun 21th 1 chance`)    
+console.log(`Jun 22th Final chance`)    
     
