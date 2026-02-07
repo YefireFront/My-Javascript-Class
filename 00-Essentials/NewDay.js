@@ -34,4 +34,5 @@ console.log(`Feb 02th `)
 console.log(`Feb 03th FIRST DAY BACK TO THE SCHOOL`)    
 console.log(`Feb 04th Final idea software`)    
 console.log(`Feb 05th Firt Meet with MT`)    
+console.log(`Feb 06th close to finish the Project`)    
     
