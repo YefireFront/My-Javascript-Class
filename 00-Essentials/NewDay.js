@@ -39,4 +39,5 @@ console.log(`Feb 07th `)
 console.log(`Feb 08th Working in NH - Project`)    
 console.log(`Feb 09th Firts Mt Maqietation calss`)    
 console.log(`Feb 10th First class with 10°`)    
+console.log(`Feb 11th `)    
     
