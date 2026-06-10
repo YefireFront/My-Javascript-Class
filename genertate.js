@@ -18,13 +18,3 @@ class Equipo {
     }
 }
 
-
-
-class Entrenador{
-    constructor(nombre, edad, equipo){
-        this.nombre = nombre;
-        this.edad = edad;
-        this.equipo = equipo;
-    }
-}
-
