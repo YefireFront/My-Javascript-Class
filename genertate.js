@@ -6,15 +6,3 @@ class JugadorFutbol {
         this.posicion = posicion;
     }
 }
-
-
-// Clase Equipo
-class Equipo {
-    constructor(nombre, ciudad ,jugadorEstrella, jugadorActual) {
-        this.nombre = nombre;
-        this.ciudad = ciudad;
-        this.jugadorEstrella = jugadorEstrella;
-        this.jugadorActual = jugadorActual;
-    }
-}
-
