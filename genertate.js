@@ -6,3 +6,5 @@ class JugadorFutbol {
         this.posicion = posicion;
     }
 }
+
+
