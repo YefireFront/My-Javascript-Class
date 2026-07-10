@@ -172,6 +172,7 @@ console.log(`Jul 02th  It a Day`)
 console.log(`Jul 03th  I feel A Pain `)    
 console.log(`Jul 04th  `)    
 console.log(`Jul 05th  Fnal Details`)    
-console.log(`Jul 05th  WASHED`)    
+console.log(`Jul 06th  WASHED`)    
+console.log(`Jul 07th  `)    
 
 
