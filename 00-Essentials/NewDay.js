@@ -175,5 +175,7 @@ console.log(`Jul 05th  Fnal Details`)
 console.log(`Jul 06th  WASHED`)    
 console.log(`Jul 07th  `)    
 console.log(`Jul 07th  `)    
+console.log(`Jul 07th  `)    
+
 
 
