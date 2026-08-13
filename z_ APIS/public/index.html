@@ -1,0 +1,34 @@
+<!-- ===============================
+     PASOS PARA MOSTRAR LOS DATOS DE LA API EN HTML
+     =============================== -->
+
+<!-- 13. Este archivo va en la carpeta "public" para que Express lo sirva -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos</title>
+</head>
+<body>
+
+  <h1>Lista de productos</h1>
+  <ul id="lista"></ul>
+
+  <script>
+    // 14. Pedimos los datos a la API con fetch
+    fetch('/productos')
+      .then(res => res.json())
+      .then(productos => {
+        // 15. Recorremos el resultado y lo mostramos en el HTML
+        const lista = document.getElementById('lista');
+        productos.forEach(p => {
+          const li = document.createElement('li');
+          li.textContent = JSON.stringify(p);
+          lista.appendChild(li);
+        });
+      });
+  </script>
+
+</body>
+</html>
