@@ -1,9 +1,14 @@
-# 🏀 GUÍA DEL PROYECTO — paso a paso, línea por línea
+# 🏀 GUÍA FRONT — app.js desde cero (paso 2)
 
-> **Cómo funciona:** construimos `frontend/app.js` DESDE CERO (archivo vacío).
-> Cada línea numerada te dice: **QUÉ escribir** (exacto), **DÓNDE va** (debajo de qué),
-> y **QUÉ HACE** palabra por palabra. Escribe tecleando, no copies bloques.
-> Hay 2 puntos de verificación: uno a mitad de camino y otro al final.
+> **Qué es este documento:** la construcción de la BASE de `frontend/app.js`,
+> línea por línea: agarrar elementos, el listener, fetch + json, y pintar con
+> createElement. Cada línea dice: **QUÉ escribir**, **DÓNDE va** y **QUÉ HACE**
+> palabra por palabra.
+>
+> 📌 **Nota de evolución:** app.js siguió creciendo después de esta guía —
+> refactor a funciones con nombre (`07-GUIA-CRUD` 7.4), formulario de fichar (7.5),
+> botones ✖/✏️ con delegación (8.2-8.3 y 9.3-9.6). Esta guía documenta los
+> cimientos; aquellas, los pisos. Índice completo: `00-INDICE.md`.
 
 ---
 
@@ -15,7 +20,9 @@
    - un div vacío: `<div id="resultado">`
    - la etiqueta `<script src="app.js">` al final (por eso tu JS ve el HTML)
 3. **`backend/servidor.js` NO se toca.** Ya funciona: tiene la ruta `GET /api/jugadores`
-   que responde los 4 jugadores en JSON, y permite peticiones del front gracias a `cors`.
+   que responde los jugadores en JSON, y permite peticiones del front gracias a `cors`.
+   *(Cuando se escribió esta guía los jugadores vivían en un array del servidor; hoy
+   salen de MySQL — para el front es invisible: recibe el mismo JSON.)*
 4. **Ambos motores encendidos:**
    - Terminal en `Proyecto/backend` → `node servidor.js` → "Corriendo en el puerto 3000 🚀"
    - `index.html` abierto con Live Server
@@ -271,4 +278,39 @@ boton.addEventListener("click", async () => {
 2. Click **5 veces seguidas** → siguen siendo 4, no 20 (eso es la línea 5 trabajando).
 3. La terminal del backend acumula un "Me pidieron los jugadores" por cada click → cada click fue una petición HTTP real de tu front a tu back.
 
-**Cuando los 3 puntos pasen, di "r": se agrega aquí el PASO 2 — pedir UN solo jugador por su id (el backend estrena `req.params`).**
+---
+
+## 📎 Apéndice: el index.html base, etiqueta por etiqueta
+
+El HTML sobre el que trabaja este app.js:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Jugadores</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Jugadores de la NBA</h1>
+    <button id="btnJugadores">Cargar jugadores</button>
+    <div id="resultado"></div>
+    <!-- formulario de fichar: explicado en 07-GUIA-CRUD 7.3 -->
+    <script src="app.js"></script>
+</body>
+</html>
+```
+
+| Pieza | Qué hace |
+|---|---|
+| `<!DOCTYPE html>` + `<html lang="es">` | "esto es HTML moderno, en español" |
+| `<meta charset="UTF-8">` | tildes y ñ se ven bien |
+| `<link rel="stylesheet" href="estilos.css">` | conecta la hoja de estilos (estética — fuera del temario) |
+| `<button id="btnJugadores">` | el botón; su `id` es el **gancho** que usa `querySelector` |
+| `<div id="resultado">` | contenedor vacío a propósito: JS lo llena |
+| `<script src="app.js">` | **al final del body**: cuando el JS corre, los elementos de arriba ya existen (más arriba, `querySelector` devolvería `null`) |
+
+---
+
+*La construcción del archivo continúa en `07-GUIA-CRUD` (7.4 en adelante). Índice del proyecto: `00-INDICE.md`.*

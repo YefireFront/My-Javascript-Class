@@ -1,9 +1,10 @@
-# 🗄️ MySQL ↔ Node.js — Guía de conexión (la parte JavaScript)
+# 🗄️ GUÍA MYSQL — la conexión JS ⇄ MySQL (pasos 3-6)
 
 > **Qué es este documento:** TODO lo necesario para que tu backend de Node/Express
 > hable con MySQL: instalación npm, la conexión, las consultas desde JS y los
 > errores típicos. *(La instalación de MySQL y el SQL puro de Workbench ya los
-> dominas — aquí vive solo el lado JavaScript, ampliado.)*
+> dominas — aquí vive solo el lado JavaScript; la chuleta SQL queda de apéndice.
+> Las rutas POST/DELETE/PUT viven en `07-GUIA-CRUD`. Índice: `00-INDICE.md`.)*
 
 **El plano completo:**
 
@@ -152,7 +153,13 @@ app.get("/api/jugadores", async (req, res) => {
 });
 ```
 
-### Un jugador — GET /api/jugadores/:id (el paso en curso)
+### Un jugador — GET /api/jugadores/:id (OPCIONAL — no implementada)
+
+> 📌 Esta ruta quedó documentada como referencia, pero **no está en tu
+> `servidor.js`**: el proyecto saltó directo al CRUD, y sus conceptos (`:id`,
+> `req.params`, el 404) se aprendieron en `07-GUIA-CRUD` paso 8. Servirá tal cual
+> el día que el front necesite pedir UN jugador (p. ej. la página de detalle,
+> paso 14 del `00-INDICE.md`).
 
 ```js
 app.get("/api/jugadores/:id", async (req, res) => {
@@ -180,8 +187,8 @@ app.get("/api/jugadores/:id", async (req, res) => {
 | `return` | corta el handler: una petición, UNA respuesta (sin él, respondería dos veces → error) |
 | `res.json(filas[0])` | quien pide UN jugador recibe UN objeto, no un array de uno |
 
-**✅ Verificación:** `/api/jugadores/1` → solo Curry (objeto). `/api/jugadores/999`
-→ el JSON de error y status **404** en la pestaña Network.
+**✅ Verificación (si algún día la agregas):** `/api/jugadores/1` → solo Curry
+(objeto). `/api/jugadores/999` → el JSON de error y status **404** en Network.
 
 ---
 
@@ -211,6 +218,5 @@ DELETE FROM jugadores WHERE id = 5;                     -- ⚠ siempre con WHERE
 
 ---
 
-*Siguiente paso del proyecto: **PASO 7 — POST**: fichar desde el front con
-formulario, `express.json()` y `req.body` + el INSERT con `?`. Di "r" cuando
-la ruta `:id` pase su verificación.*
+*Las rutas que escriben (POST/DELETE/PUT) están en `07-GUIA-CRUD`, pasos 7-9.
+Índice completo del proyecto: `00-INDICE.md`.*
