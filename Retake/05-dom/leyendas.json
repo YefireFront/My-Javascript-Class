@@ -1,0 +1,7 @@
+[
+  { "id": 101, "nombre": "Magic Johnson",       "posicion": "base",      "puntos": 19.5, "activo": false },
+  { "id": 102, "nombre": "Larry Bird",          "posicion": "alero",     "puntos": 24.3, "activo": false },
+  { "id": 103, "nombre": "Shaquille O'Neal",    "posicion": "pivot",     "puntos": 23.7, "activo": false },
+  { "id": 104, "nombre": "Kareem Abdul-Jabbar", "posicion": "pivot",     "puntos": 24.6, "activo": false },
+  { "id": 105, "nombre": "Hakeem Olajuwon",     "posicion": "pivot",     "puntos": 21.8, "activo": false }
+]
