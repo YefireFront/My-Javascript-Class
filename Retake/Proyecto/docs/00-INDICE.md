@@ -61,12 +61,12 @@
 - **Se construye:** `servidor.js` se separa en `rutas/jugadores.js`, `rutas/equipos.js`.
 - **Se aprende:** organización de un backend que crece. Va DESPUÉS del 13, cuando el dolor del archivo largo ya se sienta.
 
-### PASO 16 — Login: usuarios, contraseñas y rutas protegidas 🔐
-- **Se construye:** registro + login; solo quien inicia sesión puede crear/editar/borrar jugadores.
-- **Se aprende:** bcrypt (hashing), JWT, middleware propio, `localStorage`, `.env`. Temario completo en `16-GUIA-LOGIN`.
-- **Por qué al final:** toca las tres capas a la vez y necesita el Router del paso 15.
+### PASO 16 — Login sencillo: tabla `usuarios` + `localStorage` 🔑
+- **Se construye:** página de login; si email + contraseña coinciden, entras y la app te saluda.
+- **Se aprende:** es el GRAN REPASO — formulario + POST + `req.body` + SELECT + estado del front, todo junto. Lo único nuevo: `localStorage`, `401` y saltar entre páginas. Temario en `16-GUIA-LOGIN`.
+- **Alcance:** demo educativa local, sin temas de seguridad (eso es de apps en producción).
 
-**La lógica del orden:** primero exprimir la tabla que ya existe (10-12), luego multiplicar tablas (13), luego ordenar la casa (14-15), y cerrar con seguridad (16).
+**La lógica del orden:** primero exprimir la tabla que ya existe (10-12), luego multiplicar tablas (13), luego ordenar la casa (14-15), y cerrar con el gran repaso del login (16).
 
 ---
 
