@@ -11,14 +11,13 @@ const db = mysql.createPool({
   database: "nba",
 });
 
- 
 app.use(cors());
 app.use(express.json());
-
 
 app.get("/api/jugadores", async (req, res) => {
   const [filas] = await db.query("SELECT * FROM jugadores");
   res.json(filas);
+  
 });
 
 app.post("/api/jugadores", async (req, res) => {
@@ -49,7 +48,6 @@ app.delete("/api/jugadores/:id", async (req, res) => {
   res.json({ eliminado: Number(req.params.id) });
 });
 
-
 app.put("/api/jugadores/:id", async (req, res) => {
   const { puntos } = req.body;
 
@@ -68,8 +66,6 @@ app.put("/api/jugadores/:id", async (req, res) => {
 
   res.json({ id: Number(req.params.id), puntos });
 });
-
-
 
 
 app.listen(3000, () => {
