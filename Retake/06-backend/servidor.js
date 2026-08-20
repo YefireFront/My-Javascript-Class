@@ -1,13 +1,7 @@
 const express = require("express");
 const app = express();
 
-// Paso 4 · Los datos: nuestra "base de datos" en memoria (hasta la fase 5)
-const jugadores = [
-  { id: 1, nombre: "Stephen Curry",  posicion: "base",    puntos: 24.8 },
-  { id: 2, nombre: "LeBron James",   posicion: "alero",   puntos: 27.1 },
-  { id: 3, nombre: "Nikola Jokic",   posicion: "pivot",   puntos: 20.9 },
-  { id: 4, nombre: "Luka Doncic",    posicion: "base",    puntos: 28.6 },
-];
+
 
 app.get("/", (req, res) => {
     res.send("Hola estudiantes");
