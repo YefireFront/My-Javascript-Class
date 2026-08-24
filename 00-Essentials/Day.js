@@ -155,7 +155,7 @@ console.log(`Sep  02th     I did not quote the students in the lab and relaxed i
 console.log(`Sep  03th     Explaing MT how it the rest of the time `) 
 console.log(`Sep  04th     Class with MAT and VAL BD advance`) 
 console.log(`Sep  05th     MY QUEEN LEAVE ME`) 
-console.log(`Sep  06th     `) 
+console.log(`Sep  06th      K`) 
 console.log(`Sep  07th     `) 
 console.log(`Sep  08th     `) 
 console.log(`Sep  09th     GAME PROJECT START`) 
