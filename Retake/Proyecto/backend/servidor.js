@@ -27,10 +27,7 @@ app.post("/api/jugadores", async (req, res) => {
     return res.status(400).json({ error: "Faltan datos: nombre, posicion y puntos" });
   }
 
-  const [resultado] = await db.query(
-    "INSERT INTO jugadores (nombre, posicion, puntos) VALUES (?, ?, ?)",
-    [nombre, posicion, puntos]
-  );
+  const [resultado] = await db.query("INSERT INTO jugadores (nombre, posicion, puntos) VALUES (?, ?, ?)", [nombre, posicion, puntos]  );
 
   res.status(201).json({ id: resultado.insertId, nombre, posicion, puntos });
 });
