@@ -58,12 +58,3 @@ CREATE TABLE registros_cultivo (
     FOREIGN KEY (id_siembra) REFERENCES siembras(id_siembra)
 );
 
-CREATE TABLE productos (
-    id_producto INT PRIMARY KEY AUTO_INCREMENT,
-    id_publicacion INT,
-    nombre VARCHAR(100),
-    descripcion VARCHAR(255),
-    tipo VARCHAR(50),
-    estado VARCHAR(50),
-    FOREIGN KEY (id_publicacion) REFERENCES publicaciones(id_publicacion)
-);
